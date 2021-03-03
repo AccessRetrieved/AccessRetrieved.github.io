@@ -1,2 +1,4 @@
 # AccessRetrieved.github.io
-[Macpods](https://accessretrieved.github.io/) - Airpods controller directly from mac
+Macpods - Airpods controller directly from mac
+
+Visit the website [here](https://accessretrieved.github.io/).
