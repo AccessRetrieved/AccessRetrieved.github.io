@@ -10,17 +10,47 @@
 		<div class="page_content">
 			<hr style="width: 50%">
 			<div class="page_content_body">
-				<h3>Buy MacPods</h3>
+				<h3>Buy MacPods - $1.99 CAD</h3>
 			</div>
 
 
 			<div class="pay_form">
-				<form>
-					<label for="email">Email</label>
-					<input type="email" id="email" name="email" placeholder="Enter your email...">
-					<br>
-					<input type="submit" value="Continue &#8594">
-				</form>
+				<div id="smart-button-container">
+					<div style="text-align: center;">
+						<div id="paypal-button-container"></div>
+					</div>
+					</div>
+				<script src="https://www.paypal.com/sdk/js?client-id=sb&currency=CAD" data-sdk-integration-source="button-factory"></script>
+				<script>
+					function initPayPalButton() {
+					paypal.Buttons({
+						style: {
+						shape: 'rect',
+						color: 'gold',
+						layout: 'vertical',
+						label: 'paypal',
+						
+						},
+				
+						createOrder: function(data, actions) {
+						return actions.order.create({
+							purchase_units: [{"description":"Buy Macpods","amount":{"currency_code":"CAD","value":1.99}}]
+						});
+						},
+				
+						onApprove: function(data, actions) {
+						return actions.order.capture().then(function(details) {
+							alert('Transaction completed by ' + details.payer.name.given_name + '!');
+						});
+						},
+				
+						onError: function(err) {
+						console.log(err);
+						}
+					}).render('#paypal-button-container');
+					}
+					initPayPalButton();
+				</script>
 			</div>
 
 			<footer>
