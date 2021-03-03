@@ -32,3 +32,13 @@
     margin: auto;
     font-family: "calibri";
 }
+
+.license {
+    border-left: 1px solid orange;
+    background-color: #d8d8d8;
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    padding: 20px;
+    font-size: 15px;
+}
