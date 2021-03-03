@@ -3,6 +3,11 @@
     src: url("/fonts/Roboto-Light.ttf");
 }
 
+@font-face {
+    font-family: "calibri";
+    src: url("/fonts/Calibri-Light.ttf");
+}
+
 .title {
     font-family: "roboto";
     text-align: center;
@@ -25,4 +30,5 @@
     width: 50%;
     text-align: center;
     margin: auto;
+    font-family: "calibri";
 }
