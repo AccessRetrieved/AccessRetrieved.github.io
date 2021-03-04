@@ -21,7 +21,13 @@
 
 			<div class="pay_form" id="info">
 				<form>
-					<script src="https://accessretrieved.github.io/js/all.js"></script>
+					<script>
+						function launch_payment() {
+							var body = document.getElementById("body");
+							body.style.opacity = "0.9";
+							body.style.backgroundColor = "black";
+						}
+					</script>
 					<div class="mb-3">
 						<label for="email-text" class="form-label">Email address</label>
 						<input type="email" class="form-control" id="email" aria-describedby="emailHelp">
