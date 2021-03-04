@@ -19,7 +19,7 @@
             <a href="#products">Products</a>
             <ul>
                 <li><a href="https://accessretrieved.github.io/Macpods/app.html">Macpods</a><br></li>
-                <a href="https://accessretrieved.github.io/project-pios/app.html">Project-Pios</a>
+                <li><a href="https://accessretrieved.github.io/project-pios/app.html">Project-Pios</a></li>
             </ul>
         </li>
         <li>
