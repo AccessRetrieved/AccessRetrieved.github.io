@@ -22,15 +22,25 @@
 			<div class="pay_form" id="info">
 				<form>
 					<script>
+						function validateEmail(email) {
+							var re = /\S+@\S+\.\S+/;
+							return re.test(email);
+						}
+
 						function launch_payment() {
-							document.getElementById("proceed").disabled = true;
+							if (document.getElementById("email").value !== "") {
+								document.getElementById("proceed").disabled = true;
+								window.location = "https://accessretrieved.github.io/payment/app.html";
+							} else {
+								return
+							}
 						}
 					</script>
 					<div class="mb-3">
 						<label for="email-text" class="form-label">Email address</label>
 						<input type="email" class="form-control" id="email" aria-describedby="emailHelp">
 					</div>
-					<a href="https://accessretrieved.github.io/payment/app.html" target="popup" onclick='window.open("https://accessretrieved.github.io/payment/app.html", "popup", "width=600,height=600"); return false;'><button id="proceed" class="btn btn-primary" onclick="launch_payment()">Next &rarr;</button></a>
+					<button id="proceed" class="btn btn-primary" onclick="launch_payment()">Next &rarr;</button>
 				</form>
 			</div>
 
