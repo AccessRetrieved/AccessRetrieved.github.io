@@ -34,4 +34,4 @@
 
 <a name="#visit">
 <h2>Visit</h2>
-<p>You cam visit the website <a href="https://accessretrieved.github.io" style="text-decoration: none">here</a>.</p>
+<p>You can visit the website <a href="https://accessretrieved.github.io" style="text-decoration: none">here</a>.</p>
