@@ -7,3 +7,7 @@
     margin: auto;
     text-align: center;
 }
+
+.music_player {
+    cursor: pointer;
+}
