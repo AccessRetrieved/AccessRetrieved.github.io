@@ -35,3 +35,12 @@
 <a name="#visit">
 <h2>Visit</h2>
 <p>You can visit the website <a href="https://accessretrieved.github.io" style="text-decoration: none">here</a>.</p>
+
+<audio id="你曾是少年player" src="/server/music/你曾是少年.mp3"></audio>
+<div class="music_player">
+    <label class="text-dark" style="width: 20%;">你曾是少年</label>
+    <span class="badge rounded-pill bg-info" onclick="document.getElementById('你曾是少年player').volume += 0.1">+</span>
+    <span class="badge rounded-pill bg-light text-dark" onclick="document.getElementById('你曾是少年player').play()">Play</span>
+    <span class="badge rounded-pill bg-light text-dark" onclick="document.getElementById('你曾是少年player').pause()">Pause</span>
+    <span class="badge rounded-pill bg-info" onclick="document.getElementById('你曾是少年player').volume -= 0.1">-</span>
+</div>
