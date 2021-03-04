@@ -18,13 +18,20 @@
         <li>
             <a href="#products">Products</a>
             <ul>
-                <a href="https://accessretrieved.github.io/Macpods/app.html">Macpods</a><br>
+                <li><a href="https://accessretrieved.github.io/Macpods/app.html">Macpods</a><br></li>
                 <a href="https://accessretrieved.github.io/project-pios/app.html">Project-Pios</a>
             </ul>
+        </li>
+        <li>
+            <a href="https://accessretrieved.github.io/sponsor.html">Support me</a>
         </li>
     </ol>
 </details>
 
 <a name="#about">
 <h2>About</h2>
-<p>This repository is running on [github pages](https://accessretrieved.github.io).
+<p>This repository is the source code of the website running on <a href="https://accessretrieved.github.io" style="text-decoration: none">accessretrieved.github.io</a>.</p>
+
+<a name="#visit">
+<h2>Visit</h2>
+<p>You cam visit the website <a href="https://accessretrieved.github.io" style="text-decoration: none">here</a>.</p>
