@@ -2,3 +2,8 @@
     font-family: "calibri";
     src: url("/fonts/Calibri-Light.ttf");
 }
+
+.center {
+    margin: auto;
+    text-align: center;
+}
