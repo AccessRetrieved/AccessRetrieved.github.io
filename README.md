@@ -1,5 +1,11 @@
 # AccessRetrieved.github.io
 
+<p align="center">
+  <a href="https://github.com/AccessRetrieved/AccessRetrieved.github.io">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
+</p>
+
 <details open="open">
     <summary>Table of Contents</summary>
     <ol>
