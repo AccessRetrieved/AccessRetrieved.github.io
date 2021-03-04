@@ -24,10 +24,9 @@
             var password = document.getElementById("inputPassword").value;
 
             if (email == "work.jerrywu@gmail.com" && password == "Bestway1234") {
-                window.location.href = "https://accessretrieved.github.io/account.html?email=" + stringToHash(email) + "&password=" + stringToHash(password);
-            } else {
-                return
+                window.open("https://accessretrieved.github.io/account.html?email=" + String(stringToHash(email)) + "&password=" + String(stringToHash(password)));
             }
+
         }
         function stringToHash(string) {           
             var hash = 0;
