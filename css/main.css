@@ -13,3 +13,12 @@
     font-size: 20px;
     text-align: center;
 }
+
+.page_content {
+    margin: auto;
+    text-align: center;
+}
+
+.hand {
+    cursor: pointer;
+}
