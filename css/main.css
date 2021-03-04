@@ -7,3 +7,10 @@
     font-family: "calibri";
     src: url("/fonts/Calibri-Light.ttf");
 }
+
+.title {
+    font-family: "roboto";
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+}
