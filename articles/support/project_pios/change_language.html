@@ -1,0 +1,80 @@
+<html>
+	<head>
+		<script data-ad-client="ca-pub-1889527741439078" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/articles/support/project-pios/change_language.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+			<div class="container-fluid">
+			  <span style="display: inline-block; width: 5%;"></span>
+			  <a class="navbar-brand" href="#">Support</a>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+				  <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="https://accessretrieved.github.io">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="https://accessretrieved.github.io/support.html">FAQ</a>
+          </li>
+				</ul>
+			  </div>
+		    </div>
+		</nav>
+
+        <div class="page_content">
+            <br><br><br>
+            <br>
+            <h3>更改Project-Pios系统语言</h3>
+            <br><br>
+
+            <ol>
+                <li>打开 <code>language.txt</code></li>
+                <br>
+                <h5>从英语改成中文</h5>
+                <br>
+                <li>把<code>en</code>改成<code>zh-cn</code></li>
+                <br>
+                <h5>从中文改成英语</h5>
+                <br>
+                <li>把<code>zh-cn</code>改成<code>en</code></li>
+
+            </ol>
+
+			<br><br><br>
+			<br><br><br>
+
+			<!--Contact me div-->
+			<div class="row">
+				<h4>联系我</h4>
+				<div class="column">
+					<p>微信</p>
+					<img src="/images/Macpods/wechat.jpeg" width="250">
+				</div>
+				<div class="column">
+					<p>邮件</p>
+					<div class="input-group mb-3">
+						<div class="column">
+							<label class="form-label"><strong>邮箱:</strong> work.jerrywu@gmail.com</label>
+							<label class="form-label"><strong>标题:</strong> 写一个脱颖而出的标题</label>
+							<br><br><br>
+							<br><br><br>
+							<button class="btn btn-primary" onclick="sendEmail()">现在发送</button>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </body>
+	<script>
+		function sendEmail() {
+			var subject = "把这改成一个脱颖而出的标题";
+			var body = "我想说...";
+
+			window.location = `mailto:work.jerrywu@gmail.com?subject=${subject}&body=${body}`
+		}
+	</script>
+</html>
