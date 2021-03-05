@@ -98,8 +98,8 @@
 							<form class="row g-3 needs-validation" novalidate>
 								<div class="col-12">
 									<div class="form-check">
-										<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-										<label class="form-check-label" for="invalidCheck">
+										<input class="form-check-input" type="checkbox" value="" id="invalidCheck1" required>
+										<label class="form-check-label" for="invalidCheck1">
 											I agree to the <a href="https://accessretrieved.github.io/contactmepolicies.html">policies</a>
 										</label>
 										<div class="invalid-feedback">
@@ -107,7 +107,7 @@
 										</div>
 									</div>
 									<br>
-									<button class="btn btn-primary" type="submit" onclick="sendEmail()">现在发送</button>
+									<button class="btn btn-primary" type="submit" onclick="sendChinese()">现在发送</button>
 								</div>
 							</form>
 						</div>
@@ -124,7 +124,20 @@
 				var subject = "Replace this with a subject that stands out with my pile of emails";
 				var body = "Something to say...";
 
-				window.location = `mailto:work.jerrywu@gmail.com?subject=${subject}&body=${body}`;
+				window.open(`mailto:work.jerrywu@gmail.com?subject=${subject}&body=${body}`);
+			}
+		}
+
+		function sendChinese() {
+			var checks = document.getElementById("invalidCheck1");
+
+			if (checks.checked == true) {
+				var subject = "把这改成一个脱颖而出的标题";
+				var body = "我想说...";
+
+				window.open(`mailto:work.jerrywu@gmail.com?subject=${subject}&body=${body}`);
+			} else {
+				//pass
 			}
 		}
 
