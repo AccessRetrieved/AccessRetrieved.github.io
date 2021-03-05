@@ -31,7 +31,38 @@
             <h3>Why is my profile being updated</h3>
             <br><br>
             <p>When a new update is found, the server will automatically update your profile and dashboard. This update is only available for this website and server. Apps and projects hosted on this website will not be modified.</p>
-        </div>
 
+			<br><br><br>
+			<br><br><br>
+
+			<!--Contact me div-->
+			<div class="row">
+				<h4>Contact me</h4>
+				<div class="column">
+					<p>Via Wechat</p>
+					<img src="/images/Macpods/wechat.jpeg" width="250">
+				</div>
+				<div class="column">
+					<p>Via Email</p>
+					<div class="input-group mb-3">
+						<div class="column">
+							<label class="form-label"><strong>Email:</strong> work.jerrywu@gmail.com</label>
+							<label class="form-label"><strong>Subject:</strong> Include a subject that stands out with my pile of emails</label>
+							<br><br><br>
+							<br><br><br>
+							<button class="btn btn-primary" onclick="sendEmail()">Send now</button>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
     </body>
+	<script>
+		function sendEmail() {
+			var subject = "Replace this with a subject that stands out with my pile of emails";
+			var body = "Something to say...";
+
+			window.location = `mailto:work.jerrywu@gmail.com?subject=${subject}&body=${body}`
+		}
+	</script>
 </html>
