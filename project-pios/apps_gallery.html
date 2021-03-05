@@ -4,8 +4,11 @@
     <title>Projects</title>
 
     <link href="/css/bootstrap/bootstrap_main.css" rel="stylesheet">
-
-    <link href="/css/projects.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="/css/Project-Pios/apps_gallery.css" rel="stylesheet">
   </head>
 
   <body>
@@ -25,69 +28,111 @@
 
       <section class="jumbotron text-center">
         <div class="container">
-          <h1 class="jumbotron-heading">Projects</h1>
+          <h1 class="jumbotron-heading">Project-Pios</h1>
           <p class="lead text-muted">Project-Pios 模板展厅</p>
           <p>
             <a href="https://accessretrieved.github.io/articles/docs/project_pios/custom_app.html" class="btn btn-primary my-2">返回</a>
           </p>
         </div>
-      </section>
+    </section>
 
-      <div class="album py-5 bg-light">
-        <div class="container">
-
-          <div class="row">
-
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="/images/bg1.png" alt="Project-Pios">
-                <div class="card-body">
-                  <p class="card-text">计时器</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary" onclick="window.location.href='https://accessretrieved.github.io/project-pios/Resources/timer.zip'">下载</button>
-                    </div>
+    <!--Project-Pios: timer-->
+    <div class="container mt-3">
+        <div class="modal fade" id="timerModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Project-Pios: 计时器</h4>
+                <button type="button" class="close" data-dismiss="modal">×</button>
+              </div>
+              <div class="modal-body">
+                  <div class="row">
+                      <div class="column">
+                        <img src="/project-pios/Resources/timer.png" width="200">
+                      </div>
+                      <div class="column">
+                          <video src="/project-pios/Resources/timer.mov" width="150" autoplay loop></video>
+                      </div>
                   </div>
-                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="window.location = 'https://accessretrieved.github.io/project-pios/Resources/timer.zip'">下载</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">关闭</button>
               </div>
             </div>
-
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="/images/bg2.png" alt="Macpods">
-                <div class="card-body">
-                  <p class="card-text">Macpods</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" onclick="window.location.href='https://accessretrieved.github.io/Macpods/app.html'" class="btn btn-sm btn-outline-secondary">View</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4 hand" onclick="window.location.href='#'">
-							<div class="card mb-4 box-shadow">
-							  <img class="card-img-top" src="/images/bg5.png" alt="accessretrieved.github.io">
-							  <div class="card-body">
-								  <p class="card-text">accessretrieved.github.io</p>
-								<div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" onclick="window.location.href='https://github.com/AccessRetrieved/AccessRetrieved.github.io'" class="btn btn-sm btn-outline-secondary">View</button>
-                  </div>
-                </div>
-							</div>
-						</div>
-
           </div>
         </div>
-      </div>
+    </div>
+
+    <!--Project-Pios: template-->
+    <div class="container mt-3">
+        <div class="modal fade" id="templateModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Project-Pios: 默认模板</h4>
+                <button type="button" class="close" data-dismiss="modal">×</button>
+              </div>
+              <div class="modal-body">
+                  <div class="row">
+                      <div class="column">
+                        <img src="/project-pios/Resources/template.png" width="200">
+                      </div>
+                  </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="window.location = 'https://accessretrieved.github.io/project-pios/Resources/template.zip'">下载</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">关闭</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="album py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                      <img class="card-img-top" src="/images/bg1.png" alt="Project-Pios">
+                      <div class="card-body">
+                        <p class="card-text">Project-Pios: 计时器</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#timerModal">查看</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary" onclick="window.location.href='https://accessretrieved.github.io/project-pios/Resources/timer.zip'">下载</button>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                      <img class="card-img-top" src="/images/bg2.png" alt="Macpods">
+                      <div class="card-body">
+                        <p class="card-text">Project-Pios: 模板</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#templateModal">查看</button>
+                                <button type="button" onclick="window.location.href='https://accessretrieved.github.io/project-pios/Resources/template.zip'" class="btn btn-sm btn-outline-secondary">下载</button>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    
 
     </main>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="../../../../assets/js/vendor/popper.min.js"></script>
