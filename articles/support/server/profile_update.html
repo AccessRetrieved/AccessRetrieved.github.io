@@ -50,7 +50,22 @@
 							<label class="form-label"><strong>Subject:</strong> Include a subject that stands out with my pile of emails</label>
 							<br><br><br>
 							<br><br><br>
-							<button class="btn btn-primary" onclick="sendEmail()">Send now</button>
+
+							<form class="row g-3 needs-validation" novalidate>
+								<div class="col-12">
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+										<label class="form-check-label" for="invalidCheck">
+											I agree to the <a href="https://accessretrieved.github.io/contactmepolicies.html">policies</a>
+										</label>
+										<div class="invalid-feedback">
+											You must agree before submitting
+										</div>
+									</div>
+								</div>
+
+								<button class="btn btn-primary" type="submit" onclick="sendEmail()">Send now</button>
+							</form>
 						</div>
 					</div>
 				</div>
@@ -59,10 +74,33 @@
     </body>
 	<script>
 		function sendEmail() {
-			var subject = "Replace this with a subject that stands out with my pile of emails";
-			var body = "Something to say...";
+			var check = document.getElementById("invalidCheck");
+			if (check.checked == true) {
+				var subject = "Replace this with a subject that stands out with my pile of emails";
+				var body = "Something to say...";
 
-			window.location = `mailto:work.jerrywu@gmail.com?subject=${subject}&body=${body}`
+				window.open(`mailto:work.jerrywu@gmail.com?subject=${subject}&body=${body}`);
+			} else {
+				//pass
+			}
 		}
+
+		(function () {
+		'use strict'
+
+		var forms = document.querySelectorAll('.needs-validation')
+
+		Array.prototype.slice.call(forms)
+			.forEach(function (form) {
+			form.addEventListener('submit', function (event) {
+				if (!form.checkValidity()) {
+				event.preventDefault()
+				event.stopPropagation()
+				}
+
+				form.classList.add('was-validated')
+			}, false)
+			})
+		})()
 	</script>
 </html>
