@@ -9,6 +9,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link href="/css/Project-Pios/apps_gallery.css" rel="stylesheet">
+
+    <!--Bootstrap v5 icon link-->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
   </head>
 
   <body>
@@ -47,78 +50,15 @@
               </div>
               <div class="modal-body">
                   <div class="row">
-                      <div class="column">
-                        <img src="/project-pios/Resources/timer.png" width="200">
+                    <div class="screenshot">
+                        <div class="column">
+                          <img src="/project-pios/Resources/timer.png" width="200">
+                        </div>
                       </div>
-                      <div class="column">
-                          <video src="/project-pios/Resources/timer.mov" width="150" autoplay loop></video>
-                      </div>
-                  </div>
-                  <hr>
-                  <br><br>
-                  <pre><code>
-from tkinter import *
-from tkinter import messagebox
-import os
-from PIL import Image, ImageTk
-from getpass import getuser
-import tkmacosx # Helper for designing
-
-# Template for creating custom apps to use with  Project-Pios
-# import_app function is needed to initiate the app
-# quit_app is needed to return to home screen
-
-def import_app(window, launch_screen_time=1000): # customize app here
-    '''
-    Param launch_screen_time is time for launch screen in milliseconds.
-    '''
-    global NSAppView
-    NSAppView = Frame(window) # Make sure to use NSAppView as main window, ex. root, or master
-    NSAppView.pack(fill=BOTH, expand=True)
-
-    # Define functions here
-
-    # Add widgets and modules here
-    Label(NSAppView, text='空空如也', font=("Arial", 20)).place(relx=0.5, rely=0.5, anchor=CENTER)
-
-    # Customize launch screen here
-    img = Image.open(os.getcwd() + '/project_pios/App1/launch/launch.png')
-    pic = ImageTk.PhotoImage(img)
-
-    def launch_app():
-        NSLaunchScreen.destroy()
-    NSLaunchScreen = Label(window, text='', image=pic)
-    NSLaunchScreen.image = pic
-    NSLaunchScreen.place(relx=0.5, rely=0.5, anchor=CENTER)
-
-    NSAppView.after(launch_screen_time, launch_app)
-
-def quit_app(): # Quit app function
-    NSAppView.destroy()
-                  </code></pre>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-primary" onclick="window.location = 'https://accessretrieved.github.io/project-pios/Resources/timer.zip'">下载</button>
-                <button type="button" class="btn btn-danger" data-dismiss="modal">关闭</button>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
-
-    <!--Project-Pios: template-->
-    <div class="container mt-3">
-        <div class="modal fade" id="templateModal">
-          <div class="modal-dialog modal-dialog-scrollable modal-xl">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h4 class="modal-title">Project-Pios: 默认模板</h4>
-                <button type="button" class="close" data-dismiss="modal">×</button>
-              </div>
-              <div class="modal-body">
-                  <div class="row">
-                      <div class="column">
-                        <img src="/project-pios/Resources/template.png" width="200">
+                      <div class="screenshot">
+                        <div class="column">
+                            <video src="/project-pios/Resources/timer.mov" width="175" autoplay loop></video>
+                        </div>
                       </div>
                   </div>
                   <hr>
@@ -222,7 +162,76 @@ def quit_app2(): # Quit app function
                   </code></pre>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-primary" onclick="window.location = 'https://accessretrieved.github.io/project-pios/Resources/template.zip'">下载</button>
+                <button type="button" class="btn btn-primary" onclick="window.location = 'https://accessretrieved.github.io/project-pios/Resources/timer.zip'"><i class="bi bi-file-earmark-arrow-down"></i></button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">关闭</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!--Project-Pios: template-->
+    <div class="container mt-3">
+        <div class="modal fade" id="templateModal">
+          <div class="modal-dialog modal-dialog-scrollable modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Project-Pios: 默认模板</h4>
+                <button type="button" class="close" data-dismiss="modal">×</button>
+              </div>
+              <div class="modal-body">
+                  <div class="row">
+                    <div class="screenshot">
+                      <div class="column">
+                        <img src="/project-pios/Resources/template.png" width="200">
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <br><br>
+                  <pre><code>
+from tkinter import *
+from tkinter import messagebox
+import os
+from PIL import Image, ImageTk
+from getpass import getuser
+import tkmacosx # Helper for designing
+
+# Template for creating custom apps to use with  Project-Pios
+# import_app function is needed to initiate the app
+# quit_app is needed to return to home screen
+
+def import_app(window, launch_screen_time=1000): # customize app here
+    '''
+    Param launch_screen_time is time for launch screen in milliseconds.
+    '''
+    global NSAppView
+    NSAppView = Frame(window) # Make sure to use NSAppView as main window, ex. root, or master
+    NSAppView.pack(fill=BOTH, expand=True)
+
+    # Define functions here
+
+    # Add widgets and modules here
+    Label(NSAppView, text='空空如也', font=("Arial", 20)).place(relx=0.5, rely=0.5, anchor=CENTER)
+
+    # Customize launch screen here
+    img = Image.open(os.getcwd() + '/project_pios/App1/launch/launch.png')
+    pic = ImageTk.PhotoImage(img)
+
+    def launch_app():
+        NSLaunchScreen.destroy()
+    NSLaunchScreen = Label(window, text='', image=pic)
+    NSLaunchScreen.image = pic
+    NSLaunchScreen.place(relx=0.5, rely=0.5, anchor=CENTER)
+
+    NSAppView.after(launch_screen_time, launch_app)
+
+def quit_app(): # Quit app function
+    NSAppView.destroy()
+                  </code></pre>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="window.location = 'https://accessretrieved.github.io/project-pios/Resources/template.zip'"><i class="bi bi-file-earmark-arrow-down"></i></button>
                 <button type="button" class="btn btn-danger" data-dismiss="modal">关闭</button>
               </div>
             </div>
