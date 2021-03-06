@@ -14,7 +14,11 @@
                 <img class="mb-4" src="/images/profile.jpeg" alt="" width="72" height="72">
                 <h1 class="h3 mb-3 fw-normal">Sign in</h1>
                 <div class="form-floating mb-3">
-                    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                    <input type="text" id="username" class="form-control" placeholder="Username" required autofocus>
+                    <label for="username">Username</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
                     <label for="inputEmail">Email address</label>
                 </div>
                 <div class="form-floating">
@@ -37,9 +41,10 @@
         function check() {
             var email = document.getElementById("inputEmail").value;
             var password = document.getElementById("inputPassword").value;
+            var username = document.getElementById("username").value;
 
-            if (email == "work.jerrywu@gmail.com" && password == "Bestway1234") {
-                window.open("https://accessretrieved.github.io/account.html?email=" + String(stringToHash(email)) + "&password=" + String(stringToHash(password)));
+            if (email == "work.jerrywu@gmail.com" && password == "Bestway1234" && username == "AccessRetrieved") {
+                window.location("https://accessretrieved.github.io/account.html?email=" + String(stringToHash(email)) + "&password=" + String(stringToHash(password)) + "&username=" + String(stringToHash(username)));
             }
 
         }
