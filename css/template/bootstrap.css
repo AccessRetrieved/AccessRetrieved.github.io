@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "calibri";
+    src: url("/fonts/Calibri-Light.ttf");
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url("/fonts/Roboto-Light.ttf");
+}
+
+.page_content {
+    margin: auto;
+    text-align: center;
+}

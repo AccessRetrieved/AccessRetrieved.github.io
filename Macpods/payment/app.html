@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="/css/Macpods/Macpods.css">
+		<title>Macpods</title>
+	</head>
+	<body>
+		<div class="title">
+			<br>
+			<h1>Download MacPods</h1>
+		</div>
+		
+		<div class="page_content">
+			<hr style="width: 50%; text-align: center; margin: auto;">
+			<div class="page_content_body">
+				<br>
+				<h5>Purchase MacPods - $1.99 CAD</h3>
+			</div>
+
+			<br>
+
+			<div class="pay_form" id="checkout">
+				<div id="smart-button-container">
+					<div id="paypal-button-container"></div>
+				</div>
+				<script src="https://www.paypal.com/sdk/js?client-id=sb&currency=CAD" data-sdk-integration-source="button-factory"></script>
+				<script>
+				function initPayPalButton() {
+					paypal.Buttons({
+					style: {
+						shape: 'pill',
+						color: 'blue',
+						layout: 'vertical',
+						label: 'buynow',
+						
+					},
+			
+					createOrder: function(data, actions) {
+						return actions.order.create({
+						purchase_units: [{"amount":{"currency_code":"CAD","value":1.99}}]
+						});
+					},
+			
+					onApprove: function(data, actions) {
+						return actions.order.capture().then(function(details) {
+						alert('Thank you! You will be taken to the download page momentairly.');
+						window.location = "https://accessretrieved.github.io/payment/success/pay_success.html?paymentSuccess?ewuifwfnwrkjgnw2+3fwkjfnI2nj2n$nli34@$$efef"
+						});
+					},
+			
+					onError: function(err) {
+						console.log(err);
+					}
+					}).render('#paypal-button-container');
+				}
+				initPayPalButton();
+				</script>
+			</div>
+
+			<footer>
+				<br>
+				<p><a style="text-decoration: none; color: grey;" onclick="window.close()" href='https://accessretrieved.github.io/Macpods/app.html'>Close</a></p>
+			</footer>
+		</div>
+	</body>
+</html>

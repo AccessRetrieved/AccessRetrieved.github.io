@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href='/css/Macpods/pay_success.css'>
+        <title>Payment Success</title>
+    </head>
+    <body>
+        <div class="title">
+            <br>
+            <h1>Thank You!</h1>
+            <br><br>
+
+            <h3>Please take a screenshot of this page</h3>
+        </div>
+
+        <div class="page_content">
+            <div class="box">
+                <h3>Your license key:</h3>
+                <div class="license">
+                    <p id="licenseKey"></p>
+                </div>
+
+                <br>
+                <a href="https://github.com/AccessRetrieved/AccessRetrieved.github.io/releases/download/v1/Macpods.zip"><button class="downloadButton">Download Macpods</button></a>
+            </div>
+        </div>
+    </body>
+    <script>
+        function uuidv4() {
+            return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+                var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+                return v.toString(16);
+            });
+        }
+
+        function getRandomInt(n) {
+            return Math.floor(Math.random() * n);
+        }
+        
+        function shuffle(s) {
+            var arr = s.split('');
+            var n = arr.length;
+            
+            for(var i=0 ; i<n-1 ; ++i) {
+                var j = getRandomInt(n);
+                
+                var temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+            
+            s = arr.join('');
+            return s;
+        }
+
+        const query = window.location.search
+        if (query == "?paymentSuccess?ewuifwfnwrkjgnw2+3fwkjfnI2nj2n$nli34@$$efef") {
+            var code = document.getElementById("licenseKey")
+            var keyword = "pod";
+            code.innerHTML = "M" + shuffle(keyword) + uuidv4() + "s";
+        } else {
+            window.location = 'https://accessretrieved.github.io'
+        }
+    </script>
+</html>

@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="/css/Macpods/Macpods.css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+		<title>Macpods</title>
+	</head>
+	<body>
+		<div class="title">
+			<br>
+			<h1>Download MacPods</h1>
+		</div>
+		
+		<div class="page_content">
+			<hr style="width: 50%; text-align: center; margin: auto;">
+			<div class="page_content_body">
+				<br>
+				<h5>Purchase MacPods - $1.99 CAD</h3>
+			</div>
+
+			<br>
+
+			<div class="pay_form" id="info">
+				<form>
+					<script>
+						function validateEmail(email) {
+							var re = /\S+@\S+\.\S+/;
+							return re.test(email);
+						}
+
+						function launch_payment() {
+							if (document.getElementById("email").value !== "") {
+								document.getElementById("proceed").disabled = true;
+								window.location = "https://accessretrieved.github.io/Macpods/payment/app.html";
+							} else {
+								return
+							}
+						}
+					</script>
+					<div class="mb-3">
+						<label for="email-text" class="form-label">Email address</label>
+						<input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+					</div>
+					<button id="proceed" class="btn btn-primary" onclick="launch_payment()">Next &rarr;</button>
+				</form>
+			</div>
+
+			<footer>
+				<br>
+				<p><a style="text-decoration: none; color: grey;" onclick="window.history.go(-1)">Back</a></p>
+				<p><a style="text-decoration: none;" href="https://github.com/AccessRetrieved/AccessRetrieved.github.io/releases/download/v1/Macpods.zip">Purchased already? Download Macpods</a></p>
+			</footer>
+		</div>
+	</body>
+</html>
