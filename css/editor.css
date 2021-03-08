@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "calibri";
+    src: url("/fonts/Calibri-Light.ttf");
+}
+
+.page_content {
+    margin: auto;
+    text-align: center;
+    width: 50%;
+}

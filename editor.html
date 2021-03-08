@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>Web Editor</title>
+        <!--Bootstrap v5 icon link-->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+		<!--Browse Bootstrap v5 icon here: https://icons.getbootstrap.com-->
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link href="/css/editor.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="container mt-3">
+            <div class="modal fade" id="editorModal">
+                <div class="modal-dialog modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Editor</h4>
+                            <button type="button" class="close" data-dismiss="modal">x</button>
+                        </div>
+                        <div class="modal-body">
+                            <textarea class="form-control" id="filebox"></textarea>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" id="save">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page_content">
+            <br>
+            <h3 style="font-family: 'calibri';">File Editor</h3>
+            <hr>
+            <form>
+                <div class="mb-3">
+                    <label class="form-label" for="file">Upload file</label>
+                    <br>
+                    <input type="file" class="form-control btn btn-primary" id="file" style="width: 50%;">
+                    <br><br><br>
+                    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#editorModal">Start</button>
+                </div>
+            </form>
+        </div>
+    </body>
+    <script>
+        var filename = document.getElementById("file"); 
+
+        function saveTextAsFile() {
+            var textToWrite = document.getElementById('filebox').innerHTML;
+            var textFileAsBlob = new Blob([ textToWrite ], { type: 'text/plain' });
+            var fileNameToSaveAs = filename.value;
+
+            var downloadLink = document.createElement("a");
+            downloadLink.download = fileNameToSaveAs;
+            downloadLink.innerHTML = "Download File";
+            if (window.webkitURL != null) {
+                downloadLink.href = window.webkitURL.createObjectURL(textFileAsBlob);
+            } else {
+                downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
+                downloadLink.onclick = destroyClickedElement;
+                downloadLink.style.display = "none";
+                document.body.appendChild(downloadLink);
+            }
+
+            downloadLink.click();
+        }
+
+        var button = document.getElementById('save');
+        button.addEventListener('click', saveTextAsFile);
+
+        function destroyClickedElement(event) {
+            document.body.removeChild(event.target);
+        }
+
+        function readSingleFile(e) {
+        var file = e.target.files[0];
+        if (!file) {
+            return;
+        }
+        var reader = new FileReader();
+        reader.onload = function(e) {
+            var contents = e.target.result;
+            displayContents(contents);
+        };
+        reader.readAsText(file);
+        }
+
+        function displayContents(contents) {
+        var element = document.getElementById('filebox');
+        element.textContent = contents;
+        }
+
+        document.getElementById('file')
+        .addEventListener('change', readSingleFile, false);
+    </script>
+</html>
