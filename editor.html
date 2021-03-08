@@ -48,12 +48,13 @@
         </div>
     </body>
     <script>
-        var filename = document.getElementById("file"); 
+        var filename = document.getElementById("file").value;
+        var file = "";
 
         function saveTextAsFile() {
             var textToWrite = document.getElementById('filebox').innerHTML;
             var textFileAsBlob = new Blob([ textToWrite ], { type: 'text/plain' });
-            var fileNameToSaveAs = filename.value;
+            var fileNameToSaveAs = filename;
 
             var downloadLink = document.createElement("a");
             downloadLink.download = fileNameToSaveAs;
