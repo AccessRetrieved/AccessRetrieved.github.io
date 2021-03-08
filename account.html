@@ -7,6 +7,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+		<script src="/javascript/server/account.js"></script>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -154,35 +155,4 @@
 			</div>
 		</div>
     </body>
-    <script>
-        const query = window.location.search
-        if (query == "?email=2140473296&password=-1274958547") {
-			//pass
-        } else {
-            window.location = 'https://accessretrieved.github.io/signin.html'
-        }
-
-		var i = 0;
-		function move() {
-		if (i == 0) {
-			i = 1;
-			var elem = document.getElementById("myBar");
-			var width = 1;
-			var id = setInterval(frame, 10);
-			function frame() {
-			if (width >= 100) {
-				clearInterval(id);
-				i = 0;
-			} else {
-				width++;
-				elem.style.width = width + "%";
-			}
-			}
-		}
-		}
-
-		$(document).ready(function(){
-			$('[data-toggle="popover"]').popover();   
-		});
-    </script>
 </html>
