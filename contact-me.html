@@ -69,16 +69,17 @@
         var comment = document.getElementById("comment");
         var shareEmail = document.getElementById("shareEmail").checked;
         var email = document.getElementById("emails");
+        var agree = document.getElementById("invalidCheck").checked;
 
         if (shareEmail == true) {
-          if (name.value != "" && subject.value != "" && comment.value != "" && email.value != "") {
+          if (name.value != "" && subject.value != "" && comment.value != "" && email.value != "" && agree == true) {
             window.open("mailto:work.jerrywu@gmail.com?subject=" + subject.value + "&body=" + `${name.value} has a message for you: ${comment.value}, reply to ${email.value}`);
-          window.open("https://accessretrieved.github.io/contact-success.html")
+            window.open("https://accessretrieved.github.io/contact-success.html")
           } else {
             return
           }
         } else {
-          if (name.value != "" && subject.value != "" && comment.value != "" && email.value != "") {
+          if (name.value != "" && subject.value != "" && comment.value != "" && email.value != "" && agree == true) {
             window.open("mailto:work.jerrywu@gmail.com?subject=" + subject.value + "&body=" + `${name.value} has a message for you: ${comment.value}`);
             window.open("https://accessretrieved.github.io/contact-success.html")
           } else {
