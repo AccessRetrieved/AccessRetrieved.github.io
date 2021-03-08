@@ -33,12 +33,13 @@
             </form>
         </main>
     </body>
+    <script src="/javascript/signin.js"></script>
     <script>
         function check() {
             var email = document.getElementById("inputEmail").value;
             var password = document.getElementById("inputPassword").value;
 
-            if (email == "work.jerrywu@gmail.com" && password == "Bestway1234" && username == "AccessRetrieved") {
+            if (email == email_raw && password == password_raw) {
                 window.open("https://accessretrieved.github.io/account.html?email=" + String(stringToHash(email)) + "&password=" + String(stringToHash(password)));
             }
 
