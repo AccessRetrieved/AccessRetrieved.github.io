@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="/css/signin.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+        <script src="/javascript/signin.js"></script>
     </head>
     <body class="text-center">
         <button class="bi bi-arrow-left-circle-fill rounded-pill" onclick="window.location.href 
@@ -33,27 +34,4 @@
             </form>
         </main>
     </body>
-    <script src="/javascript/signin.js"></script>
-    <script>
-        function check() {
-            var email = document.getElementById("inputEmail").value;
-            var password = document.getElementById("inputPassword").value;
-
-            if (email == email_raw && password == password_raw) {
-                window.open("https://accessretrieved.github.io/account.html?email=" + String(stringToHash(email)) + "&password=" + String(stringToHash(password)));
-            }
-
-        }
-        function stringToHash(string) {           
-            var hash = 0;
-            
-            if (string.length == 0) return hash;
-            for (i = 0; i < string.length; i++) {
-                char = string.charCodeAt(i);
-                hash = ((hash << 5) - hash) + char;
-                hash = hash & hash;
-            }
-            return hash;
-        }
-    </script>
 </html>
