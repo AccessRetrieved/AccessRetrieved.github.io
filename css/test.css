@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "calibri";
+    src: url("/fonts/Calibri-Light.ttf");
+}
+
+.page_content {
+    margin: auto;
+    text-align: center;
+}
+
+.audio_card {
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    width: 45%;
+    height: 20%;
+    margin: auto;
+    text-align: center;
+}
+
+.audio_card_title {
+    font-size: 17px;
+    font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei UI","Microsoft YaHei",Arial,sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    height: 23px;
+    letter-spacing: normal;
+    line-height: 23px;
+    -webkit-box-orient: vertical;
+    -webkit-hyphens: auto;
+    -webkit-line-clamp: 2;
+    -webkit-user-select: none;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.9);
+    display: -webkit-box;
+    text-align: left;
+    margin-left: 5%;
+}
+
+.audio_card_desc {
+    -webkit-hyphens: auto;
+    -webkit-user-select: none;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.5);
+    display: block;
+    font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei UI","Microsoft YaHei",Arial,sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    height: 24px;
+    letter-spacing: normal;
+    line-height: 16px;
+    text-align: left;
+    margin-left: 5%;
+}
+
+.audio_card_playpause {
+    width: 8%;
+    height: 40%;
+    display: block;
+    border: none;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 100%;
+}
