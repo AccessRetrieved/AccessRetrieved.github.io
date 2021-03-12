@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <title>Welcome</title>
+        <link rel="stylesheet" href="/css/bootstrap/bootstrap_main.css">
+        <link rel="stylesheet" href="/css/welcome.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+		<link href="/css/bootstrap/bootstrap_main.css" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </head>
+    <body class="noselect" onload="load()">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<span style="display: inline-block; width: 1%;"></span>
+			  	<div class="dropdown">
+					<a class="navbar-brand" href="#" data-toggle="dropdown">AccessRetrieved</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#" data-toggle="modal" data-target="#languageModal">Change Language - 更改语言</a>
+					</div>
+			  	</div>
+			  	<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="https://accessretrieved.github.io">首页</a>
+						</li>
+				  		<li class="nav-item">
+							<a class="nav-link" href="https://github.com/AccessRetrieved">Github账户</a>
+				  		</li>
+				  		<li class="nav-item">
+							<a class="nav-link" href="https://accessretrieved.github.io/projects.html">项目</a>
+				  		</li>
+				  		<li class="nav-item">
+							<a class="nav-link" href="https://accessretrieved.github.io/support.html">帮助</a>
+				  		</li>
+				  		<li class="nav-item">
+							<a class="nav-link" href="https://accessretrieved.github.io/signin.html">账户</a>
+				  		</li>
+				  		<div class="dropdown">
+							<a class="nav-link" href="#" data-toggle="dropdown">开发者</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="https://accessretrieved.github.io/developer.html"><i class="bi bi-card-text"></i><span style="color: white;">s</span>开发者文档</a>
+								<hr class="dropdown-divider">
+								<a class="dropdown-item" href="https://accessretrieved.github.io/project-pios/apps_gallery.html"><i class="bi bi-file-earmark-arrow-down"></i><span style="color: white;">s</span>Project-Pios 软件展览</a>
+							</div>
+						</div>
+					</ul>
+			  	</div>
+			</div>
+		</nav>
+
+        <div class="container mt-3">
+			<div class="modal fade" id="languageModal">
+				<div class="modal-dialog modal-dialog-scrollable modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title">小技巧</h4>
+						</div>
+						<div class="modal-body">
+							<div class="slideshow-container">
+                                <div class="mySlides">
+                                    <p>点击AccessRetrieved来换语言。</p>
+                                    <br>
+                                    <a href="https://accessretrieved.github.io/welcome.html">Switch to English</a>
+                                </div>
+                    
+                                <div class="mySlides">
+                                    <p>这个网站提供英语和简体中文。</p>
+                                    <br>
+                                    <button class="btn btn-primary" data-dismiss="modal" onclick="window.location='https://accessretrieved.github.io/index_zh-cn.html'">Finish</button>
+                                </div>
+                    
+                                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                                <a class="next" onclick="plusSlides(1)">❯</a>
+                            </div>
+                    
+                            <div class="dot-container">
+                                <span class="dot" onclick="currentSlide(1)"></span>
+                                <span class="dot" onclick="currentSlide(2)"></span>
+                            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+        <button class="dropdown-item" href="#" data-toggle="modal" data-target="#languageModal" hidden id="openWelcome">Change Language - 更改语言</button>
+
+        
+    </body>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+
+        function load() {
+            document.getElementById("openWelcome").click();
+        }
+    </script>
+</html>
