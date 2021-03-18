@@ -1,4 +1,6 @@
 {
+    "Address": "https://accessretrieved.github.io/",
+
     "Project-Pios": {
         "Project-Pios": {
             "Project-Pios 版本5.5": "https://github.com/Project-Pios/Project-Pios/releases/download/5.5/Project-Pios.5.5.zip",
@@ -12,9 +14,26 @@
         }
     },
 
+    "Errors": {
+        "404": ["https://accessretrieved.github.io/404.html", "https://accessretrieved.github.io/404_zh-cn.html", "https://accessretrieved.github.io/404.md"],
+    },
+
+    "Server": {
+        "javascript": {
+            "server": ["https://accessretrieved.github.io/javascript/server/account.js", "https://accessretrieved.github.io/javascript/server/signin.js"],
+            "jquery": "https://accessretrieved.github.io/javascript/jquery.min.js",
+            "qrcode": "https://accessretrieved.github.io/javascript/qrcode.js",
+            "qrcode.min": "https://accessretrieved.github.io/javascript/qrcode.min.js",
+        }
+    },
+
+    "Images": ["https://accessretrieved.github.io/images/bg1.png", "https://accessretrieved.github.io/images/bg2.png", "https://accessretrieved.github.io/images/bg3.png", "https://accessretrieved.github.io/images/bg4.png", "https://accessretrieved.github.io/images/bg5.png", "https://accessretrieved.github.io/images/bg6.png", "https://accessretrieved.github.io/images/bg7.png", "https://accessretrieved.github.io/images/bg8.png", "https://accessretrieved.github.io/images/logo.png", "https://accessretrieved.github.io/images/profile.jpeg", "https://accessretrieved.github.io/images/wechat.jpeg"],
     "Macpods": "https://github.com/AccessRetrieved/AccessRetrieved.github.io/releases/download/v1/Macpods.zip",
     "Github": "https://github.com/AccessRetrieved",
-    "Send-Me-A-Message": "https://accessretrieved.github.io/contact-me.html",
-    "Editor": "https://accessretrieved.github.io/editor.html",
-    "last-updated": "2021-03-08 9:32 AM"
+    "Send-Me-A-Message": ["https://accessretrieved.github.io/contact-me.html", "https://accessretrieved.github.io/contact-me_zh-cn.html"],
+    "Editor": ["https://accessretrieved.github.io/editor.html", "https://accessretrieved.github.io/editor_zh-cn.html"],
+    "Contactmepolicies": ["https://accessretrieved.github.io/contactmepolicies.html", "https://accessretrieved.github.io/contactmepolicies_zh-cn.html"],
+    "Funding": "https://accessretrieved.github.io/FUNDING.yml",
+    "Readme": "https://accessretrieved.github.io/README.md",
+    "last-updated": "2021-03-17 8:29 PM"
 }

@@ -29,6 +29,9 @@
         <li>
             <a href="#downlaod">Download</a>
         </li>
+        <li>
+            <a href="#api">api</a>
+        <li>
     </ol>
 </details>
 
@@ -44,3 +47,8 @@
 <h2>Download</h2>
 <p>Download this website's source code:</p>
 <code>$ git clone https://github.com/AccessRetrieved/AccessRetrieved.github.io</code>
+
+<a name="#api">
+<h2>API</h2>
+<p>This website provides api to informations of this website. To use the api, enter the following code to the terminal:</p>
+<code>$ curl -l 'https://accessretrieved.github.io/api/data.json'</code>
