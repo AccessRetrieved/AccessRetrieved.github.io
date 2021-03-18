@@ -126,6 +126,46 @@ function handleFiles(files) {
 	$("button, input").prop("disabled",true);
 }
 
+function playSample() {
+	
+	fileChosen = true;
+    setupAudioNodes();
+	
+	var request = new XMLHttpRequest();
+	
+	request.addEventListener("progress", updateProgress);
+	request.addEventListener("load", transferComplete);
+	request.addEventListener("error", transferFailed);
+	request.addEventListener("abort", transferCanceled);
+	
+	request.open('GET', 'src/Infinite.mp3', true);
+	request.responseType = 'arraybuffer';
+
+ 	// When loaded decode the data
+	request.onload = function() {
+		
+		$("#title").html("Infinite");
+		$("#album").html("Infinite");
+		$("#artist").html("Valence");
+		onWindowResize();
+		$("#title, #artist, #album").css("visibility", "visible");
+		
+		// decode the data
+		context.decodeAudioData(request.response, function(buffer) {
+		// when the audio is decoded play the sound
+		sourceNode.buffer = buffer;
+		sourceNode.start(0);
+		$("#freq, body").addClass("animateHue");
+		//on error
+		}, function(e) {
+			console.log(e);
+		});
+	};
+	request.send();
+	
+	$("button, input").prop("disabled",true);
+}
+
 function useMic() 	
 {
 	"use strict";
