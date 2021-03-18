@@ -5,7 +5,7 @@
  * Please consider supporting this project on behance:
  * https://www.behance.net/gallery/49260123/Web-Audio-Visualization
  */
-@keyframes hue {
+ @keyframes hue {
   0% {
     filter: hue-rotate(0deg);
     -webkit-filter: hue-rotate(0deg);
@@ -80,6 +80,14 @@ input, button, #loading {
     
 }
 
+#playSampleButton {
+	top: 40px;
+}
+
+#useMicButton {
+	top: 70px;
+}
+
 #loading {
 	display: inline-block;
 	top: 44px; 
@@ -120,16 +128,4 @@ html, body {
 	#title {
 		
 	}
-}
-
-#artist {
-  font-size: 45px;
-}
-
-#title {
-  font-size: 70px;
-}
-
-#album {
-  font-size: 40px;
 }
