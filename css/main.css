@@ -1,24 +1,8 @@
-@font-face {
-    font-family: "roboto";
-    src: url("/fonts/Roboto-Light.ttf");
+a {
+    color: #F05C38;
+    text-decoration: none;
 }
 
-@font-face {
-    font-family: "calibri";
-    src: url("/fonts/Calibri-Light.ttf");
-}
-
-.title {
-    font-family: "roboto";
-    font-size: 20px;
-    text-align: center;
-}
-
-.page_content {
-    margin: auto;
-    text-align: center;
-}
-
-.hand {
-    cursor: pointer;
+a:hover {
+    border-bottom: 2px solid #F05C38;
 }
