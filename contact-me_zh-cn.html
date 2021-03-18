@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/contactme.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+		<link href="/css/bootstrap/bootstrap_main.css" rel="stylesheet">
+    </head>
+    <body onload="window.location = '#bottom'">
+        <div class="page_content form_content">
+          <br><br><br>
+          <br><br><br>
+
+          <form class="g-3 needs-validation" novalidate>
+            <div class="mb-3">
+              <label for="name" class="form-label">名字</label>
+              <input type="text" class="form-control" id="name" aria-describedby="name" autofocus required>
+              <div class="invalid-feedback">
+                请输入您的名字
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="emails" class="form-label">邮件</label>
+              <input type="email" class="form-control" id="emails" aria-describedby="emails" required>
+              <div class="invalid-feedback">
+                您可以选择不公开您的邮箱
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="subject" class="form-label">主题</label>
+              <input type="text" class="form-control" id="subject" aria-describedby="subject" required>
+              <div class="invalid-feedback">
+                请填写一个联系主题
+              </div>
+            </div>
+            <br>
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Leave a comment here" id="comment" style="height: 100px" required></textarea>
+              <label for="comment">原因</label>
+              <div class="invalid-feedback">
+                请填写一个联系我的原因
+              </div>
+            </div>
+            <br>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="shareEmail" checked>
+              <label class="form-check-label" form="shareEmail">开发者可以看到我的邮箱</label>
+            </div>
+            <br>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  我同意<a href="https://accessretrieved.github.io/contactmepolicies.html">联系开发者政策</a>
+                </label>
+                <div class="invalid-feedback">
+                  联系前需要同意
+                </div>
+              </div>
+            </div>
+            <br>
+
+            <button type="submit" style="width: 20%;" class="btn btn-primary" onclick="send()" name="bottom">Send</button>
+          </form>
+        </div>
+    </body>
+    <script>
+      function send() {
+        var name = document.getElementById("name");
+        var subject = document.getElementById("subject");
+        var comment = document.getElementById("comment");
+        var shareEmail = document.getElementById("shareEmail").checked;
+        var email = document.getElementById("emails");
+        var agree = document.getElementById("invalidCheck").checked;
+
+        if (shareEmail == true) {
+          if (name.value != "" && subject.value != "" && comment.value != "" && email.value != "" && agree == true) {
+            window.open("mailto:work.jerrywu@gmail.com?subject=" + subject.value + "&body=" + `${name.value} 有一条消息: ${comment.value}, 回复到 ${email.value}`);
+            window.open("https://accessretrieved.github.io/contact-success.html")
+          } else {
+            return
+          }
+        } else {
+          if (name.value != "" && subject.value != "" && comment.value != "" && email.value != "" && agree == true) {
+            window.open("mailto:work.jerrywu@gmail.com?subject=" + subject.value + "&body=" + `${name.value} 有一条消息: ${comment.value}`);
+            window.open("https://accessretrieved.github.io/contact-success.html")
+          } else {
+            return
+          }
+        }
+      }
+
+      (function () {
+        'use strict'
+
+        var forms = document.querySelectorAll(".needs-validation")
+
+        Array.prototype.slice.call(forms)
+          .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+
+              form.classList.add('was-validated')
+            }, false)
+          })
+      })()
+    </script>
+</html>
