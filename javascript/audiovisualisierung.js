@@ -53,6 +53,31 @@ function handleFiles(files) {
 		var url = files[0].urn || files[0].name;
 		ID3.loadTags(url, function() {
 			var tags = ID3.getAllTags(url);
+
+//                    console.log(tags.title.toString().length);
+//                    if (tags.title.length > 14) {
+//                        var newTitle = tags.title.substring(0,14);
+//                        newTitle += "...";
+//                        $("#title").html(newTitle);
+//                    }
+//                    else {
+//                        $("#title").html(tags.title);
+//                    }
+			if (tags.title.length > 14 && tags.title.length <= 17) {
+
+				$("#title").css("font-size", "7.5vh");
+				
+			}
+			if (tags.title.length > 17 && tags.title.length <= 20) {
+				
+				$("#title").css("font-size", "6.5vh");
+			}
+			
+			if (tags.title.length > 20) {
+				
+				$("#title").css("font-size", "5vh");
+				
+			}
 			
 			$("#title").html(tags.title);
 			
