@@ -42,6 +42,4 @@
 
 <a name="#download">
 <h2>Download</h2>
-```
-$ git clone https://github.com/AccessRetrieved/AccessRetrieved.github.io
-```
+<code>$ git clone https://github.com/AccessRetrieved/AccessRetrieved.github.io</code>
