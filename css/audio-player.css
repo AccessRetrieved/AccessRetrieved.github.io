@@ -2,7 +2,21 @@
     background-image: url("/images/bg9.png");
     background-position: center;
     height: 50%;
-    background-repeat: no-repeat;
     background-size: cover;
     position: relative
+}
+
+.header {
+    color: rgb(255, 255, 255);
+    display: block;
+    font-family: 'Roboto Mono', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    height: 33px;
+    margin-top: auto;
+    text-align: center;
+    width: 553px;
+    position: absolute;
+    left: 28%;
+    top: 33%;
 }
