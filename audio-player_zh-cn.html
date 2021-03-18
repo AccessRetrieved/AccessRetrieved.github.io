@@ -5,11 +5,18 @@
         <link rel="import" href="/bower_components/paper-audio-player/paper-audio-player.html">
         <link rel="stylesheet" href="css/main.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="/css/audio-player.scss">
+        <link rel="stylesheet" href="/css/forms.css">
     </head>
     <body>
         <div class="image">
             <h3 class="header"><a class="a" style="color: white;" href="https://accessretrieved.github.io/beta.html">测试版</a> - 音乐播放器</h3>
         </div>
+        <br><br>
+        <label class="file">
+            <input type="file" id="file" aria-label="File browser" onchange="setMusic(this.files)" disabled>
+            <span class="file-custom" id="filename">Choose a File</span>
+        </label>
         <br><br>
         <paper-audio-player src="/server/music/Infinite.mp3" title="Infinite" color="#F05C38"></paper-audio-player>
     </body>
