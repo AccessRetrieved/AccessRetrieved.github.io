@@ -42,4 +42,5 @@
 
 <a name="#download">
 <h2>Download</h2>
+<p>Download this website's source code:</p>
 <code>$ git clone https://github.com/AccessRetrieved/AccessRetrieved.github.io</code>
