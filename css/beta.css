@@ -124,8 +124,4 @@ body {
   padding: 30px;
 }
 
-.slideBtn {
-  background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);
-}
-
 body {margin: 0;font-family: "Segoe UI", Arial, Helvetica, Sans Serif;} a {text-decoration: none; display: inline-block; margin-right: 10px; color:#fff;}
