@@ -37,7 +37,9 @@ function checkCookie() {
 function setLanguage(lang) {
     if (lang == "en") {
         setCookie("language", "en", 30);
+        window.location = "https://accessretrieved.github.io";
     } else if (lang == "zh-cn") {
         setCookie("language", "zh-cn", 30);
+        window.location = "https://accessretrieved.github.io/index_zh-cn.html";
     }
 }
