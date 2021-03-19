@@ -316,7 +316,7 @@ function check() {
     var password_raw = "-1274958547";
 
     if (hashed_email == email_raw && hashed_password == password_raw) {
-        window.location.replace("https://accessretrieved.github.io/account.html?email=" + hashed_email + "&password=" + hashed_password);
+        window.open("https://accessretrieved.github.io/account.html?email=" + hashed_email + "&password=" + hashed_password);
     } else {
 		$('#incorrectModal').modal()
 	}
