@@ -62,11 +62,17 @@
 
 <table>
     <tr>
-        <th>Test</th>
-        <th>Value</th>
+        <th>Tools</th>
+        <th>Availability</th>
+        <th>Safari</th>
+        <th>Chrome</th>
+        <th>Firefox</th>
     </tr>
     <tr>
-        <td>Yes</td>
-        <td>Null</td>
+        <td>Timer</td>
+        <td>✅</td>
+        <td>✅</td>
+        <td>?</td>
+        <td>?</td>
     </tr>
 </table>
