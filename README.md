@@ -7,7 +7,7 @@
   </a>
 </p>
 
-<details><summary>Table of Contents</summary>
+<details open><summary>Table of Contents</summary>
 <p>
 
 - [About the project](#about)
@@ -23,8 +23,8 @@
 </details>
 
 <a name="#about">
-<h2>About</h2>
-<p>This repository is the source code of the website running on <a href="https://accessretrieved.github.io" style="text-decoration: none">accessretrieved.github.io</a>.</p>
+## About
+This repository is the source code of the website running on [accessretrieved.github.io](https://accessretrieved.github.io).
 
 <a name="#visit">
 <h2>Visit</h2>
