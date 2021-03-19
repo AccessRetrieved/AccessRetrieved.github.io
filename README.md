@@ -7,35 +7,19 @@
   </a>
 </p>
 
-<details open="open">
-    <summary>Table of Contents</summary>
-    <ol>
-        <li>
-            <a href="#about">About the project</a>
-        </li>
-        <li>
-            <a href="#visit">Visit the website</a>
-        </li>
-        <li>
-            <a href="#products">Products</a>
-            <ul>
-                <li><a href="https://accessretrieved.github.io/Macpods/app.html">Macpods</a><br></li>
-                <li><a href="https://accessretrieved.github.io/project-pios/app.html">Project-Pios</a></li>
-            </ul>
-        </li>
-        <li>
-            <a href="https://accessretrieved.github.io/sponsor.html">Support me</a>
-        </li>
-        <li>
-            <a href="#downlaod">Download</a>
-        </li>
-        <li>
-            <a href="#api">api</a>
-        </li>
-        <li>
-            <a href="#toolbox">Toolbox</a>
-        </li>
-    </ol>
+<details><summary>Table of Contents</summary>
+<p>
+
+- [About the project](#about)
+- [Visit the website](#visit)
+- [Products](#products)
+    - [Macpods](https://accessretrieved.github.io/Macpods/app.html)
+    - [Project-Pios](https://accessretrieved.github.io/project-pios/app.html)
+- [Support me](https://accessretrieved.github.io/sponsor.html)
+- [Download](#download)
+- [api](#api)
+- [Toolbox](#toolbox)
+
 </details>
 
 <a name="#about">
