@@ -59,6 +59,14 @@
 <a name="#toolbox">
 <h2>Toolbox</h2>
 <p>Mini tools are available <a href="https://accessretrieved.github.io/toolbox.html">here</a>, or select the <a href="https://accessretrieved.github.io/toolbox_zh-cn.html">中文版本</a>
-| First | Second |
-| ----- | ------ |
-| None  | Null   |
+
+<table>
+    <tr>
+        <th>Test</th>
+        <th>Value</th>
+    </tr>
+    <tr>
+        <td>Yes</td>
+        <td>Null</td>
+    </tr>
+</table>
