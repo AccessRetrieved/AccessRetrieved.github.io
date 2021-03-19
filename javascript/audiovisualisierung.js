@@ -299,37 +299,3 @@ function drawBars (array) {
     
 	ctx.restore();
 }
-
-//function setTextAnimation(array)
-//{
-//    var bass = Math.floor(array[1]); //4Hz Frequenz 
-//    
-//    
-//    var fontSize = bass * 0.25 + 50;
-//    
-//    ctx.save();
-//    ctx.globalCompositeOperation='destination-over';
-//    ctx.fillStyle = "#fff";
-//    ctx.filter = "blur(16px)";
-//    
-//    var neueFontsize = 70;
-//    if (fontSize > neueFontsize) {
-//        neueFontsize = fontSize;
-//    }
-//    
-//    //ctx.font = neueFontsize.toString() + "px Arial";
-//    if (navigator.userAgent.indexOf("Chrome/53.0.2764.0") > -1) { //besserer Look in Chrome Canary
-//        console.log("Chrome Canary User Agent detected");
-//        ctx.font="normal normal 300 350px Roboto";
-//        if (filename !== undefined) {
-//            ctx.fillText(filename, 0, c.height - 200);
-//        }
-//    }
-//    ctx.filter = "blur(0px)";
-//    //ctx.font="normal normal 100 " + neueFontsize.toString() + "px Roboto";
-//    ctx.font="normal normal 100 70px Roboto";
-//    if (filename !== undefined) {
-//        ctx.fillText(filename, window.innerWidth / 2 - 125, c.height / 2);
-//    }
-//    ctx.restore();
-//}
