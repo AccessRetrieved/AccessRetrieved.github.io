@@ -10,7 +10,6 @@
 <details open><summary>Table of Contents</summary>
 
 - [About the project](#about)
-- [Visit the website](#visit)
 - [Products](#products)
     - [Macpods](https://accessretrieved.github.io/Macpods/app.html)
     - [Project-Pios](https://accessretrieved.github.io/project-pios/app.html)
@@ -24,10 +23,6 @@
 <a name="#about"></a>
 ## About
 This repository is the source code of the website running on [accessretrieved.github.io](https://accessretrieved.github.io).
-
-<a name="#visit"></a>
-## Visit
-You can visit the website [here](https://accessretrieved.github.io).
 
 <a name="#download"></a>
 ## Download
