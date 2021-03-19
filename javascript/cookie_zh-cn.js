@@ -24,8 +24,8 @@ function getCookie(cname) {
 function checkCookie() {
     var language = getCookie("language");
     if (language != "") {
-        if (language == "zh-cn") {
-            window.location = "https://accessretrieved.github.io/index_zh-cn.html";
+        if (language == "en") {
+            window.location = "https://accessretrieved.github.io";
         } else {
             // pass
         }
