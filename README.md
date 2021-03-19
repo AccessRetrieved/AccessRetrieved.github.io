@@ -63,7 +63,6 @@
 <table>
     <tr>
         <th>Tools</th>
-        <th>Availability</th>
         <th>Safari</th>
         <th>Chrome</th>
         <th>Firefox</th>
@@ -71,8 +70,7 @@
     <tr>
         <td>Timer</td>
         <td>✅</td>
-        <td>✅</td>
-        <td>?</td>
-        <td>?</td>
+        <td>Not tested</td>
+        <td>Not tested</td>
     </tr>
 </table>
