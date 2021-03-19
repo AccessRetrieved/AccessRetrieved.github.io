@@ -7,7 +7,7 @@
   </a>
 </p>
 
-<details><summary>Table of Contents</summary>
+<details open><summary>Table of Contents</summary>
 
 - [About the project](#about)
 - [Visit the website](#visit)
