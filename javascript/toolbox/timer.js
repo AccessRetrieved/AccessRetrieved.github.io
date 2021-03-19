@@ -51,7 +51,7 @@ function onChange() {
 }
 
 function playAudio() {
-    var audio = new Audio('https://accessretrieved.github.io/server/music/alert.mp3');
+    var audio = new Audio('https://accessretrieved.github.io/server/music/alert.m4a');
     audio.play();
 }
 
