@@ -27,22 +27,26 @@
 This repository is the source code of the website running on [accessretrieved.github.io](https://accessretrieved.github.io).
 
 <a name="#visit">
-<h2>Visit</h2>
-<p>You can visit the website <a href="https://accessretrieved.github.io" style="text-decoration: none">here</a>.</p>
+## Visit
+You can visit the website [here](https://accessretrieved.github.io).
 
 <a name="#download">
-<h2>Download</h2>
-<p>Download this website's source code:</p>
-<code>$ git clone https://github.com/AccessRetrieved/AccessRetrieved.github.io</code>
+## Download
+Download this website's source code:
+```
+$ git clone https://github.com/AccessRetrieved/AccessRetrieved.github.io
+```
 
 <a name="#api">
-<h2>API</h2>
-<p>This website provides api to informations of this website. To use the api, enter the following code to the terminal:</p>
-<code>$ curl -l 'https://accessretrieved.github.io/api/data.json'</code>
+## API
+This website provides api to informations of this website. To use the api, enter the following code to the terminal:
+```
+$ curl -l 'https://accessretrieved.github.io/api/data.json'
+```
 
 <a name="#toolbox">
-<h2>Toolbox</h2>
-<p>Mini tools are available <a href="https://accessretrieved.github.io/toolbox.html">here</a>, or select the <a href="https://accessretrieved.github.io/toolbox_zh-cn.html">中文版本</a>
+## Toolbox
+Mini tools are available [here](https://accessretrieved.github.io/toolbox.html), or select the [中文版本](https://accessretrieved.github.io/toolbox_zh-cn.html)。
 
 <table>
     <caption>English</caption>
