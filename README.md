@@ -61,6 +61,7 @@
 <p>Mini tools are available <a href="https://accessretrieved.github.io/toolbox.html">here</a>, or select the <a href="https://accessretrieved.github.io/toolbox_zh-cn.html">中文版本</a>
 
 <table>
+    <caption>English</caption>
     <tr>
         <th>Tools</th>
         <th>Safari</th>
@@ -84,5 +85,33 @@
         <td>✅</td>
         <td>Not tested</td>
         <td>Not tested</td>
+    </tr>
+</table>
+
+<table>
+    <caption>简体中文</caption>
+    <tr>
+        <th>工具</th>
+        <th>Safari</th>
+        <th>Chrome</th>
+        <th>Firefox</th>
+    </tr>
+    <tr>
+        <td>计时器</td>
+        <td>✅</td>
+        <td>未测试</td>
+        <td>未测试</td>
+    </tr>
+    <tr>
+        <td>音频可视化</td>
+        <td>✅</td>
+        <td>✅</td>
+        <td>未测试</td>
+    </tr>
+    <tr>
+        <td>音频播放器</td>
+        <td>✅</td>
+        <td>未测试</td>
+        <td>未测试</td>
     </tr>
 </table>
