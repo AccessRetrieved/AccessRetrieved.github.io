@@ -51,8 +51,11 @@ function onChange() {
 }
 
 function playAudio() {
+    document.getElementById('start').disabled = false;
     var audio = new Audio('https://accessretrieved.github.io/server/music/alert.mp3');
-    audio.play();
+    while (0 == 0) {
+        audio.play();
+    }
 }
 
 function onTimesUp() {
