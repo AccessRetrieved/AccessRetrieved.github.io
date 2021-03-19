@@ -52,10 +52,7 @@ function onChange() {
 
 function playAudio() {
     document.getElementById('start').disabled = false;
-    var audio = new Audio('https://accessretrieved.github.io/server/music/alert.mp3');
-    while (0 == 0) {
-        audio.play();
-    }
+    var audio = document.getElementById('alert').play();
 }
 
 function onTimesUp() {
