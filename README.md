@@ -73,4 +73,16 @@
         <td>Not tested</td>
         <td>Not tested</td>
     </tr>
+    <tr>
+        <td>Audio Visualization</td>
+        <td>✅</td>
+        <td>✅</td>
+        <td>Not tested</td>
+    </tr>
+    <tr>
+        <td>Audio Player</td>
+        <td>✅</td>
+        <td>Not tested</td>
+        <td>Not tested</td>
+    </tr>
 </table>
