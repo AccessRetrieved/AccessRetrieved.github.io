@@ -317,7 +317,9 @@ function check() {
 
     if (hashed_email == email_raw && hashed_password == password_raw) {
         window.location.replace("https://accessretrieved.github.io/account.html?email=" + hashed_email + "&password=" + hashed_password);
-    }
+    } else {
+		$('#incorrectModal').modal()
+	}
 
 }
 function stringToHash(string) {           
