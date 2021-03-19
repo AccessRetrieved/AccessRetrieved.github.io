@@ -6,7 +6,7 @@ function check() {
     var password = document.getElementById("inputPassword").value;
 
     if (email == email_raw && password == password_raw) {
-        location.replace = "https://accessretrieved.github.io/account.html?email=" + String(stringToHash(email)) + "&password=" + String(stringToHash(password));
+        window.location.replace("https://accessretrieved.github.io/account.html?email=" + String(stringToHash(email)) + "&password=" + String(stringToHash(password)));
     }
 
 }
