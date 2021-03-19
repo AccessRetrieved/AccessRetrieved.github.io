@@ -54,58 +54,9 @@ English Version
 | Audio Visualization |  ✅      |  ✅        | Not tested |
 | Audio Player        |  ✅      | Not tested | Not tested |
 
-<table>
-    <caption>English</caption>
-    <tr>
-        <th>Tools</th>
-        <th>Safari</th>
-        <th>Chrome</th>
-        <th>Firefox</th>
-    </tr>
-    <tr>
-        <td>Timer</td>
-        <td>✅</td>
-        <td>Not tested</td>
-        <td>Not tested</td>
-    </tr>
-    <tr>
-        <td>Audio Visualization</td>
-        <td>✅</td>
-        <td>✅</td>
-        <td>Not tested</td>
-    </tr>
-    <tr>
-        <td>Audio Player</td>
-        <td>✅</td>
-        <td>Not tested</td>
-        <td>Not tested</td>
-    </tr>
-</table>
-
-<table>
-    <caption>简体中文</caption>
-    <tr>
-        <th>工具</th>
-        <th>Safari</th>
-        <th>Chrome</th>
-        <th>Firefox</th>
-    </tr>
-    <tr>
-        <td>计时器</td>
-        <td>✅</td>
-        <td>未测试</td>
-        <td>未测试</td>
-    </tr>
-    <tr>
-        <td>音频可视化</td>
-        <td>✅</td>
-        <td>✅</td>
-        <td>未测试</td>
-    </tr>
-    <tr>
-        <td>音频播放器</td>
-        <td>✅</td>
-        <td>未测试</td>
-        <td>未测试</td>
-    </tr>
-</table>
+简体中文
+|   工具    |  Safari  |  Chrome |  Firefox  |
+|  :----:  | :-------: | :-----: | :------: |
+| 计时器    |  ✅       | 未测试   | 未测试     |
+| 音频可视化 | ✅        | ✅      | 未测试     |
+| 音频播放器 | ✅        | 未测试   | 未测试     |
