@@ -16,11 +16,11 @@
                 <img class="mb-4" src="/images/profile.jpeg" alt="" width="72" height="72">
                 <h1 class="h3 mb-3 fw-normal">登录账号</h1>
                 <div class="form-floating mb-3">
-                    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
+                    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required onkeyup="HashEmail(this.value)">
                     <label for="inputEmail">邮箱</label>
                 </div>
                 <div class="form-floating">
-                    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required onkeyup="HashPassword(this.value)">
                     <label for="inputPassword">密码</label>
                 </div>
                 <button class="w-100 btn btn-lg btn-primary" type="submit" onclick="check()">

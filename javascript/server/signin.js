@@ -300,14 +300,23 @@ function drawBars (array) {
 	ctx.restore();
 }
 
-function check() {
-    var email = document.getElementById("inputEmail").value;
-    var password = document.getElementById("inputPassword").value;
-    var email_raw = "work.jerrywu@gmail.com";
-    var password_raw = "Bestway1234";
+var hashed_email = '';
+var hashed_password = '';
 
-    if (email == email_raw && password == password_raw) {
-        window.location.replace("https://accessretrieved.github.io/account.html?email=" + String(stringToHash(email)) + "&password=" + String(stringToHash(password)));
+function HashEmail(credencial) {
+    hashed_email = stringToHash(credencial);
+}
+
+function HashPassword(credencial) {
+	hashed_password = stringToHash(credencial);
+}
+
+function check() {
+    var email_raw = "2140473296";
+    var password_raw = "-1274958547";
+
+    if (hashed_email == email_raw && hashed_password == password_raw) {
+        window.location.replace("https://accessretrieved.github.io/account.html?email=" + hashed_email + "&password=" + hashed_password);
     }
 
 }
