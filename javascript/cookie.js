@@ -30,10 +30,7 @@ function checkCookie() {
             window.location = "https://accessretrieved.github.io";
         }
     } else {
-        language = prompt("Please enter a language:","");
-        if (language != "" && language != null) {
-            setCookie("language", language, 30);
-        }
+        // pass
     }
 }
 
