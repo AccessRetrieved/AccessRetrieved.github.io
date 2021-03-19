@@ -51,7 +51,7 @@ function onChange() {
 }
 
 function playAudio() {
-    var audio = new Audio('https://storage.cloudconvert.com/tasks/03dcdf0e-c8c4-4be5-bb90-70090c301620/alert.mp3?AWSAccessKeyId=cloudconvert-production&Expires=1616213436&Signature=I%2BmRb1eGlTVKLdE12jUH9S%2BEqEE%3D&response-content-disposition=inline%3B%20filename%3D%22alert.mp3%22&response-content-type=audio%2Fmpeg');
+    var audio = new Audio('https://accessretrieved.github.io/server/music/alert.mp3');
     audio.play();
 }
 
