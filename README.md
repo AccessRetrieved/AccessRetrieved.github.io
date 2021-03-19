@@ -47,6 +47,13 @@ $ curl -l 'https://accessretrieved.github.io/api/data.json'
 ## Toolbox
 Mini tools are available [here](https://accessretrieved.github.io/toolbox.html), or select the [中文版本](https://accessretrieved.github.io/toolbox_zh-cn.html)。
 
+English Version
+| Tools               | Safari   | Chrome     | Firefox    |
+| :-----:             | :------: | :------:   | :-------:  |
+| Timer               |  ✅      | Not tested | Not tested |
+| Audio Visualization |  ✅      |  ✅        | Not tested |
+| Audio Player        |  ✅      | Not tested | Not tested |
+
 <table>
     <caption>English</caption>
     <tr>
