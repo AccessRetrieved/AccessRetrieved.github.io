@@ -32,6 +32,9 @@
         <li>
             <a href="#api">api</a>
         <li>
+        <li>
+            <a href="#toolbox">Toolbox</a>
+        </li>
     </ol>
 </details>
 
@@ -52,3 +55,7 @@
 <h2>API</h2>
 <p>This website provides api to informations of this website. To use the api, enter the following code to the terminal:</p>
 <code>$ curl -l 'https://accessretrieved.github.io/api/data.json'</code>
+
+<a name="#toolbox">
+<h2>Toolbox</h2>
+<p>Mini tools are available <a href="https://accessretrieved.github.io/toolbox.html">here</a>, or<a href="https://accessretrieved.github.io/toolbox_zh-cn.html">或中文版本</a>
