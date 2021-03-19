@@ -333,5 +333,3 @@ function drawBars (array) {
 //    }
 //    ctx.restore();
 //}
-
-
