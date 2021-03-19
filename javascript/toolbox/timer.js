@@ -50,9 +50,18 @@ function onChange() {
     document.getElementById('base-timer-label').innerHTML = formatTime(document.getElementById('seconds').value);
 }
 
+function pauseAudio() {
+    window.location = window.location;
+}
+
 function playAudio() {
-    document.getElementById('start').disabled = false;
+    var startBtn = document.getElementById('start');
     var audio = document.getElementById('alert').play();
+    startBtn.disabled = false;
+    startBtn.innerHTML = 'Stop';
+    startBtn.classList.remove('btn-primary');
+    startBtn.classList.add('btn-danger');
+    startBtn.onclick = function() { pauseAudio() };
 }
 
 function onTimesUp() {
