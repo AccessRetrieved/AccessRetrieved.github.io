@@ -81,11 +81,11 @@ input, button, #loading {
 }
 
 #playSampleButton {
-	top: 40px;
+	top: 20px;
 }
 
 #useMicButton {
-	top: 70px;
+	top: 50px;
 }
 
 #loading {

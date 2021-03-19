@@ -12,8 +12,7 @@
         <script src="javascript/audiovisualisierung.js"></script>
         <link rel="stylesheet" href="css/main.css">
     </head>
-    <body>		   
-       	<input type="file" id="input" onchange="handleFiles(this.files)"/>
+    <body>
        	<button id="playSampleButton" type="button" onClick="playSample()">Play Sample File</button>
 		<button id="useMicButton" type="button" onClick="useMic()">Use Microphone</button>
        	<span id="loading"></span>
@@ -23,9 +22,5 @@
 			<div id="album">Unknown Album</div>
 		</div>
         <canvas id="freq" width="1024" height="525"></canvas>
-
-        <footer>
-            <a style="color: white; position: absolute; bottom: 3%; text-align: center; margin: auto; text-decoration: none; left: 43%;" href="https://github.com/dominikhofacker/audiovisualization">Forked from dominikhofacker</a>
-        </footer>
     </body>
 </html>
