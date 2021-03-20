@@ -1,7 +1,9 @@
 const query = window.location.search
 
-if (query.includes('&loggedin=true')) {
-    //pass
-} else {
-    window.location = 'https://accessretrieved.github.io/signin.html'
+function check() {
+    if (query.includes('&loggedin=true')) {
+        //pass
+    } else {
+        window.location = 'https://accessretrieved.github.io/beta_projects.html'
+    }
 }
