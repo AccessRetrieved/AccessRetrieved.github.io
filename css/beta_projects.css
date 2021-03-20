@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "calibri";
+    src: url("/fonts/Calibri-Light.ttf");
+}
+
+.page-content {
+    margin: auto;
+    text-align: center;
+    width: 70%;
+}
+
+.form {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
