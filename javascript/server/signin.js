@@ -313,27 +313,6 @@ function getCookie(cname) {
     return "";
 }
 
-
-// Check for existing cookies on page load
-function checkCookie() {
-    var device = getCookie("device");
-    var userAgent = navigator.userAgent;
-    if (device != "") {
-        if (userAgent == "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15") {
-            window.open("https://accessretrieved.github.io/account.html?email=" + "2140473296" + "&password=" + "-1274958547");
-        } else {
-            // pass
-        }
-    } else {
-        // pass
-    }
-}
-
-// Sets cookie
-function setCookie() {
-    setCookie("device", navigator.userAgent, 30);
-}
-
 var hashed_email = '';
 var hashed_password = '';
 
@@ -350,7 +329,6 @@ function check() {
     var password_raw = "-1274958547";
 
     if (hashed_email == email_raw && hashed_password == password_raw) {
-		setCookie(navigator.userAgent);
         window.open("https://accessretrieved.github.io/account.html?email=" + hashed_email + "&password=" + hashed_password);
     } else {
 		$('#incorrectModal').modal()
