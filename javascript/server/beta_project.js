@@ -319,7 +319,7 @@ function updateCode(string) {
 
 function tryConnect() {
     if (codes.includes(stringToHash(code.value)) && emails.includes(stringToHash(email.value))) {
-        window.open(`https://accessretrieved.github.io/beta_projects/loggedin.html?email=${stringToHash(email.value)}&code=${stringToHash(code.value)}&loggedin=true`);
+        window.open("https://accessretrieved.github.io/beta_projects/loggedin.html?email=" + stringToHash(email.value) + "&code=" + stringToHash(code.value) + "&loggedin=true");
     } else {
         alert('Incorrect credencials');
     }
