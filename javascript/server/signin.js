@@ -296,6 +296,54 @@ function drawBars (array) {
 	ctx.restore();
 }
 
+
+
+// Sets a new cookie at login
+function setCookie(cname,cvalue,exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires=" + d.toGMTString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+// Get cookie is required for check cookies.
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+
+// Check for existing cookies on page load
+function checkCookie() {
+    var device = getCookie("device");
+    var userAgent = navigator.userAgent;
+    if (device != "") {
+        if (userAgent == "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15") {
+            window.location = "https://accessretrieved.github.io/account.html?email=" + "2140473296" + "&password=" + "-1274958547";
+        } else {
+            // pass
+        }
+    } else {
+        // pass
+    }
+}
+
+// Sets cookie
+function setCookie() {
+    setCookie("device", navigator.userAgent, 30);
+}
+
 var hashed_email = '';
 var hashed_password = '';
 
@@ -312,12 +360,14 @@ function check() {
     var password_raw = "-1274958547";
 
     if (hashed_email == email_raw && hashed_password == password_raw) {
+		setCookie(navigator.userAgent);
         window.open("https://accessretrieved.github.io/account.html?email=" + hashed_email + "&password=" + hashed_password);
     } else {
 		$('#incorrectModal').modal()
 	}
 
 }
+
 function stringToHash(string) {           
     var hash = 0;
     
