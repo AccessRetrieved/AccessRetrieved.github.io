@@ -46,15 +46,15 @@ function playSample() {
 	request.addEventListener("error", transferFailed);
 	request.addEventListener("abort", transferCanceled);
 	
-	request.open('GET', 'server/music/Infinite.mp3', true);
+	request.open('GET', 'server/music/SuitAndTie.mp3', true);
 	request.responseType = 'arraybuffer';
 
  	// When loaded decode the data
 	request.onload = function() {
 		
-		$("#title").html("Infinite");
-		$("#album").html("Infinite");
-		$("#artist").html("Valence");
+		$("#title").html("");
+		$("#album").html("Suit and Tie");
+		$("#artist").html("Justin Timberlake");
 		onWindowResize();
 		$("#title, #artist, #album").css("visibility", "visible");
 		
