@@ -1,7 +1,15 @@
 var video = document.getElementById('player');
 var overlay = document.getElementById('overlay');
 
-var videoList = ['https://sf1-scmcdn-tos.pstatp.com/goofy/ies/douyin_home_web/medias/banner_video3.3ce510ed.mp4', 'https://accessretrieved.github.io/project-pios/Resources/timer.mov'];
+var videoList = ['https://sf1-scmcdn-tos.pstatp.com/goofy/ies/douyin_home_web/medias/banner_video2.69593fa5.mp4',
+    'https://sf1-scmcdn-tos.pstatp.com/goofy/ies/douyin_home_web/medias/banner_video1.4c74cc4e.mp4',
+    'https://sf1-scmcdn-tos.pstatp.com/goofy/ies/douyin_home_web/medias/1-1.98effe6c.mp4',
+    'https://sf1-scmcdn-tos.pstatp.com/goofy/ies/douyin_home_web/medias/1-2.a8ef0fea.mp4',
+    'https://sf1-scmcdn-tos.pstatp.com/goofy/ies/douyin_home_web/medias/1-3.951f0f8e.mp4',
+    'https://sf1-scmcdn-tos.pstatp.com/goofy/ies/douyin_home_web/medias/1-4.6d59e328.mp4',
+    'https://sf1-scmcdn-tos.pstatp.com/goofy/ies/douyin_home_web/medias/3.03d4fdee.mp4',
+    'https://sf1-scmcdn-tos.pstatp.com/goofy/ies/douyin_home_web/medias/cul-3.be345881.mp4',
+    ''];
 var videoPlayedList = [];
 
 function playVideo() {
