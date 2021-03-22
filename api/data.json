@@ -14,6 +14,15 @@
         }
     },
 
+    "Beta-Testing": {
+        "Audio-Visualization": "https://accessretrieved.github.io/audio_visualization.html",
+        "Paper-Audio-Player": "https://accessretrieved.github.io/audio-player.html"
+    },
+
+    "Toolbox": {
+        "timer": "https://accessretrieved.github.io/timer.html"
+    },
+
     "Errors": {
         "404": ["https://accessretrieved.github.io/404.html", "https://accessretrieved.github.io/404_zh-cn.html", "https://accessretrieved.github.io/404.md"],
     },
