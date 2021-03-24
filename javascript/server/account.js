@@ -29,7 +29,7 @@ const interval = setInterval(function() {
     } else {
         console.log('true');
     }
-}, 500)
+}, 100)
 
 const query = window.location.search
 
