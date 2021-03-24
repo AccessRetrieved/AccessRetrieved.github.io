@@ -37,3 +37,10 @@ document.addEventListener('play', function(e){
         }
     }
 }, true);
+
+function openMusic() {
+    $('#myModal').modal('hide')
+    $('#myModal').on('hidden.bs.modal', function () {
+        $('#languageModal').modal('show')
+    })
+}
