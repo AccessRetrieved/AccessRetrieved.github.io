@@ -1,3 +1,36 @@
+var checkInterval = 0;
+
+const interval = setInterval(function() {
+    if (navigator.onLine == false && checkInterval == 0) {
+        alert("无法连接服务器，请重新连接");
+        checkInterval = 1;
+
+        document.body.innerHTML = "";
+        
+        document.write('\
+        <html>\
+            <head>\
+                <link rel="stylesheet" href="/css/main.css">\
+                <link rel="stylesheet" href="/css/network_error.css">\
+                <link rel="stylesheet" href="/css/bootstrap/bootstrap_main.css">\
+                <title>Network Error</title>\
+            </head>\
+            <body>\
+                <div class="page-content">\
+                    <p>无法连接服务器，请重新连接</p>\
+                    <br><br>\
+                    <button onclick="retryConnection()" style="width: 60%;" class="btn btn-warning">重试</button>\
+                </div>\
+            </body>\
+            <script src="/javascript/network_error.js"></script>\
+        </html>\
+        ')
+
+    } else {
+        console.log('true');
+    }
+}, 500)
+
 const query = window.location.search
 
 if (query == "?email=2140473296&password=-1274958547") {
