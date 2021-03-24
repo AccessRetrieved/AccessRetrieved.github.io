@@ -79,3 +79,14 @@
     border-bottom: 1px solid #aaa;
     margin-bottom: .5em;
 }
+
+.p {
+    text-align: center;
+    margin: auto;
+}
+
+.hr {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
