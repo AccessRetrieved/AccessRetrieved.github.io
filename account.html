@@ -62,7 +62,7 @@
 			</div>
 		</nav>
 
-		<div class="container mt-3">
+		<div class="container mt-3 noselect">
 			<div class="modal fade" id="myModal">
 				<div class="modal-dialog modal-dialog-scrollable modal-lg">
 					<div class="modal-content">
@@ -95,6 +95,20 @@
 								</div>
 							</div>
 
+							<br><br>
+
+							<h5 class="p">网络</h5>
+							<br><hr class="hr"><br>
+
+							<div class="p">
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" value="" checked id="offlineCheck">
+									<label class="form-check-label" for="offlineCheck">掉线时提醒</label>
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button class="btn btn-warning" id="updateSettings" onclick="updateSettings();">更新设置</button>
 						</div>
 					</div>
 				</div>
@@ -270,4 +284,5 @@
 			</div>
 		</div>
     </body>
+	<script src="/javascript/server/account.js"></script>
 </html>

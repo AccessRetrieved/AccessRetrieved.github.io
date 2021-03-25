@@ -1,7 +1,16 @@
 var checkInterval = 0;
+var checked = 1;
+
+function updateSettings() {
+    if (document.getElementById('offlineCheck').checked) {
+        checked = 1;
+    } else {
+        checked = 0;
+    }
+}
 
 const interval = setInterval(function() {
-    if (navigator.onLine == false && checkInterval == 0) {
+    if (navigator.onLine == false && checkInterval == 0 && checked == 1) {
         alert("无法连接服务器，请重新连接");
         checkInterval = 1;
 
@@ -27,7 +36,7 @@ const interval = setInterval(function() {
         ')
 
     } else {
-        console.log('true');
+        // pass
     }
 }, 100)
 
