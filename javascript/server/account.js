@@ -2,8 +2,18 @@ var checkInterval = 0;
 var checked = 1;
 
 function updateSettings() {
+    $('#myModal').modal('hide')
     if (document.getElementById('offlineCheck').checked) {
         checked = 1;
+
+        document.getElementById('updateNotice').style.display = "none";
+
+        document.getElementById('success').innerHTML = '\
+        <div class="alert alert-success alert-dismissible">\
+            <button type="button" class="close" data-dismiss="alert">&times;</button>\
+            更新成功!\
+        </div>\
+        '
     } else {
         checked = 0;
     }
