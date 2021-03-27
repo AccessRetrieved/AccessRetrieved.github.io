@@ -6,14 +6,16 @@ function updateSettings() {
     if (document.getElementById('offlineCheck').checked) {
         checked = 1;
 
-        document.getElementById('updateNotice').style.display = "none";
-
         document.getElementById('success').innerHTML = '\
-        <div class="alert alert-success alert-dismissible">\
+        <div class="alert alert-success alert-dismissible" id="success">\
             <button type="button" class="close" data-dismiss="alert">&times;</button>\
             更新成功!\
         </div>\
         '
+
+        setTimeout(function() {
+            document.getElementById('success').innerHTML = "";
+        }, 5000)
     } else {
         checked = 0;
     }
