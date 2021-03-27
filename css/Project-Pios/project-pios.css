@@ -32,22 +32,6 @@
     border: none;
 }
 
-.download_btn:hover {
-    background-color: #007acc;
-}
-
-table {
-    margin: auto;
-    text-align: center;
-    border-collapse: collapse;
-    border: 1px solid black;
-    width: 80%;
-}
-
 table td {
-    border: 1px solid #333;
-}
-
-table th {
-    border: 1px solid #333;
+    text-align: center;
 }
