@@ -1,6 +1,11 @@
-const http = new XMLHttpRequest()
+// Encoding to base64 and back...
 
-http.open("GET", "https://raw.githubusercontent.com/Project-Pios/Project-Pios/main/version.txt");
-http.send()
+/*
+ENCODE
+var decoded = "Hello";
+var encoded = btoa(decoded);
 
-http.onload = () => document.getElementById('code').innerHTML = http.responseText;
+DECODE
+var encoded = btoa(decoded);
+var decoded = atob(encoded);
+*/
