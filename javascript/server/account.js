@@ -98,3 +98,19 @@ function openMusic() {
         $('#languageModal').modal('show')
     })
 }
+
+const waitforUpdate = setInterval(function() {
+    var update = document.getElementById('updateNotice');
+    const httpS = new XMLHttpRequest()
+    httpS.open("GET", "https://raw.githubusercontent.com/Project-Pios/Project-Pios/main/version.txt");
+    httpS.send()
+    httpS.onload = () => console.log(`v${httpS.response}`);
+    document.getElementById('updateBox').style.display = "none";
+    update.classList.remove('alert-info');
+    update.classList.add('alert-success');
+    document.getElementById('updateNotice').innerHTML = `\
+    <button type="button" class="close" data-dismiss="alert">&times;</button>\
+	更新完毕   <svg t="1616914377162" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2631" width="20" height="20"><path d="M512 64c247.424 0 448 200.576 448 448s-200.576 448-448 448S64 759.424 64 512 264.576 64 512 64z m261.696 265.376a32 32 0 0 0-42.24-2.656l-3.04 2.656-296.896 296.864-120.896-120.864a32 32 0 0 0-47.904 42.24l2.656 3.008 135.776 135.776a31.936 31.936 0 0 0 14.336 8.288 32 32 0 0 0 38.464-0.64l2.944-2.624 316.8-316.8a32 32 0 0 0 0-45.248z" fill="#2aa515" p-id="2632"></path></svg>\
+    `;
+    clearInterval(waitfor)
+}, 157000)
