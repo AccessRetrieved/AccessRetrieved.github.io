@@ -1,7 +1,7 @@
 function launch() {
     var url_string = window.location.href;
     var url = new URL(url_string);
-    var param = url.searchParams.get("json")
+    var param = url.searchParams.get("mode")
 
     var rand = function() {
         return Math.random().toString(36).substr(2);
@@ -34,7 +34,7 @@ function launch() {
         });
     }
 
-    if (param === "true") {
+    if (param === "json") {
         var obj = {
             "current-time": new Date().getTime(),
             "visit-token": token(),
@@ -45,8 +45,8 @@ function launch() {
     
         var str = JSON.stringify(obj, null, 4);
         output(syntaxHighlight(str));
-    } else if (param === "false") {
-        var prefParams = url.searchParams.get('info');
+    } else if (param === "postRequest") {
+        var prefParams = url.searchParams.get('string');
         
         var obj = {
             "current-time": new Date().getTime(),
@@ -60,6 +60,53 @@ function launch() {
 
         var str = JSON.stringify(obj, null, 4);
         output(syntaxHighlight(str));
-        
+    } else if (param === "hash") {
+        var hashString = url.searchParams.get('string');
+
+        function stringToHash(string) {           
+            var hash = 0;
+            
+            if (string.length == 0) return hash;
+            for (i = 0; i < string.length; i++) {
+                char = string.charCodeAt(i);
+                hash = ((hash << 5) - hash) + char;
+                hash = hash & hash;
+            }
+            return hash;
+        }
+
+        var obj = {
+            "original-string": hashString,
+            "hashed-string": String(stringToHash(hashString))
+        }
+
+        var str = JSON.stringify(obj, null, 4);
+        output(syntaxHighlight(str));
+    } else if (param === "base64") {
+        var base64 = url.searchParams.get('function');
+
+        if (base64 === "encode") {
+            var string = url.searchParams.get('string');
+
+            var obj = {
+                "mode": base64,
+                "original-string": string,
+                "base64-encoded-string": btoa(string)
+            }
+
+            var str = JSON.stringify(obj, null, 4);
+            output(syntaxHighlight(str));
+        } else if (base64 === "decode") {
+            var string = url.searchParams.get('string');
+
+            var obj = {
+                "mode": base64,
+                "original-string": string,
+                "decoded-string": atob(string)
+            }
+
+            var str = JSON.stringify(obj, null, 4);
+            output(syntaxHighlight(str));
+        }
     }
 }
