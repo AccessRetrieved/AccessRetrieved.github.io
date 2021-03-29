@@ -134,6 +134,8 @@
 
 .side-by-side {
     clear: both;
+    text-align: center;
+    margin: auto;
 }
 
 
