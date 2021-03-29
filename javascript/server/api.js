@@ -1,15 +1,52 @@
+const tokens = ['r3Uh67govw5KlgptejjGpmpdPgFkOjQS',
+                'lramLNhHr8YzwrYr77OzRc1jQ5T1kQa0',
+                'h1FULD7OvKWhU5xzWEDhrhgmdmNtVLI9',
+                'se7pWRVK9FPfGTLItCg0KPQrFEMlBjuY',
+                'AGQcf6MW32w8s2LqVKDZhTYTdU8lbCxi',
+                'NVbmVmog4Sg6zTIKji5w7jalp9Lj6Jvj',
+                'DU351h2iwt6rYu3v0SEstuox87osVFsJ',
+                'n5OyZBqhUNCYQsMrphcaeuAI2eR76Ibj',
+                'ueFMXxXMOVFSTwSdXecY3vdmjtt924ZR',
+                'debxsurRcqo8w6S0EIqsNCDS9TbgiNCL',
+                'iL6kxFtI0e5YZRzyC5EKiXriMhTrlFzT',
+                'JpczeUsLoaCnEw4nYw2L3HzDVgdnfzsj',
+                'ooc6fQQMH2z5K3gfLkjYtj3eEvxBtnv7',
+                'hmfjzEP5riYpI6peo0SXqNIbqVVPewA0',
+                'QXh4mynQABaG0fu9z4ujVAvI0s50WCsr',
+                'MwLvKGQUGakepiF2wQFvOAytP9ZUiNuk',
+                'vWW6AA2qR2LGdSDKmw7oDO1ZQappc4fa',
+                'Clrs97BpMkgkMmgLSzBEFSfosoAh3kxq',
+                'G61UXwOY6yGKiRdQqT1J6h76ZrOSNGax',
+                'lmCeOdOarg55jJcUwSYr5E55bt79OTUL',
+                '2xbNgvQQHkmHhmdObmryDZv6Vctcn24B',
+                'VhfP2OCowSGNgUSW9Wv6p6moo0XrVXSO',
+                'ptYjml3gClRITQJRG1PcPlIAIKYyA7Xu',
+                'OLzdQvmcHqyzIYUTbXoCMK5NIU3NGv7D',
+                'gT8F0g3TB4ci4JXLPCR2IbunxMsYr8WY',
+                'g5LOiKQOktBpdTgoaJxcs71eZFzPeP4B',
+                'yEdQGEb6XgIMhVLwQNuC5qaAeWYaPMzD',
+                'LAiM34nGXAeIIdGDtER6TEC43VGOpQYM',
+                'ZlVFVL4d7rBqHmCKWOVuICwawYQ0lFTk',
+                'R0XU4kiEZaDSlWsNuIhmUldE0edRELeR',
+                'oZ0ABPz9dVAevjAwJ9rn2gMdCFyWywJf',
+                'JkC76d6YXhdiNLoahbKMYynqJTUZePv1',
+                'baDu7pEZguXWdvOQPbI2XK5JKfxDK8Xn',
+                'X3vwi17kM6cJB2P4ftSaei3x45UavY0m',
+                'qjqe7r6xiBIRTdTE8wqBlaPvrnzF3ECM',
+                'wIJ6xnBniC1i1oaEHbUgYUhWYAKCHUkL',
+                'F6mTZUhmQqXwn3cXzyp2rO41WgxHv6OJ',
+                '8YtapmFsR8imXfUw8sZKHge5rgJ2cKin',
+                'j3ldFH606FPJvAq4H5PaKzxH7UzFZ5bH',
+                'PlMRgpiLtwTprZdvWfrQDOQJJpKkOLwb',
+                'ZSTusdXcYaNzdhoNpeHmSNUSZPLpXLDc',
+                'Mqa21ZiU1eTaXE4HBtBDbuMK7Fz0XQnw',
+                'L8QdkPRJGNdK6XtC01NNyGYv8LzRQkM5',
+                'GE9Ere5fMU4lof4t7IWs514IlVupqYwD']
+
 function launch() {
     var url_string = window.location.href;
     var url = new URL(url_string);
     var param = url.searchParams.get("mode")
-
-    var rand = function() {
-        return Math.random().toString(36).substr(2);
-    };
-
-    var token = function() {
-        return rand() + rand() + rand() + rand() + rand();
-    }
 
     function output(inp) {
         document.body.appendChild(document.createElement('pre')).innerHTML = inp;
@@ -37,7 +74,7 @@ function launch() {
     if (param === "json") {
         var obj = {
             "current-time": new Date().getTime(),
-            "visit-token": token(),
+            "visit-token": tokens[Math.floor(Math.random() * tokens.length)],
             "user-agent": navigator.userAgent,
             "last-visited": new Date().toLocaleString(),
             "_COMMENT": 'Use the visit-token and id for account api.'

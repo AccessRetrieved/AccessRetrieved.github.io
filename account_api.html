@@ -1,0 +1,135 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/bootstrap/bootstrap_main.css">
+        <link rel="stylesheet" href="/css/account.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+		<title>账号</title>
+		<link rel="stylesheet" href="css/main.css">
+		<script src="/javascript/server/account_api.js"></script>
+
+		<!--Bootstrap v5 icon link-->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<span style="display: inline-block; width: 1%;"></span>
+			  	<a class="navbar-brand" href="https://github.com/AccessRetrieved">AccessRetrieved</a>
+			  	<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+			  	</button>
+			  	<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="https://accessretrieved.github.io">首页</a>
+						</li>
+				  		<li class="nav-item">
+							<a class="nav-link" href="https://accessretrieved.github.io/editor.html">编辑器</a>
+				  		</li>
+				  		<li class="nav-item">
+							<a class="nav-link" href="https://accessretrieved.github.io/projects.html">项目</a>
+				  		</li>
+						
+				  		<li class="nav-item">
+							<a class="nav-link" href="https://accessretrieved.github.io/support.html">帮助</a>
+				  		</li>
+				  		<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">账号</a>
+				  		</li>
+				  		<div class="dropdown">
+							<a class="nav-link" href="#" data-toggle="dropdown">开发者</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="https://accessretrieved.github.io/developer.html"><i class="bi bi-card-text"></i><span style="color: white;">s</span>开发者文档</a>
+								<hr class="dropdown-divider">
+								<a class="dropdown-item" href="https://accessretrieved.github.io/project-pios/apps_gallery.html"><i class="bi bi-file-earmark-arrow-down"></i><span style="color: white;">s</span>Project-Pios 软件展览</a>
+							</div>
+						</div>
+					</ul>
+			  	</div>
+			</div>
+			<div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">
+							<svg t="1616559334205" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1148" width="20" height="20"><path d="M520 672A168 168 0 1 1 688 504 168.16 168.16 0 0 1 520 672z m0-288a120 120 0 1 0 120 120 120 120 0 0 0-120-120z" p-id="1149"></path><path d="M584 928h-128a24 24 0 0 1-7.52-1.28 106.56 106.56 0 0 1-64-62.72 24 24 0 0 0-12.32-14.72l-87.84-44a23.36 23.36 0 0 0-14.72-2.08 96 96 0 0 1-87.2-26.24 17.28 17.28 0 0 1-3.84-5.12l-64-112a17.76 17.76 0 0 1-1.28-3.84 78.24 78.24 0 0 1 22.88-80A24.16 24.16 0 0 0 144 557.92V464a24.48 24.48 0 0 0-6.56-16 106.72 106.72 0 0 1-24.16-96 17.76 17.76 0 0 1 1.92-4.32l64-112a17.28 17.28 0 0 1 3.84-5.12 96 96 0 0 1 87.2-26.24 23.36 23.36 0 0 0 14.72-2.08l87.84-43.52a24 24 0 0 0 12.32-14.72 106.56 106.56 0 0 1 64-62.72A24 24 0 0 1 456 80h128a24 24 0 0 1 7.52 1.28 106.56 106.56 0 0 1 64 62.72 24 24 0 0 0 12.32 14.72l87.84 44a23.36 23.36 0 0 0 14.72 2.08 96 96 0 0 1 87.2 26.24 17.28 17.28 0 0 1 3.84 5.12l64 112a17.76 17.76 0 0 1 1.92 4.32A106.72 106.72 0 0 1 902.56 448a24.48 24.48 0 0 0-6.56 16v93.76a24.16 24.16 0 0 0 7.84 18.24 78.24 78.24 0 0 1 22.88 80 17.76 17.76 0 0 1-1.92 4.32l-64 112a17.28 17.28 0 0 1-3.84 5.12 96 96 0 0 1-87.2 26.24 23.2 23.2 0 0 0-14.72 2.08l-87.84 43.52a24 24 0 0 0-12.32 14.72 106.56 106.56 0 0 1-64 62.72 24 24 0 0 1-6.88 1.28z m-123.52-48h119.04a60.32 60.32 0 0 0 29.28-29.6 71.68 71.68 0 0 1 36.96-44l87.84-44a70.72 70.72 0 0 1 44.32-6.56 50.08 50.08 0 0 0 43.04-10.88l60.8-106.24a32 32 0 0 0-10.4-27.68A72 72 0 0 1 848 557.92V464a72.16 72.16 0 0 1 19.68-49.6 64 64 0 0 0 14.08-45.28l-60.8-106.24a50.08 50.08 0 0 0-43.04-10.88 71.84 71.84 0 0 1-44.32-6.56l-87.84-43.84a71.68 71.68 0 0 1-36.96-44A60.32 60.32 0 0 0 579.52 128h-119.04A60.32 60.32 0 0 0 432 157.6a71.68 71.68 0 0 1-36.96 44l-87.84 44a70.72 70.72 0 0 1-44.32 6.56 50.08 50.08 0 0 0-43.04 10.88l-60.8 106.24a64 64 0 0 0 14.08 45.28A72.16 72.16 0 0 1 192 464v93.76a72 72 0 0 1-23.36 53.12 32 32 0 0 0-10.4 27.68l60.8 106.24a50.08 50.08 0 0 0 43.04 10.88 71.84 71.84 0 0 1 44.32 6.56l87.84 44A71.68 71.68 0 0 1 432 850.4 60.32 60.32 0 0 0 460.48 880z" p-id="1150"></path></svg>
+						</a> 
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="container mt-3 noselect">
+			<div class="modal fade" id="myModal">
+				<div class="modal-dialog modal-dialog-scrollable modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title">
+								设置
+							</h4>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<div class="modal-body">
+							
+							<h5 class="p">账号</h5>
+							<br><hr class="hr"><br>
+
+							<div class="p">
+								<a class="a" style="color: #4e9af1;" onclick="window.location='https://accessretrieved.github.io/signout.html?signout=true&id=020592059240s0vr9j29m9mvoeirgjc4ijrtf3ow4eithfgjeiurghn39e4owrh2wfwnergijferlcgj3w04e9pri2p40q8teuryh35euirhg94ewopruefj4oi'">退出登录</a>
+							</div>
+
+							<br><br>
+
+							<h5 class="p">网络</h5>
+							<br><hr class="hr"><br>
+
+							<div class="p">
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" value="" checked id="offlineCheck">
+									<label class="form-check-label" for="offlineCheck">掉线时提醒</label>
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button class="btn btn-warning" id="updateSettings" onclick="updateSettings();">更新设置</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+        <br><br><br>
+
+        <h3 style="position: absolute; left: 5%; top: 10%;">
+			<div class="container mt-3">
+				欢迎, 胡家睿
+			</div>
+		</h3>
+
+		<div id="updateBox">
+			<a href="#" style="text-align: right; position: absolute; left: 77%; top: 11%; text-decoration: none; color: black;" data-toggle="popover" title="提示" data-content="您的账号正在更新，目前可以同步使用">正在更新账号设置...</a>
+			<div class="spinner-grow" role="status" style="text-align: right; position: absolute; left: 90%; top: 10%;">
+				<span class="visually-hidden">Loading...</span>
+			</div>
+		</div>
+		<br>
+
+		<!-- Dashboard widget: <div class="widget"></div> -->
+
+		<div class="container">
+			<div class="page_content">
+			<!-- Empty Container -->
+				<br>
+				<div class="alert alert-info alert-dismissible" id="updateNotice">
+					<button type="button" class="close" data-dismiss="alert">&times;</button>
+					您的账号正在更新(预计2分钟)。 <a href="https://accessretrieved.github.io/articles/support/server/profile_update_zh-cn.html">查看更多</a>
+				</div>
+				<div id="success"></div>
+			</div>
+		</div>
+    </body>
+	<script src="/javascript/server/account_api.js"></script>
+</html>
