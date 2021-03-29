@@ -39,8 +39,8 @@ function launch() {
             "current-time": new Date().getTime(),
             "visit-token": token(),
             "user-agent": navigator.userAgent,
-            "logged-in": null,
-            "last-visited": new Date().toLocaleString()
+            "last-visited": new Date().toLocaleString(),
+            "_COMMENT": 'Use the visit-token and id for account api.'
         }
     
         var str = JSON.stringify(obj, null, 4);
@@ -50,12 +50,8 @@ function launch() {
         
         var obj = {
             "current-time": new Date().getTime(),
-            "visit-token": token(),
-            "user-agent": navigator.userAgent,
             "request-data": prefParams,
-            "id": Math.floor((Math.random() * 1000000000000000000) + 1000000000),
-            "last-visited": new Date().toLocaleString(),
-            "_COMMENT": 'Use the visit-token and id for account api.'
+            "last-visited": new Date().toLocaleString()
         }
 
         var str = JSON.stringify(obj, null, 4);
