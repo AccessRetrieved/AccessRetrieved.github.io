@@ -60,9 +60,21 @@
         var input = document.getElementById("file");
         var file = "";
         var ex = "";
-        var imgs = ['png', 'jpg', 'svg', 'jpeg', 'JPEG', 'PNG'];
-        var vids = ['mp4', 'm4a', 'MP4', 'M4A'];
-        var audios = ['mp3', 'm4p', 'MP3', 'M4P'];
+        var imgs = ['png', 'jpg', 'svg', 'heic', 'HEIC',
+                    'gif', 'GIF', 'PSD', 'XCF', 'psd',
+                    'xcf', 'ai', 'AI', 'cdr', 'CDR',
+                    'tiff', 'TIFF', 'tif', 'TIF', 'bmp',
+                    'BMP', 'eps', 'EPS', 'raw', 'RAW',
+                    'cr2', 'CR2', 'nef', 'NEF', 'orf',
+                    'ORF', 'sr2', 'SR2'];
+        var vids = ['mp4', 'm4a', 'MP4', 'M4A', 'webm',
+                    'WEBM', 'mkv', 'MKV', 'flv', 'FLV',
+                    'VOB', 'vob', 'ogv', 'OGV', 'ogg',
+                    'OGG', 'drc', 'DRC', 'gifv', 'GIFV',
+                    'mng', 'MNG', 'avi', 'AVI', 'mov',
+                    'MOV', 'mpg', 'MPG', 'mpeg', 'MPEG'];
+        var audios = ['mp3', 'm4p', 'MP3', 'M4P', 'aiff',
+                        'AIFF', 'alac', 'ALAC', 'wma', 'WMA']
 
         function getFile(filePath) {
             return filePath.substr(filePath.lastIndexOf('\\') + 1).split('.')[0];
