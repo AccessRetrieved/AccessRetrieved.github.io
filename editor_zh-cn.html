@@ -53,13 +53,24 @@
         </div>
     </body>
     <script>
-        var filename = document.getElementById("file").value;
+        var input = document.getElementById("file");
         var file = "";
+        var ex = "";
+
+        function getFile(filePath) {
+            return filePath.substr(filePath.lastIndexOf('\\') + 1).split('.')[0];
+        }
+
+        function getoutput() {
+            file = getFile(input.value);
+            ex = input.value.split('.')[1];
+        }
 
         function saveTextAsFile() {
-            var textToWrite = document.getElementById('filebox').innerHTML;
+            getoutput();
+            var textToWrite = document.getElementById('filebox').value;
             var textFileAsBlob = new Blob([ textToWrite ], { type: 'text/plain' });
-            var fileNameToSaveAs = filename.split(/(\\|\/)/g).pop();
+            var fileNameToSaveAs = file + "." + ex;
 
             var downloadLink = document.createElement("a");
             downloadLink.download = fileNameToSaveAs;
