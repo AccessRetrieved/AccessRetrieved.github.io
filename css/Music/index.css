@@ -103,7 +103,7 @@
 }
 
 .song-card {
-    width: 200px;
+    width: 185px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
     text-align: center;
     border-radius: 8px;
@@ -113,7 +113,7 @@
 }
 
 .song-card:hover {
-    width: 205px;
+    width: 190px;
     transition: .1s linear;
 }
 

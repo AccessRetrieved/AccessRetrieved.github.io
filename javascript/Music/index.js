@@ -16,3 +16,7 @@ avatar.addEventListener("click", function(event) {
 function showAccountPopup() {
     accountPopup.style.display = "block";
 }
+
+function playSelected(track) {
+    
+}
