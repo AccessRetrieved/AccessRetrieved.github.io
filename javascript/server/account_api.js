@@ -119,7 +119,7 @@ const interval = setInterval(function() {
             </head>\
             <body>\
                 <div class="page-content">\
-                    <p>无法连接服务器，请重新连接</p>\
+                    <p style="text-align: center; margin: auto; position: absolute; top: 35%; left: 47%;">无法连接服务器，请重新连接</p>\
                     <br><br>\
                     <button onclick="retryConnection()" style="width: 60%;" class="btn btn-warning">重试</button>\
                 </div>\
