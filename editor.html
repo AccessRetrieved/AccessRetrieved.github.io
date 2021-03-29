@@ -60,6 +60,9 @@
         var input = document.getElementById("file");
         var file = "";
         var ex = "";
+        var imgs = ['png', 'jpg', 'svg', 'jpeg', 'JPEG', 'PNG'];
+        var vids = ['mp4', 'm4a', 'MP4', 'M4A'];
+        var audios = ['mp3', 'm4p', 'MP3', 'M4P'];
 
         function getFile(filePath) {
             return filePath.substr(filePath.lastIndexOf('\\') + 1).split('.')[0];
@@ -72,7 +75,13 @@
 
         function changeName() {
             getoutput();
-            document.getElementById('filename').innerHTML = file + "." + ex;
+            if (imgs.includes(ex) == true || vids.includes(ex) == true || audios.includes(ex) == true) {
+                alert('Sorry, not a supported format.');
+                input.value = '';
+                document.getElementById('filename').innerHTML = "Choose a File";
+            } else {
+                document.getElementById('filename').innerHTML = file + "." + ex;
+            }
         }
 
         function saveTextAsFile() {
