@@ -239,11 +239,73 @@
 			<a class="Launchbtn" data-toggle="modal" data-target="#languageModal" id="openWelcome" data-keyboard="false" data-backdrop="static" style="background-color: #4e9af1;"><i class="bi bi-music-note-list"></i> 打开</a>
 		</div>
 
+		<br><br>
+
 		<!-- Dashboard widget: <div class="widget"></div> -->
+
+		<div class="row">
+			<div class="column">
+				<div class="widget">
+					<div class="weather">
+						<a class="weatherwidget-io" href="https://forecast7.com/zh/49d10n122d80/surrey/" data-label_1="素里，加拿大" data-font="Noto Sans SC" data-icons="Climacons Animated" data-theme="orange" >素里，加拿大</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="widget">
+					<br>
+					<h6 style="font-family: 'calibri';">更新预计倒计时</h6>
+					<br><br>
+
+					<div class="round-time-bar" data-color="blue" data-style="smooth" style="--duration: 157000;">
+						<div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<br><br>
+
+		<div class="row">
+			<div class="column">
+				<div class="widget" style="width: 50.5%; height: 25.5%;">
+					<br>
+					<h6 style="font-family: 'calibri';">时间</h6>
+					<br>
+
+					<div id="clock">
+						<div id="time">
+							<div>
+								<span id="hours">00</span>
+								<span>Hours</span>
+							</div>
+							<div>
+								<span id="minutes">00</span>
+								<span>Minutes</span>
+							</div>
+							<div>
+								<span id="seconds">00</span>
+								<span>Seconds</span>
+							</div>
+							<div></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="column">
+
+			</div>
+		</div>
+
+		<br><br><br>
 
 		<div class="container">
 			<div class="page_content">
-			<!-- Empty Container -->
+				
+				<!-- Empty Container -->
+
 				<br>
 				<div class="alert alert-info alert-dismissible" id="updateNotice">
 					<button type="button" class="close" data-dismiss="alert">&times;</button>
@@ -254,4 +316,7 @@
 		</div>
     </body>
 	<script src="/javascript/server/account.js"></script>
+	<script>
+		!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+	</script>
 </html>

@@ -3,14 +3,37 @@
     src: url("/fonts/Calibri-Light.ttf");
 }
 
-.widget {
-    text-align: center;
-    background-color: #f8f9fa;
-    border-radius: 10px;
-    width: 30%;
-    margin: auto;
-    height: 20%;
-}
+.round-time-bar {
+    margin: 1rem;
+    overflow: hidden;
+  }
+  .round-time-bar div {
+    height: 7px;
+    animation: roundtime calc(var(--duration) * 1s) steps(var(--duration))
+      forwards;
+    transform-origin: left center;
+    background: linear-gradient(to bottom, #df6b55, #e0916f);
+    border-radius: 8px;
+  }
+  
+  .round-time-bar[data-style="smooth"] div {
+    animation: roundtime calc(var(--duration) * 1s) linear forwards;
+  }
+  
+  .round-time-bar[data-style="fixed"] div {
+    width: calc(var(--duration) * 5%);
+  }
+  
+  .round-time-bar[data-color="blue"] div {
+    background: linear-gradient(to right, #1565c0, #9ac7bd);
+  }
+  
+  @keyframes roundtime {
+    to {
+      /* More performant than `width` */
+      transform: scaleX(0);
+    }
+  }
 
 .center {
     margin: auto;
@@ -103,8 +126,118 @@
     margin: auto;
 }
 
+.widget {
+    text-align: center;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    height: 30%;
+}
+
 .weather {
     text-align: center;
     margin: auto;
-    width: 430px;
+    width: 370px;
+    border-radius: 10px;
+}
+
+.space {
+    text-align: center;
+    margin: auto;
+    width: 370px;
+    border-radius: 10px;
+    background-color: white;
+    color: white;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 33.33%;
+    padding: 5px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+
+#clock h2 {
+  position: relative;
+  display: block;
+  color: #fff;
+  text-align: center;
+  margin: 10px 0;
+  font-weight: 700;
+  text-transform: 0.4em;
+  font-size: 2em;
+}
+
+#clock #time {
+  display: flex;
+}
+
+#clock #time div {
+  border-radius: 10px;
+}
+
+#clock #time div span {
+  position: relative;
+  display: block;
+  width: 100px;
+  height: 80px;
+  background: #2196f3;
+  color: #fff;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  z-index: 10;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+#clock #time div span:nth-child(2) {
+  height: 30px;
+  font-size: 0.7em;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+  z-index: 9;
+  box-shadow: none;
+  background: #127fd6;
+  text-transform: uppercase;
+}
+
+#clock #time div:nth-last-child(2) span {
+  background: #ff006a;
+}
+
+#clock #time div:nth-last-child(2) span:nth-child(2) {
+  background: #ec0062;
+}
+
+#clock #time div:nth-last-child(1) span {
+  position: absolute;
+  bottom: 0;
+  width: 60px;
+  height: 40px;
+  font-size: 1.5em;
+  background: #fff;
+  color: #000;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
 }
