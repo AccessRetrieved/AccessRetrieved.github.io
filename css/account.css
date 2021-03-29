@@ -3,6 +3,11 @@
     src: url("/fonts/Calibri-Light.ttf");
 }
 
+@font-face {
+  font-family: 'roboto';
+  src: url("/fonts/Roboto-Light.ttf");
+}
+
 .round-time-bar {
     margin: 1rem;
     overflow: hidden;
