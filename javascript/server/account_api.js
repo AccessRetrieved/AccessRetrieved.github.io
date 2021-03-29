@@ -1,3 +1,5 @@
+var checkInterval = 0;
+var checked = 1;
 const tokens = ['r3Uh67govw5KlgptejjGpmpdPgFkOjQS',
                 'lramLNhHr8YzwrYr77OzRc1jQ5T1kQa0',
                 'h1FULD7OvKWhU5xzWEDhrhgmdmNtVLI9',
