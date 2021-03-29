@@ -102,3 +102,9 @@
     text-align: center;
     margin: auto;
 }
+
+.weather {
+    text-align: center;
+    margin: auto;
+    width: 430px;
+}
