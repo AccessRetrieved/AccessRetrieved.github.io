@@ -101,6 +101,49 @@
     background-color: rgb(237, 242, 254);
 }
 
+.song-card {
+    width: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+    margin: 22px;
+}
+
+.song-card:hover {
+    width: 205px;
+    transition: .1s linear;
+}
+
+.song-card-title {
+    padding-bottom: 8px;
+    font-family: Barlow,-apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.song-card-title:hover {
+    text-decoration: underline;
+}
+
+.song-card-img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.side-by-side {
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
 /* Right part*/
 
 .right-part[data-v-2cb97a44] {
