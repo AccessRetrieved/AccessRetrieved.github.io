@@ -49,7 +49,6 @@ var param = url.searchParams.get("auth");
 
 if (tokens.includes(param) == true) {
     // pass
-    document.getElementById('name').innerHTML = `欢迎, ${param}`;
 } else {
     window.location = 'https://accessretrieved.github.io/signin.html'
 }
@@ -130,4 +129,23 @@ const interval = setInterval(function() {
     } else {
         // pass
     }
-}, 100) 
+}, 100)
+
+var i = 0;
+function move() {
+if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
+    var width = 1;
+    var id = setInterval(frame, 10);
+    function frame() {
+    if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+    } else {
+        width++;
+        elem.style.width = width + "%";
+    }
+    }
+}
+}

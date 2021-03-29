@@ -62,6 +62,17 @@ function updateSettings() {
         }, 5000)
     } else {
         checked = 0;
+
+        document.getElementById('success').innerHTML = '\
+        <div class="alert alert-success alert-dismissible" id="success">\
+            <button type="button" class="close" data-dismiss="alert">&times;</button>\
+            更新成功!\
+        </div>\
+        '
+
+        setTimeout(function() {
+            document.getElementById('success').innerHTML = "";
+        }, 5000)
     }
 }
 
