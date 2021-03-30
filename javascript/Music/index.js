@@ -30,12 +30,33 @@ function playSelected(trackName) {
         audio.play();
         isPlaying = 1;
 
-        playerCover.src = `/server/music/cover/${trackName}.png`;
-        playerTitle.innerHTML = trackName;
+        var url = playerCoverExists(`https://accessretrieved.github.io/server/music/cover/${trackName}.png`);
+        if (url == true) {
+            playerCover.src = `/server/music/cover/${trackName}.png`;
+            playerTitle.innerHTML = trackName;
+        } else {
+            playerCover.src = '/server/music/cover/music.png';
+            playerTitle.innerHTML = trackName;
+        }
     } else {
         var path = `/server/music/${trackName}.mp3`;
         audio.src = path;
         audio.play();
         isPlaying = 1;
+
+        var url = playerCoverExists(`https://accessretrieved.github.io/server/music/cover/${trackName}.png`);
+        if (url == true) {
+            playerCover.src = `/server/music/cover/${trackName}.png`;
+            playerTitle.innerHTML = trackName;
+        } else {
+            playerCover.src = '/server/music/cover/music.png';
+            playerTitle.innerHTML = trackName;
+        }
     }
+}
+
+function playerCoverExists(url) {
+    var img = new Image();
+    img.src = url;
+    return img.height != 0;
 }

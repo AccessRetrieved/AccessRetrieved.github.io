@@ -168,6 +168,36 @@
     border: none;
 }
 
+.player-play {
+    border: none;
+    background-color: white;
+    font-size: 30px;
+    position: relative;
+    top: 30%;
+}
+
+.player-previous {
+    border: none;
+    background-color: white;
+    font-size: 30px;
+    position: relative;
+    top: 30%;
+}
+
+.player-next {
+    border: none;
+    background-color: white;
+    font-size: 30px;
+    position: relative;
+    top: 30%;
+}
+
+
+
+
+
+
+
 
 
 
