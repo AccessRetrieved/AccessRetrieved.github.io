@@ -567,3 +567,9 @@
     from { left: 0; }
     to { left: 100%; }
 }
+
+.string { color: green; }
+.number { color: darkorange; }
+.boolean { color: blue; }
+.null { color: magenta; }
+.key = { color: red; }
