@@ -224,9 +224,9 @@
     background: rgba(255, 255, 255, 0.960);
     backdrop-filter: blur(90%);
     font-size: 20px;
-    position: relative;
-    top: 54%;
-    left: 95.3%;
+    position: absolute;
+    top: 5%;
+    left: 95%;
 }
 
 .player-fullscreen-close:hover {
@@ -241,8 +241,8 @@
 
 .fullscreen-cover {
     width: 25%;
-    position: relative;
-    left: 35%;
+    position: absolute;
+    left: 37%;
     top: 7%;
     border-radius: 8px;
 }
@@ -250,9 +250,16 @@
 .progress {
     width: 1px;
     height: 3px;
-    background: #006B5A;
+    background: linear-gradient(to right, #1565c0, #9ac7bd);
     transition: width .1s linear;
+    
+    text-align: center;
+    margin: auto;
 }
+
+
+
+
 
 
 
