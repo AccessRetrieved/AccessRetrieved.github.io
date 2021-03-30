@@ -194,6 +194,15 @@
     top: 30%;
 }
 
+.player-volume {
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    position: relative;
+    top: 30%;
+    left: 20%;
+}
+
 .player-expand {
     border: none;
     background-color: white;

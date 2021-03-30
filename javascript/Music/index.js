@@ -12,6 +12,7 @@ var playerPlay = document.getElementById('player-play');
 var playerNext = document.getElementById('player-next');
 var player = document.getElementById('player');
 var playerFullscreen = document.getElementById('player-fullscreen');
+var playerVolume = document.getElementById('player-volume');
 
 var fullscreenPrevious = document.getElementById('fullscreen-previous');
 var fullscreenPlay = document.getElementById('fullscreen-play');
@@ -202,3 +203,13 @@ window.mobileAndTabletCheck = function() {
     alert('Visit this page on a Mac or PC.\n使用Mac或PC查看此页面')
     window.location = 'about:blank';
   }
+
+function volume() {
+    if (audio.volume == 1.0) {
+        audio.volume = 0;
+        playerVolume.innerHTML = '<i class="bi bi-volume-mute-fill"></i>';
+    } else {
+        audio.volume = 1.0;
+        playerVolume.innerHTML = '<i class="bi bi-volume-up-fill"></i>';
+    }
+}
