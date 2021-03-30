@@ -248,7 +248,7 @@
 }
 
 .progress {
-    width: 1px;
+    width: 0px;
     height: 3px;
     background: linear-gradient(to right, #1565c0, #9ac7bd);
     transition: width .1s linear;
