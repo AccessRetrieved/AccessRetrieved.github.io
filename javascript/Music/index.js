@@ -40,6 +40,8 @@ var fullscreenPrevious = document.getElementById('fullscreen-previous');
 var fullscreenPlay = document.getElementById('fullscreen-play');
 var fullscreenNext = document.getElementById('fullscreen-next');
 
+var progressBar = document.getElementById('slider');
+
 var playedSongs = [];
 var audio = new Audio();
 
@@ -71,6 +73,10 @@ function preloadImages(urls, allImagesLoadedCallback){
       img.src = url;
   }
 }
+
+const progress = setTimeout(function() {
+    progressBar.style.display = "none";
+}, 3000);
 
 function playSelected(trackName) {
     if (isPlaying == 1) {

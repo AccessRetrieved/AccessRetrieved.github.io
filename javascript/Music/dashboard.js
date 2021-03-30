@@ -2,6 +2,11 @@ function check() {
   var url_string = window.location.href;
   var url = new URL(url_string);
   var param = url.searchParams.get("intro");
+  var progressBar = document.getElementById('slider')
+
+  const progress = setTimeout(function() {
+      progressBar.style.display = "none";
+  }, 3000);
 
   if (param == "false") {
     closeIntro();

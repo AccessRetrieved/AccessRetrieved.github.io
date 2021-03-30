@@ -498,10 +498,11 @@
     height:4px;
     width: 100%;
     position: fixed;
-    bottom: 15%;
+    top: 0%;
     left: 0%;
     text-align: center;
     margin: auto;
+    border-radius: 5px;
 }
 
 .line{
