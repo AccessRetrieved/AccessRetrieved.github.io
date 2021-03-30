@@ -9,7 +9,7 @@ function check() {
   }, 3000);
 
   if (param == "false") {
-    closeIntro();
+    closes();
   } else {
     // pass
   }
