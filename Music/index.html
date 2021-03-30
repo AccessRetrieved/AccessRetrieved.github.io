@@ -7,7 +7,6 @@
         <link rel="stylesheet" href="/css/Music/dashboard.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="/javascript/Music/dashboard.js"></script>
-        <script src="/javascript/Music/index.js"></script>
 
         <!--Bootstrap v5 icon link-->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
@@ -70,34 +69,11 @@
                 <!-- First row -->
                 <div class="side-by-side">
                     <h3 class="song-category">最近听过</h3>
-                    <div class="song-card" style="float: left;">
-                        <img src="https://github.com/AccessRetrieved/server/raw/main/Music/cover/Infinite.png" onerror="this.onerror=null; this.src='https://github.com/AccessRetrieved/server/raw/main/Music/cover/music.png'" class="song-card-img">
-                        <div class="song-card-title">
-                            <p onclick="playSelected(this.innerText);">Infinite</p>
-                        </div>
-                    </div>
-
-                    <div class="song-card" style="float: left;">
-                        <img src="https://github.com/AccessRetrieved/server/raw/main/Music/cover/Suit-And-Tie.png" onerror="this.onerror=null; this.src='https://github.com/AccessRetrieved/server/raw/main/Music/cover/music.png'" class="song-card-img">
-                        <div class="song-card-title">
-                            <script src="/javascript/Music/index.js"></script>
-                            <p onclick="playSelected(this.innerText);">Suit-And-Tie</p>
-                            <script src="/javascript/Music/index.js"></script>
-                        </div>
-                    </div>
-
-                    <div class="song-card" style="float: left;">
-                        <img src="https://github.com/AccessRetrieved/server/raw/main/Music/cover/A-Thousand-Years.png" onerror="this.onerror=null; this.src='https://github.com/AccessRetrieved/server/raw/main/Music/cover/music.png'" class="song-card-img">
-                        <div class="song-card-title">
-                            <p onclick="playSelected(this.innerText);">A-Thousand-Years</p>
-                        </div>
-                    </div>
-    
-                    <div class="song-card" style="float: left;">
-                        <img src="https://github.com/AccessRetrieved/server/raw/main/Music/cover/music.png" onerror="this.onerror=null; this.src='https://github.com/AccessRetrieved/server/raw/main/Music/cover/music.png'" class="song-card-img">
-                        <div class="song-card-title">
-                            <p onclick="playSelected(this.innerText);">A-Million-Dreams</p>
-                        </div>
+                    
+                    <div class="empty-list">
+                        <br><br>
+                        <h3 class="empty-list-title">空空如也</h3>
+                        <p>快去听歌吧！</p>
                     </div>
                 </div>
             </div>
