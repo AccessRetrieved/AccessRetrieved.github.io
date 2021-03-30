@@ -1,3 +1,16 @@
+function check() {
+  var url_string = window.location.href;
+  var url = new URL(url_string);
+  var param = url.searchParams.get("intro");
+  console.log(param)
+
+  if (param == "false") {
+    closeIntro();
+  } else {
+    // pass
+  }
+}
+
 var TxtRotate = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -59,7 +72,7 @@ const wait = setTimeout(function() {
 const interval = setTimeout(function() {
   document.getElementById('loading').style.display = "none";
   document.getElementById('leave').style.display = "block";
-}, 7500);
+}, 8000);
 
 window.mobileAndTabletCheck = function() {
   let check = false;
@@ -70,4 +83,10 @@ window.mobileAndTabletCheck = function() {
 if (window.mobileAndTabletCheck() == true) {
   alert('Visit this page on a Mac or PC.\n使用Mac或PC查看此页面')
   window.location = 'about:blank';
+}
+
+function closeIntro() {
+  document.getElementById('html').classList.remove('body');
+  document.getElementById('intro').style.display = "none";
+  document.getElementById('home').style.display = "block";
 }
