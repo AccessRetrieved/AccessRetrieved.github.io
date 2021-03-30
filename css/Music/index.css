@@ -207,7 +207,47 @@
     border-radius: 5px;
 }
 
+.player-fullscreen {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background: rgba(255, 255, 255, 0.960);
+    backdrop-filter: blur(90%);
+    display: none;
+    font-family: 'calibri';
+}
 
+.player-fullscreen-close {
+    border: none;
+    background: rgba(255, 255, 255, 0.960);
+    backdrop-filter: blur(90%);
+    font-size: 20px;
+    position: relative;
+    top: 15%;
+    left: 95.3%;
+}
+
+.player-fullscreen-close:hover {
+    height: 4%;
+    background-color: rgb(231, 236, 239);
+    border-radius: 5px;
+}
+
+.player-lyrics {
+    font-family: 'calibri';
+    font-size: 17px;
+    position: relative;
+    top: 13%;
+    left: 21%;
+    width: 50%;
+    height: 84%;
+    outline: none;
+    resize: none;
+    border: none;
+    text-align: center;
+}
 
 
 

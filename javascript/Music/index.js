@@ -8,8 +8,14 @@ var playerTitle = document.getElementById('player-title');
 var playerPrevious = document.getElementById('player-previous');
 var playerPlay = document.getElementById('player-play');
 var playerNext = document.getElementById('player-next');
+var player = document.getElementById('player');
+
+var playerFullscreen = document.getElementById('player-fullscreen');
+var playerFullscreenLyricsTitle = document.getElementById('player-fullscreen-lyrics');
+var playerFullscreenLyrics = document.getElementById('player-lyrics')
 
 var playedSongs = [];
+var lyrics = "";
 
 var audio = new Audio();
 
@@ -45,9 +51,15 @@ function playSelected(trackName) {
         if (url == true) {
             playerCover.src = `https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/${trackName}.png`;
             playerTitle.innerHTML = trackName;
+            playerFullscreenLyricsTitle.innerHTML = `歌词: ${trackName}`;
+            playerFullscreenLyrics.readOnly = false;
+            playerFullscreenLyrics.textContent = getText(`https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/lyrics/${trackName}.txt`)
         } else {
             playerCover.src = `https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/${trackName}.png`;
             playerTitle.innerHTML = trackName;
+            playerFullscreenLyricsTitle.innerHTML = `歌词: ${trackName}`;
+            playerFullscreenLyrics.readOnly = false;
+            playerFullscreenLyrics.textContent = getText(`https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/lyrics/${trackName}.txt`)
         }
     } else {
         var path = `https://github.com/AccessRetrieved/server/blob/main/Music/${trackName}.mp3?raw=true`;
@@ -62,9 +74,15 @@ function playSelected(trackName) {
         if (url == true) {
             playerCover.src = `https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/${trackName}.png`;
             playerTitle.innerHTML = trackName;
+            playerFullscreenLyricsTitle.innerHTML = `歌词: ${trackName}`;
+            playerFullscreenLyrics.readOnly = false;
+            playerFullscreenLyrics.textContent = getText(`https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/lyrics/${trackName}.txt`)
         } else {
             playerCover.src = `https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/${trackName}.png`;
             playerTitle.innerHTML = trackName;
+            playerFullscreenLyricsTitle.innerHTML = `歌词: ${trackName}`;
+            playerFullscreenLyrics.readOnly = false;
+            playerFullscreenLyrics.textContent = getText(`https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/lyrics/${trackName}.txt`)
         }
     }
 }
@@ -108,9 +126,15 @@ function playPrevious() {
         if (url == true) {
             playerCover.src = `https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/${trackName}.png`;;
             playerTitle.innerHTML = trackName;
+            playerFullscreenLyricsTitle.innerHTML = `歌词: ${trackName}`;
+            playerFullscreenLyrics.readOnly = false;
+            playerFullscreenLyrics.textContent = getText(`https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/lyrics/${trackName}.txt`)
         } else {
             playerCover.src = `https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/${trackName}.png`;
             playerTitle.innerHTML = trackName;
+            playerFullscreenLyricsTitle.innerHTML = `歌词: ${trackName}`;
+            playerFullscreenLyrics.readOnly = false;
+            playerFullscreenLyrics.textContent = getText(`https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/lyrics/${trackName}.txt`)
         }
     }
 }
@@ -122,3 +146,27 @@ const interval = setInterval(function() {
         playerPrevious.disabled = false;
     }
 }, 1)
+
+function fullscreen() {
+    player.style.display = "none";
+    playerFullscreen.style.display = "block";
+}
+
+function closeFullscreen() {
+    player.style.display = "block";
+    playerFullscreen.style.display = "none";
+}
+
+function getText(url) {
+    var request = new XMLHttpRequest();
+    request.open('GET', url, true);
+    request.send(null);
+    request.onreadystatechange = function() {
+        if (request.readyState === 4 && request.status === 200) {
+            var type = request.getResponseHeader('Content-Type');
+            if (type.indexOf("text") !== 1) {
+                return request.responseText;
+            }
+        }
+    }
+}
