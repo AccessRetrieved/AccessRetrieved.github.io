@@ -207,7 +207,8 @@
 
 .player-expand {
     border: none;
-    background-color: white;
+    background-color: transparent;
+    background-repeat: no-repeat;
     font-size: 20px;
     position: absolute;
     top: 47%;
@@ -234,8 +235,8 @@
 
 .player-fullscreen-close {
     border: none;
-    background: rgba(255, 255, 255, 0.960);
-    backdrop-filter: blur(90%);
+    background-color: transparent;
+    background-repeat: no-repeat;
     font-size: 20px;
     position: absolute;
     top: 5%;
