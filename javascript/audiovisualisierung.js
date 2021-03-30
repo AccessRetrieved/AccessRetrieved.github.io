@@ -51,7 +51,6 @@ function playSample() {
 
  	// When loaded decode the data
 	request.onload = function() {
-		
 		$("#title").html("");
 		$("#album").html("A Million Dreams");
 		$("#artist").html("The Piano Guys");
