@@ -295,6 +295,17 @@
     right: 35%;
 }
 
+.song-category {
+    font-size: 25px;
+    font-family: 'notosans';
+    position: relative;
+    left: 2%;
+    text-align: left;
+    font-weight: bold;
+}
+
+
+
 
 
 
