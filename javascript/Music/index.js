@@ -13,6 +13,8 @@ var playedSongs = [];
 
 var audio = new Audio();
 
+playerCover.style.height = "100%";
+
 body.addEventListener("click", function() {
     accountPopup.style.display = "none";
 }, false);
