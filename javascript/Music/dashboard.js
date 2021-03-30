@@ -93,6 +93,13 @@ function closeIntro() {
   document.getElementById('html').classList.remove('body');
   $('#intro').slideUp( "slow", function() {
     console.log('Loading tracks...')
+    document.getElementById('intro').style.display = "none";
   })
+  document.getElementById('home').style.display = "block";
+}
+
+function closes() {
+  document.getElementById('html').classList.remove('body');
+  document.getElementById('intro').style.display = "none";
   document.getElementById('home').style.display = "block";
 }
