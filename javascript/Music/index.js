@@ -39,7 +39,6 @@ var playerVolume = document.getElementById('player-volume');
 var fullscreenPrevious = document.getElementById('fullscreen-previous');
 var fullscreenPlay = document.getElementById('fullscreen-play');
 var fullscreenNext = document.getElementById('fullscreen-next');
-var progressBar = document.getElementById('progressbar');
 
 var playedSongs = [];
 var audio = new Audio();
@@ -223,13 +222,6 @@ document.body.addEventListener('keypress', function(e) {
         closeFullscreen();
     }
 })
-
-function spinner() {
-    while (1 === 1) {
-
-    }
-}
-
 
 window.mobileAndTabletCheck = function() {
     let check = false;
