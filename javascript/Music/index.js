@@ -4,6 +4,8 @@ var avatar = document.getElementById('avatar');
 var isPlaying = 0;
 var playerCover = document.getElementById('player-cover');
 var playerTitle = document.getElementById('player-title');
+var fullscreenCover = document.getElementById('fullscreen-cover');
+var fullscreenTitle = document.getElementById('fullscreen-title');
 
 var playerPrevious = document.getElementById('player-previous');
 var playerPlay = document.getElementById('player-play');
@@ -56,9 +58,13 @@ function playSelected(trackName) {
         if (url == true) {
             playerCover.src = `https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/${trackName}.png`;
             playerTitle.innerHTML = trackName;
+            fullscreenCover.src = `https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/${trackName}.png`;
+            fullscreenTitle.innerHTML = trackName;
         } else {
             playerCover.src = `https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/${trackName}.png`;
             playerTitle.innerHTML = trackName;
+            fullscreenCover.src = `https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/${trackName}.png`;
+            fullscreenTitle.innerHTML = trackName;
         }
     } else {
         var path = `https://github.com/AccessRetrieved/server/blob/main/Music/${trackName}.mp3?raw=true`;
@@ -75,9 +81,13 @@ function playSelected(trackName) {
         if (url == true) {
             playerCover.src = `https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/${trackName}.png`;
             playerTitle.innerHTML = trackName;
+            fullscreenCover.src = `https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/${trackName}.png`;
+            fullscreenTitle.innerHTML = trackName;
         } else {
             playerCover.src = `https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/${trackName}.png`;
             playerTitle.innerHTML = trackName;
+            fullscreenCover.src = `https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/${trackName}.png`;
+            fullscreenTitle.innerHTML = trackName;
         }
     }
 }
@@ -125,9 +135,13 @@ function playPrevious() {
         if (url == true) {
             playerCover.src = `https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/${trackName}.png`;;
             playerTitle.innerHTML = trackName;
+            fullscreenCover.src = `https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/${trackName}.png`;
+            fullscreenTitle.innerHTML = trackName;
         } else {
             playerCover.src = `https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/${trackName}.png`;
             playerTitle.innerHTML = trackName;
+            fullscreenCover.src = `https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/${trackName}.png`;
+            fullscreenTitle.innerHTML = trackName;
         }
     }
 }

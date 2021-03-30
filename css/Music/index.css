@@ -245,8 +245,16 @@
     width: 25%;
     position: absolute;
     left: 37%;
-    top: 7%;
+    top: 15%;
     border-radius: 8px;
+}
+
+.fullscreen-title {
+    font-family: 'calibri';
+    font-size: 30px;
+    position: absolute;
+    left: 37%;
+    top: 7%;
 }
 
 .progress {
