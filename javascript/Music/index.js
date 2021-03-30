@@ -207,7 +207,7 @@ audio.addEventListener('pause', function(_event) {
 var advance = function(duration, element) {
     var progress = document.getElementById('progress');
     increment = 10/duration
-    percent = Math.min(increment * element.currentTime * 1, 100);
+    percent = Math.min(increment * element.currentTime * 5, 100);
     progress.style.width = percent + '%';
     startTimer(duration, element);
 }
