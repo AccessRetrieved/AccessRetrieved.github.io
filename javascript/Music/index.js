@@ -243,3 +243,7 @@ function volume() {
         playerVolume.innerHTML = '<i class="bi bi-volume-up-fill"></i>';
     }
 }
+
+function closeIntro() {
+    document.getElementById('intro').style.display = "none"
+}
