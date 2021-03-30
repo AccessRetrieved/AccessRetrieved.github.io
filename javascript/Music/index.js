@@ -41,6 +41,42 @@ function showAccountPopup() {
     accountPopup.style.display = "block";
 }
 
+function preloadImages(urls, allImagesLoadedCallback){
+    var loadedCounter = 0;
+  var toBeLoadedNumber = urls.length;
+  urls.forEach(function(url){
+    preloadImage(url, function(){
+        loadedCounter++;
+            console.log('Number of loaded images: ' + loadedCounter);
+      if(loadedCounter == toBeLoadedNumber){
+        allImagesLoadedCallback();
+      }
+    });
+  });
+  
+  function preloadImage(url, anImageLoadedCallback){
+      var img = new Image();
+      img.onload = anImageLoadedCallback;
+      img.src = url;
+  }
+}
+
+preloadImages([
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/Infinite.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/SuitAndTie.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/TA.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/你曾是少年.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/冲吧少年.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/无解.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/气象站台.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/清空.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/AThousandYears.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/AMillionYears.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/SomeoneYouLoved.png'
+], function() {
+    console.log('Successfully loaded all images')
+})
+
 function playSelected(trackName) {
 
     if (isPlaying == 1) {
