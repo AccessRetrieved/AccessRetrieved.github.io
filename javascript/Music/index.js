@@ -41,18 +41,13 @@ var audio = new Audio();
 var timer;
 var percent = 0;
 
-playerCover.style.height = "100%";
+var home = document.getElementById('home');
+var discover = document.getElementById('discover');
+var library = document.getElementById('library');
 
-body.addEventListener("click", function() {
-    accountPopup.style.display = "none";
-}, false);
-accountPopup.addEventListener("click", function(event) {
-    event.stopPropagation();
-}, false);
-avatar.addEventListener("click", function(event) {
-    event.stopPropagation();
-    accountPopup.style.display = "block";
-})
+switchPage('首页');
+
+playerCover.style.height = "100%";
 
 function showAccountPopup() {
     accountPopup.style.display = "block";
@@ -64,7 +59,7 @@ function preloadImages(urls, allImagesLoadedCallback){
   urls.forEach(function(url){
     preloadImage(url, function(){
         loadedCounter++;
-            console.log('Number of loaded images: ' + loadedCounter);
+            console.log('Loading image: ' + loadedCounter);
       if(loadedCounter == toBeLoadedNumber){
         allImagesLoadedCallback();
       }
@@ -248,5 +243,31 @@ function volume() {
     } else {
         audio.volume = 1.0;
         playerVolume.innerHTML = '<i class="bi bi-volume-up-fill"></i>';
+    }
+}
+
+function switchPage(page) {
+    console.log(page)
+    if (page == "首页") {
+        discover.style.display = "none";
+        discover.style.display = "none";
+        library.style.display = "none";
+        library.style.display = "none";
+        home.style.display = "block";
+        home.style.display = "block";
+    } else if (page == "发现") {
+        discover.style.display = "block";
+        discover.style.display = "block";
+        library.style.display = "none";
+        library.style.display = "none";
+        home.style.display = "none";
+        home.style.display = "none";
+    } else if (page == "音乐库") {
+        discover.style.display = "none";
+        discover.style.display = "none";
+        library.style.display = "block";
+        library.style.display = "block";
+        home.style.display = 'none';
+        home.style.display = 'none';
     }
 }

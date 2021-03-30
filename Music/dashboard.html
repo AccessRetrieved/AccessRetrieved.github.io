@@ -10,87 +10,345 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
     </head>
     <body class="noselect" id="body">
-        <div class="menubar noselect">
-            <div style="position: relative;">
-                <div class="left">
-                    <div class="menubar-text menubar-text-active">
-                        <h3 onclick="window.location='https://accessretrieved.github.io/Music/dashboard.html'">首页</h3>
+        <!-- LIBRARY PAGE -->
+        <div id="library">
+            <div class="menubar noselect">
+                <div style="position: relative;">
+                    <div class="left">
+                        <div class="menubar-text">
+                            <h3 onclick="switchPage(this.innerHTML);">首页</h3>
+                        </div>
+                    </div>
+
+                    <div class="middle">
+                        <div class="menubar-text">
+                            <h3 onclick="switchPage(this.innerHTML);">发现</h3>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <div class="menubar-text menubar-text-active">
+                            <h3 onclick="switchPage(this.innerHTML);">音乐库</h3>
+                        </div>
+                    </div>
+
+                    
+
+                    <br>
+                    <div data-v-05b2c7d8 class="right-part" style="position: absolute; right: 2%;">
+                        <img data-v-05b2c7d8 src="/images/Music/avatar.png" class="avatar" id="avatar" onclick="showAccountPopup();">
+                    </div>
+                </div>
+            </div>
+
+            <br><br><br>
+
+            <div class="page-content">
+                <!-- 电子合成 -->
+                <div class="side-by-side">
+                    <br>
+                    <h3 class="song-category">电子合成</h3>
+                    <div class="song-card" style="float: left;">
+                        <img src="https://github.com/AccessRetrieved/server/raw/main/Music/cover/Infinite.png" class="song-card-img">
+                        <div class="song-card-title">
+                            <p onclick="playSelected(this.innerText);">Infinite</p>
+                        </div>
+                    </div>
+
+                    <div class="song-card" style="float: left;">
+                        <img src="https://github.com/AccessRetrieved/server/raw/main/Music/cover/SuitAndTie.png" class="song-card-img">
+                        <div class="song-card-title">
+                            <p onclick="playSelected(this.innerText);">SuitAndTie</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="middle">
-                    <div class="menubar-text">
-                        <h3 onclick="window.location='https://accessretrieved.github.io/Music/discover.html'">发现</h3>
+                <!-- 2021抖音热门 -->
+                <div class="side-by-side">
+                    <br>
+                    <h3 class="song-category">2021抖音热门</h3>
+                    <div class="song-card" style="float: left;">
+                        <img src="https://github.com/AccessRetrieved/server/raw/main/Music/cover/TA.png" class="song-card-img">
+                        <div class="song-card-title">
+                            <p onclick="playSelected(this.innerText);">TA</p>
+                        </div>
+                    </div>
+
+                    <div class="song-card" style="float: left;">
+                        <img src="https://github.com/AccessRetrieved/server/raw/main/Music/cover/你曾是少年.png" class="song-card-img">
+                        <div class="song-card-title">
+                            <p onclick="playSelected(this.innerText);">你曾是少年</p>
+                        </div>
+                    </div>
+
+                    <div class="song-card" style="float: left;">
+                        <img src="https://github.com/AccessRetrieved/server/raw/main/Music/cover/music.png" class="song-card-img">
+                        <div class="song-card-title">
+                            <p onclick="playSelected(this.innerText);">冲吧少年</p>
+                        </div>
+                    </div>
+
+                    <div class="song-card" style="float: left;">
+                        <img src="https://github.com/AccessRetrieved/server/raw/main/Music/cover/无解.png" class="song-card-img">
+                        <div class="song-card-title">
+                            <p onclick="playSelected(this.innerText);">无解</p>
+                        </div>
+                    </div>
+
+                    <div class="song-card" style="float: left;">
+                        <img src="https://github.com/AccessRetrieved/server/raw/main/Music/cover/气象站台.png" class="song-card-img">
+                        <div class="song-card-title">
+                            <p onclick="playSelected(this.innerText);">气象站台</p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="right">
-                    <div class="menubar-text">
-                        <h3 onclick="window.location='https://accessretrieved.github.io/Music/library.html'">音乐库</h3>
-                    </div>
-                </div>
-
                 
+                <div class="side-by-side">
+                    <div class="song-card" style="float: left;">
+                        <img src="https://github.com/AccessRetrieved/server/raw/main/Music/cover/清空.png" class="song-card-img">
+                        <div class="song-card-title">
+                            <p onclick="playSelected(this.innerText);">清空</p>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- 清新 -->
+                <div class="side-by-side">
+                    <br>
+                    <h3 class="song-category">清新</h3>
+                    <div class="song-card" style="float: left;">
+                        <img src="https://github.com/AccessRetrieved/server/raw/main/Music/cover/SomeoneYouLoved.png" class="song-card-img">
+                        <div class="song-card-title">
+                            <p onclick="playSelected(this.innerText);">SomeoneYouLoved</p>
+                        </div>
+                    </div>
+
+                    <div class="song-card" style="float: left;">
+                        <img src="https://github.com/AccessRetrieved/server/raw/main/Music/cover/music.png" class="song-card-img">
+                        <div class="song-card-title">
+                            <p onclick="playSelected(this.innerText);">AMillionDreams</p>
+                        </div>
+                    </div>
+
+                    <div class="song-card" style="float: left;">
+                        <img src="https://github.com/AccessRetrieved/server/raw/main/Music/cover/AThousandYears.png" class="song-card-img">
+                        <div class="song-card-title">
+                            <p onclick="playSelected(this.innerText);">AThousandYears</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DISCOVER PAGE -->
+        <div id="discover" class="" hidden>
+            <div class="menubar noselect">
+                <div style="position: relative;">
+                    <div class="left">
+                        <div class="menubar-text">
+                            <h3 onclick="switchPage(this.innerHTML);">首页</h3>
+                        </div>
+                    </div>
+
+                    <div class="middle">
+                        <div class="menubar-text menubar-text-active">
+                            <h3 onclick="switchPage(this.innerHTML);">发现</h3>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <div class="menubar-text">
+                            <h3 onclick="switchPage(this.innerHTML);">音乐库</h3>
+                        </div>
+                    </div>
+
+                    
+
+                    <br>
+                    <div data-v-05b2c7d8 class="right-part" style="position: absolute; right: 2%;">
+                        <img data-v-05b2c7d8 src="/images/Music/avatar.png" class="avatar" id="avatar" onclick="showAccountPopup();">
+                    </div>
+                </div>
+            </div>
+
+            <br><br><br>
+
+            <div class="page-content">
                 <br>
-                <div data-v-05b2c7d8 class="right-part" style="position: absolute; right: 2%;">
-                    <img data-v-05b2c7d8 src="/images/Music/avatar.png" class="avatar" id="avatar" onclick="showAccountPopup();">
+
+                <!-- First row -->
+                <div class="side-by-side">
+                    <div class="song-card" style="float: left;">
+                        <img src="https://github.com/AccessRetrieved/server/raw/main/Music/cover/Infinite.png" class="song-card-img">
+                        <div class="song-card-title">
+                            <p onclick="playSelected(this.innerText);">Infinite</p>
+                        </div>
+                    </div>
+
+                    <div class="song-card" style="float: left;">
+                        <img src="https://github.com/AccessRetrieved/server/raw/main/Music/cover/SuitAndTie.png" class="song-card-img">
+                        <div class="song-card-title">
+                            <p onclick="playSelected(this.innerText);">SuitAndTie</p>
+                        </div>
+                    </div>
+
+                    <div class="song-card" style="float: left;">
+                        <img src="https://github.com/AccessRetrieved/server/raw/main/Music/cover/TA.png" class="song-card-img">
+                        <div class="song-card-title">
+                            <p onclick="playSelected(this.innerText);">TA</p>
+                        </div>
+                    </div>
+
+                    <div class="song-card" style="float: left;">
+                        <img src="https://github.com/AccessRetrieved/server/raw/main/Music/cover/你曾是少年.png" class="song-card-img">
+                        <div class="song-card-title">
+                            <p onclick="playSelected(this.innerText);">你曾是少年</p>
+                        </div>
+                    </div>
+
+                    <div class="song-card" style="float: left;">
+                        <img src="https://github.com/AccessRetrieved/server/raw/main/Music/cover/music.png" class="song-card-img">
+                        <div class="song-card-title">
+                            <p onclick="playSelected(this.innerText);">冲吧少年</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Second row -->
+                <div class="side-by-side">
+                    <div class="song-card" style="float: left;">
+                        <img src="https://github.com/AccessRetrieved/server/raw/main/Music/cover/无解.png" class="song-card-img">
+                        <div class="song-card-title">
+                            <p onclick="playSelected(this.innerText);">无解</p>
+                        </div>
+                    </div>
+
+                    <div class="song-card" style="float: left;">
+                        <img src="https://github.com/AccessRetrieved/server/raw/main/Music/cover/气象站台.png" class="song-card-img">
+                        <div class="song-card-title">
+                            <p onclick="playSelected(this.innerText);">气象站台</p>
+                        </div>
+                    </div>
+
+                    <div class="song-card" style="float: left;">
+                        <img src="https://github.com/AccessRetrieved/server/raw/main/Music/cover/清空.png" class="song-card-img">
+                        <div class="song-card-title">
+                            <p onclick="playSelected(this.innerText);">清空</p>
+                        </div>
+                    </div>
+
+                    <div class="song-card" style="float: left;">
+                        <img src="https://github.com/AccessRetrieved/server/raw/main/Music/cover/AThousandYears.png" class="song-card-img">
+                        <div class="song-card-title">
+                            <p onclick="playSelected(this.innerText);">AThousandYears</p>
+                        </div>
+                    </div>
+
+                    <div class="song-card" style="float: left;">
+                        <img src="https://github.com/AccessRetrieved/server/raw/main/Music/cover/music.png" class="song-card-img">
+                        <div class="song-card-title">
+                            <p onclick="playSelected(this.innerText);">AMillionDreams</p>
+                        </div>
+                    </div>
+
+                    <div class="song-card" style="float: left;">
+                        <img src="https://github.com/AccessRetrieved/server/raw/main/Music/cover/SomeoneYouLoved.png" class="song-card-img">
+                        <div class="song-card-title">
+                            <p onclick="playSelected(this.innerText);">SomeoneYouLoved</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <br><br><br>
-
-        <div class="page-content">
-            <br>
-
-            <!-- First row -->
-            <div class="side-by-side">
-                <h3 class="song-category">热门音乐</h3>
-                <div class="song-card" style="float: left;">
-                    <img src="https://github.com/AccessRetrieved/server/raw/main/Music/cover/Infinite.png" class="song-card-img">
-                    <div class="song-card-title">
-                        <p onclick="playSelected(this.innerText);">Infinite</p>
+        <!-- HOME page -->
+        <div id="home">
+            <div class="menubar noselect">
+                <div style="position: relative;">
+                    <div class="left">
+                        <div class="menubar-text menubar-text-active">
+                            <h3 onclick="switchPage(this.innerHTML);">首页</h3>
+                        </div>
                     </div>
-                </div>
 
-                <div class="song-card" style="float: left;">
-                    <img src="https://github.com/AccessRetrieved/server/raw/main/Music/cover/SuitAndTie.png" class="song-card-img">
-                    <div class="song-card-title">
-                        <p onclick="playSelected(this.innerText);">SuitAndTie</p>
+                    <div class="middle">
+                        <div class="menubar-text">
+                            <h3 onclick="switchPage(this.innerHTML);">发现</h3>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <div class="menubar-text">
+                            <h3 onclick="switchPage(this.innerHTML);">音乐库</h3>
+                        </div>
+                    </div>
+
+                    
+
+                    <br>
+                    <div data-v-05b2c7d8 class="right-part" style="position: absolute; right: 2%;">
+                        <img data-v-05b2c7d8 src="/images/Music/avatar.png" class="avatar" id="avatar" onclick="showAccountPopup();">
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <!-- Fullscreen player -->
-        
-        <div class="player-fullscreen" id="player-fullscreen">
-            <button class="player-fullscreen-close" id="player-fullscreen-close" onclick="closeFullscreen();">
-                <i class="bi bi-chevron-down"></i>
-            </button>
 
-            <img id="fullscreen-cover" class="fullscreen-cover" src="https://github.com/AccessRetrieved/server/raw/main/Music/cover/music.png">
+            <br><br><br>
 
-            <span id="fullscreen-title" class="fullscreen-title">未在播放</span>
+            <div class="page-content">
+                <br>
 
-            <br><br><br><br><br><br>
-            <br><br><br><br><br><br>
-            <br><br><br><br><br><br>
-            <br><br><br><br><br>
-            <div class="progress" id="progress"></div>
+                <!-- First row -->
+                <div class="side-by-side">
+                    <h3 class="song-category">热门音乐</h3>
+                    <div class="song-card" style="float: left;">
+                        <img src="https://github.com/AccessRetrieved/server/raw/main/Music/cover/Infinite.png" class="song-card-img">
+                        <div class="song-card-title">
+                            <p onclick="playSelected(this.innerText);">Infinite</p>
+                        </div>
+                    </div>
 
-            <br><br><br><br>
+                    <div class="song-card" style="float: left;">
+                        <img src="https://github.com/AccessRetrieved/server/raw/main/Music/cover/SuitAndTie.png" class="song-card-img">
+                        <div class="song-card-title">
+                            <p onclick="playSelected(this.innerText);">SuitAndTie</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <button class="fullscreen-previous" id="fullscreen-previous" onclick="playPrevious();">
-                <i class="bi bi-skip-start-circle-fill"></i>
-            </button>
-            <button class="fullscreen-play" id="fullscreen-play" onclick="playBtn();" disabled>
-                <i class="bi bi-play-circle-fill"></i>
-            </button>
-            <button class="fullscreen-next" id="fullscreen-next" disabled>
-                <i class="bi bi-skip-end-circle-fill"></i>
-            </button>
+            
+
+            
+            
+            <!-- Fullscreen player -->
+            
+            <div class="player-fullscreen" id="player-fullscreen">
+                <button class="player-fullscreen-close" id="player-fullscreen-close" onclick="closeFullscreen();">
+                    <i class="bi bi-chevron-down"></i>
+                </button>
+
+                <img id="fullscreen-cover" class="fullscreen-cover" src="https://github.com/AccessRetrieved/server/raw/main/Music/cover/music.png">
+
+                <span id="fullscreen-title" class="fullscreen-title">未在播放</span>
+
+                <br><br><br><br><br><br>
+                <br><br><br><br><br><br>
+                <br><br><br><br><br><br>
+                <br><br><br><br><br>
+                <div class="progress" id="progress"></div>
+
+                <br><br><br><br>
+
+                <button class="fullscreen-previous" id="fullscreen-previous" onclick="playPrevious();">
+                    <i class="bi bi-skip-start-circle-fill"></i>
+                </button>
+                <button class="fullscreen-play" id="fullscreen-play" onclick="playBtn();" disabled>
+                    <i class="bi bi-play-circle-fill"></i>
+                </button>
+                <button class="fullscreen-next" id="fullscreen-next" disabled>
+                    <i class="bi bi-skip-end-circle-fill"></i>
+                </button>
+            </div>
         </div>
 
         <!-- Player -->
