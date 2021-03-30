@@ -27,6 +27,7 @@ var playerCover = document.getElementById('player-cover');
 var playerTitle = document.getElementById('player-title');
 var fullscreenCover = document.getElementById('fullscreen-cover');
 var fullscreenTitle = document.getElementById('fullscreen-title');
+var counter
 
 var playerPrevious = document.getElementById('player-previous');
 var playerPlay = document.getElementById('player-play');
@@ -207,7 +208,7 @@ audio.addEventListener('pause', function(_event) {
 var advance = function(duration, element) {
     var progress = document.getElementById('progress');
     increment = 10/duration
-    percent = Math.min(increment * element.currentTime * 5, 100);
+    percent = Math.min(increment * element.currentTime * 2, 100);
     progress.style.width = percent + '%';
     startTimer(duration, element);
 }
@@ -222,6 +223,13 @@ document.body.addEventListener('keypress', function(e) {
         closeFullscreen();
     }
 })
+
+function spinner() {
+    while (1 === 1) {
+
+    }
+}
+
 
 window.mobileAndTabletCheck = function() {
     let check = false;
