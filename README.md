@@ -32,7 +32,7 @@ $ curl -l 'https://accessretrieved.github.io/api?mode=json'
 ```
 [See more](https://accessretrieve.github.io/articles/support/server/api_help.html)
 <br>
-[查看更多])https://accessretrieved.github.io/articles/support/server/api_help_zh-cn.html)
+[查看更多](https://accessretrieved.github.io/articles/support/server/api_help_zh-cn.html)
 
 <a name="#toolbox"></a>
 ## Toolbox
