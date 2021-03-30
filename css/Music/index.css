@@ -225,7 +225,7 @@
     backdrop-filter: blur(90%);
     font-size: 20px;
     position: relative;
-    top: 15%;
+    top: 54%;
     left: 95.3%;
 }
 
@@ -235,18 +235,23 @@
     border-radius: 5px;
 }
 
-.player-lyrics {
-    font-family: 'calibri';
-    font-size: 17px;
+.container {
     position: relative;
-    top: 13%;
-    left: 21%;
-    width: 50%;
-    height: 84%;
-    outline: none;
-    resize: none;
-    border: none;
-    text-align: center;
+}
+
+.fullscreen-cover {
+    width: 25%;
+    position: relative;
+    left: 35%;
+    top: 7%;
+    border-radius: 8px;
+}
+
+.progress {
+    width: 1px;
+    height: 3px;
+    background: #006B5A;
+    transition: width .1s linear;
 }
 
 
