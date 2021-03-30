@@ -17,6 +17,7 @@
 - [Download](#download)
 - [api](#api)
 - [Toolbox](#toolbox)
+- [Music](#music)
 
 </details>
 
