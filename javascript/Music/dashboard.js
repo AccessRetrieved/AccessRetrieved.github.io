@@ -2,7 +2,6 @@ function check() {
   var url_string = window.location.href;
   var url = new URL(url_string);
   var param = url.searchParams.get("intro");
-  console.log(param)
 
   if (param == "false") {
     closeIntro();
