@@ -42,8 +42,9 @@ function check() {
       '湘礼湘礼': 'https://github.com/AccessRetrieved/server/blob/main/Music/湘礼湘礼.mp3?raw=true',
     }
 
-    var str = JSON.stringify(obj, null, 4);
-    output(syntaxHighlight(str));
+    var str = JSON.stringify(obj);
+    document.innerHTML = '';
+    document.write(str);
 
   } else {
     // pass
