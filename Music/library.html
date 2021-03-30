@@ -17,14 +17,14 @@
                 </div>
 
                 <div class="middle">
-                    <div class="menubar-text menubar-text-active">
-                        <h3>发现</h3>
+                    <div class="menubar-text">
+                        <h3 onclick="window.location='https://accessretrieved.github.io/Music/discover.html'">发现</h3>
                     </div>
                 </div>
 
                 <div class="right">
-                    <div class="menubar-text">
-                        <h3 onclick="window.location='https://accessretrieved.github.io/Music/library.html'">音乐库</h3>
+                    <div class="menubar-text menubar-text-active">
+                        <h3>音乐库</h3>
                     </div>
                 </div>
 
@@ -49,8 +49,9 @@
         <div class="page-content">
             <br>
 
-            <!-- First row -->
+            <!-- 电子合成 -->
             <div class="side-by-side">
+                <h3 class="song-category">电子合成</h3>
                 <div class="song-card" style="float: left;">
                     <img src="https://github.com/AccessRetrieved/server/raw/main/Music/cover/Infinite.png" class="song-card-img">
                     <div class="song-card-title">
@@ -65,6 +66,13 @@
                     </div>
                 </div>
 
+            </div>
+
+            <br>
+            
+            <!-- 2021抖音热门 -->
+            <div class="side-by-side">
+                <h3 class="song-category">2021抖音热门</h3>
                 <div class="song-card" style="float: left;">
                     <img src="https://github.com/AccessRetrieved/server/raw/main/Music/cover/TA.png" class="song-card-img">
                     <div class="song-card-title">
@@ -85,10 +93,7 @@
                         <p onclick="playSelected(this.innerText);">冲吧少年</p>
                     </div>
                 </div>
-            </div>
-            
-            <!-- Second row -->
-            <div class="side-by-side">
+
                 <div class="song-card" style="float: left;">
                     <img src="https://github.com/AccessRetrieved/server/raw/main/Music/cover/无解.png" class="song-card-img">
                     <div class="song-card-title">
@@ -102,7 +107,10 @@
                         <p onclick="playSelected(this.innerText);">气象站台</p>
                     </div>
                 </div>
-
+            </div>
+            
+            
+            <div class="side-by-side">
                 <div class="song-card" style="float: left;">
                     <img src="https://github.com/AccessRetrieved/server/raw/main/Music/cover/清空.png" class="song-card-img">
                     <div class="song-card-title">
