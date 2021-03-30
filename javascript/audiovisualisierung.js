@@ -46,15 +46,15 @@ function playSample() {
 	request.addEventListener("error", transferFailed);
 	request.addEventListener("abort", transferCanceled);
 	
-	request.open('GET', 'server/music/SuitAndTie.mp3', true);
+	request.open('GET', '/server/music/AMillionDreams.mp3', true);
 	request.responseType = 'arraybuffer';
 
  	// When loaded decode the data
 	request.onload = function() {
 		
 		$("#title").html("");
-		$("#album").html("Suit and Tie");
-		$("#artist").html("Justin Timberlake");
+		$("#album").html("A Million Dreams");
+		$("#artist").html("The Piano Guys");
 		onWindowResize();
 		$("#title, #artist, #album").css("visibility", "visible");
 		
