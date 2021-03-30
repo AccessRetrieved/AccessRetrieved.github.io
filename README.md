@@ -17,7 +17,7 @@
 - [Download](#download)
 - [api](#api)
 - [Toolbox](#toolbox)
-- [Music](#music)
+- [Oh-my-music](#music)
 
 </details>
 
@@ -59,6 +59,6 @@ English Version
 
 
 <a name="#music"></a>
-## [Music](https://accessretrieved.github.io/Music)
+## [Oh-my-music](https://accessretrieved.github.io/Music)
 有彩蛋！
 Easter egg included.
