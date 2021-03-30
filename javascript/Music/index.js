@@ -12,7 +12,9 @@ preloadImages([
     'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/AMillionYears.png',
     'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/SomeoneYouLoved.png',
     'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/水.png',
-    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/RiverFlowsInYou.png'
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/RiverFlowsInYou.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/少年.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/飞鸟和蝉.png'
 ], function() {
     console.log('Successfully loaded all images')
 })
