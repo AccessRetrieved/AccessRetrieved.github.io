@@ -11,13 +11,13 @@
         <div class="menubar noselect">
             <div style="position: relative;">
                 <div class="left">
-                    <div class="menubar-text menubar-text-active">
+                    <div class="menubar-text">
                         <h3 onclick="window.location='https://accessretrieved.github.io/Music/dashboard.html'">首页</h3>
                     </div>
                 </div>
 
                 <div class="middle">
-                    <div class="menubar-text">
+                    <div class="menubar-text menubar-text-active">
                         <h3>发现</h3>
                     </div>
                 </div>
@@ -41,7 +41,7 @@
             <br><br><br>
             <div class="profile-popup" id="profile-popup" style="display: none;">
                 <button class="profile-popup-button"><i class="bi bi-gear-fill"></i> Settings</button>
-                <button class="profile-popup-button"><i class="bi bi-box-arrow-right"></i> Logout</button>
+                <button class="profile-popup-button" onclick="window.location='https://accessretrieved.github.io/Music/index.html'"><i class="bi bi-box-arrow-right"></i> Logout</button>
                 <hr style="text-align: center; width: 80%; margin: auto; color: rgb(232, 232, 232); border-color: white;">
             </div>
         </div>
@@ -64,6 +64,51 @@
                         <p onclick="playSelected(this.innerText);">SuitAndTie</p>
                     </div>
                 </div>
+
+                <div class="song-card" style="float: left;">
+                    <img src="https://github.com/AccessRetrieved/server/raw/main/Music/cover/TA.png" class="song-card-img">
+                    <div class="song-card-title">
+                        <p onclick="playSelected(this.innerText);">TA</p>
+                    </div>
+                </div>
+
+                <div class="song-card" style="float: left;">
+                    <img src="https://github.com/AccessRetrieved/server/raw/main/Music/cover/你曾是少年.png" class="song-card-img">
+                    <div class="song-card-title">
+                        <p onclick="playSelected(this.innerText);">你曾是少年</p>
+                    </div>
+                </div>
+
+                <div class="song-card" style="float: left;">
+                    <img src="https://github.com/AccessRetrieved/server/raw/main/Music/cover/music.png" class="song-card-img">
+                    <div class="song-card-title">
+                        <p onclick="playSelected(this.innerText);">冲吧少年</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Second row -->
+            <div class="side-by-side">
+                <div class="song-card" style="float: left;">
+                    <img src="https://github.com/AccessRetrieved/server/raw/main/Music/cover/无解.png" class="song-card-img">
+                    <div class="song-card-title">
+                        <p onclick="playSelected(this.innerText);">无解</p>
+                    </div>
+                </div>
+
+                <div class="song-card" style="float: left;">
+                    <img src="https://github.com/AccessRetrieved/server/raw/main/Music/cover/气象站台.png" class="song-card-img">
+                    <div class="song-card-title">
+                        <p onclick="playSelected(this.innerText);">气象站台</p>
+                    </div>
+                </div>
+
+                <div class="song-card" style="float: left;">
+                    <img src="https://github.com/AccessRetrieved/server/raw/main/Music/cover/清空.png" class="song-card-img">
+                    <div class="song-card-title">
+                        <p onclick="playSelected(this.innerText);">清空</p>
+                    </div>
+                </div>
             </div>
         </div>
         
@@ -81,7 +126,7 @@
             <br><br><br><br><br><br>
             <br><br><br><br><br><br>
             <br><br><br><br><br><br>
-            <br><br><br><br><br>
+            <br><br>
             <div class="progress" id="progress"></div>
 
             <br><br><br><br>
