@@ -41,12 +41,6 @@ var audio = new Audio();
 var timer;
 var percent = 0;
 
-var home = document.getElementById('home');
-var discover = document.getElementById('discover');
-var library = document.getElementById('library');
-
-switchPage('首页');
-
 playerCover.style.height = "100%";
 
 function showAccountPopup() {
@@ -243,31 +237,5 @@ function volume() {
     } else {
         audio.volume = 1.0;
         playerVolume.innerHTML = '<i class="bi bi-volume-up-fill"></i>';
-    }
-}
-
-function switchPage(page) {
-    console.log(page)
-    if (page == "首页") {
-        discover.style.display = "none";
-        discover.style.display = "none";
-        library.style.display = "none";
-        library.style.display = "none";
-        home.style.display = "block";
-        home.style.display = "block";
-    } else if (page == "发现") {
-        discover.style.display = "block";
-        discover.style.display = "block";
-        library.style.display = "none";
-        library.style.display = "none";
-        home.style.display = "none";
-        home.style.display = "none";
-    } else if (page == "音乐库") {
-        discover.style.display = "none";
-        discover.style.display = "none";
-        library.style.display = "block";
-        library.style.display = "block";
-        home.style.display = 'none';
-        home.style.display = 'none';
     }
 }
