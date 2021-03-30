@@ -1,3 +1,20 @@
+// Preload images. Add link to here when adding a new song
+preloadImages([
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/Infinite.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/SuitAndTie.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/TA.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/你曾是少年.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/冲吧少年.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/无解.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/气象站台.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/清空.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/AThousandYears.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/AMillionYears.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/SomeoneYouLoved.png'
+], function() {
+    console.log('Successfully loaded all images')
+})
+
 var body = document.getElementById('body');
 var accountPopup = document.getElementById('profile-popup');
 var avatar = document.getElementById('avatar');
@@ -53,29 +70,13 @@ function preloadImages(urls, allImagesLoadedCallback){
       }
     });
   });
-  
+
   function preloadImage(url, anImageLoadedCallback){
       var img = new Image();
       img.onload = anImageLoadedCallback;
       img.src = url;
   }
 }
-
-preloadImages([
-    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/Infinite.png',
-    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/SuitAndTie.png',
-    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/TA.png',
-    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/你曾是少年.png',
-    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/冲吧少年.png',
-    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/无解.png',
-    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/气象站台.png',
-    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/清空.png',
-    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/AThousandYears.png',
-    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/AMillionYears.png',
-    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/SomeoneYouLoved.png'
-], function() {
-    console.log('Successfully loaded all images')
-})
 
 function playSelected(trackName) {
 
