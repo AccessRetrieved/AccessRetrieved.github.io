@@ -207,13 +207,13 @@
     border: none;
     background-color: white;
     font-size: 20px;
-    position: relative;
-    top: 30%;
-    left: 33.5%;
+    position: absolute;
+    top: 47%;
+    left: 95%;
 }
 
 .player-expand:hover {
-    height: 30%;
+    height: 25%;
     background-color: rgb(231, 236, 239);
     border-radius: 5px;
 }
