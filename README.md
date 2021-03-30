@@ -55,3 +55,9 @@ English Version
 | 计时器    |  ✅       | 未测试   | 未测试     |
 | 音频可视化 | ✅        | ✅      | 未测试     |
 | 音频播放器 | ✅        | 未测试   | 未测试     |
+
+
+<a name="#music"></a>
+## [Music](https://accessretrieved.github.io/Music)
+有彩蛋！
+Easter egg included.
