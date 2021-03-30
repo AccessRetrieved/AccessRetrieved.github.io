@@ -11,6 +11,10 @@ var playerNext = document.getElementById('player-next');
 var player = document.getElementById('player');
 var playerFullscreen = document.getElementById('player-fullscreen');
 
+var fullscreenPrevious = document.getElementById('fullscreen-previous');
+var fullscreenPlay = document.getElementById('fullscreen-play');
+var fullscreenNext = document.getElementById('fullscreen-next');
+
 var playedSongs = [];
 var audio = new Audio();
 
@@ -43,7 +47,9 @@ function playSelected(trackName) {
         audio.play();
         isPlaying = 1;
         playerPlay.innerHTML = '<i class="bi bi-pause-circle-fill"></i>';
+        fullscreenPlay.innerHTML = '<i class="bi bi-pause-circle-fill"></i>';
         playerPlay.disabled = false;
+        fullscreenPlay.disabled = false
         playedSongs.push(`https://github.com/AccessRetrieved/server/blob/main/Music/${trackName}.mp3?raw=true`)
 
         var url = playerCoverExists(`https://accessretrieved.github.io/server/music/cover/${trackName}.png`);
@@ -60,7 +66,9 @@ function playSelected(trackName) {
         audio.play();
         isPlaying = 1;
         playerPlay.innerHTML = '<i class="bi bi-pause-circle-fill"></i>';
+        fullscreenPlay.innerHTML = '<i class="bi bi-pause-circle-fill"></i>';
         playerPlay.disabled = false;
+        fullscreenPlay.disabled = false
         playedSongs.push(`https://github.com/AccessRetrieved/server/blob/main/Music/${trackName}.mp3?raw=true`)
 
         var url = playerCoverExists(`https://accessretrieved.github.io/server/music/cover/${trackName}.png`);
@@ -81,14 +89,16 @@ function playerCoverExists(url) {
 }
 
 function playBtn() {
-    if (playerPlay.innerHTML == '<i class="bi bi-pause-circle-fill"></i>') {
+    if (playerPlay.innerHTML == '<i class="bi bi-pause-circle-fill"></i>' || fullscreenPlay.innerHTML == '<i class="bi bi-pause-circle-fill"></i>') {
         audio.pause();
         isPlaying = 0;
         playerPlay.innerHTML = '<i class="bi bi-play-circle-fill"></i>';
+        fullscreenPlay.innerHTML = '<i class="bi bi-play-circle-fill"></i>';
     } else {
         audio.play();
         isPlaying = 1;
         playerPlay.innerHTML = '<i class="bi bi-pause-circle-fill"></i>';
+        fullscreenPlay.innerHTML = '<i class="bi bi-pause-circle-fill"></i>';
     }
 }
 
@@ -107,7 +117,9 @@ function playPrevious() {
         audio.play();
         isPlaying = 1;
         playerPlay.innerHTML = '<i class="bi bi-pause-circle-fill"></i>';
+        fullscreenPlay.innerHTML = '<i class="bi bi-pause-circle-fill"></i>';
         playerPlay.disabled = false;
+        fullscreenPlay.disabled = false
 
         var url = playerCoverExists(`https://accessretrieved.github.io/server/music/cover/${trackName}.png`);
         if (url == true) {
@@ -123,8 +135,10 @@ function playPrevious() {
 const interval = setInterval(function() {
     if (playedSongs.length == 0 || playedSongs.length == 1) {
         playerPrevious.disabled = true;
+        fullscreenPrevious.disabled = true;
     } else {
         playerPrevious.disabled = false;
+        fullscreenPrevious.disabled = false;
     }
 }, 1)
 
