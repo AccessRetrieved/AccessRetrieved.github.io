@@ -72,7 +72,6 @@ function preloadImages(urls, allImagesLoadedCallback){
 }
 
 function playSelected(trackName) {
-
     if (isPlaying == 1) {
         audio.pause();
         var path = `https://github.com/AccessRetrieved/server/blob/main/Music/${trackName}.mp3?raw=true`;
