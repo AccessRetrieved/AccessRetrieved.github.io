@@ -186,3 +186,8 @@ var startTimer = function(duration, element) {
     }
 }
 
+document.body.addEventListener('keypress', function(e) {
+    if (e.key === "Escape") {
+        closeFullscreen();
+    }
+})
