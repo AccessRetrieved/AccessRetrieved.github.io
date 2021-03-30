@@ -33,33 +33,37 @@ function showAccountPopup() {
 function playSelected(trackName) {
     if (isPlaying == 1) {
         audio.pause();
-        var path = `/server/music/${trackName}.mp3`;
+        var path = `https://github.com/AccessRetrieved/server/blob/main/Music/${trackName}.mp3?raw=true`;
         audio.src = path;
         audio.play();
         isPlaying = 1;
         playerPlay.innerHTML = '<i class="bi bi-pause-circle-fill"></i>';
+        playerPlay.disabled = false;
+        playedSongs.push(`https://github.com/AccessRetrieved/server/blob/main/Music/${trackName}.mp3?raw=true`)
 
         var url = playerCoverExists(`https://accessretrieved.github.io/server/music/cover/${trackName}.png`);
         if (url == true) {
-            playerCover.src = `/server/music/cover/${trackName}.png`;
+            playerCover.src = `https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/${trackName}.png`;
             playerTitle.innerHTML = trackName;
         } else {
-            playerCover.src = '/server/music/cover/music.png';
+            playerCover.src = `https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/${trackName}.png`;
             playerTitle.innerHTML = trackName;
         }
     } else {
-        var path = `/server/music/${trackName}.mp3`;
+        var path = `https://github.com/AccessRetrieved/server/blob/main/Music/${trackName}.mp3?raw=true`;
         audio.src = path;
         audio.play();
         isPlaying = 1;
         playerPlay.innerHTML = '<i class="bi bi-pause-circle-fill"></i>';
+        playerPlay.disabled = false;
+        playedSongs.push(`https://github.com/AccessRetrieved/server/blob/main/Music/${trackName}.mp3?raw=true`)
 
         var url = playerCoverExists(`https://accessretrieved.github.io/server/music/cover/${trackName}.png`);
         if (url == true) {
-            playerCover.src = `/server/music/cover/${trackName}.png`;
+            playerCover.src = `https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/${trackName}.png`;
             playerTitle.innerHTML = trackName;
         } else {
-            playerCover.src = '/server/music/cover/music.png';
+            playerCover.src = `https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/${trackName}.png`;
             playerTitle.innerHTML = trackName;
         }
     }
@@ -82,3 +86,39 @@ function playBtn() {
         playerPlay.innerHTML = '<i class="bi bi-pause-circle-fill"></i>';
     }
 }
+
+function playPrevious() {
+    if (playedSongs.length == 0 || playedSongs.length == 1) {
+        // pass
+    } else {
+        audio.pause();
+        isPlaying = 0;
+
+        playedSongs.pop();
+        var fil1 = playedSongs[playedSongs.length - 1].replace('https://github.com/AccessRetrieved/server/blob/main/Music/', '');
+        var trackName = fil1.replace('.mp3?raw=true', '');
+
+        audio.src = `https://github.com/AccessRetrieved/server/blob/main/Music/${trackName}.mp3?raw=true`;
+        audio.play();
+        isPlaying = 1;
+        playerPlay.innerHTML = '<i class="bi bi-pause-circle-fill"></i>';
+        playerPlay.disabled = false;
+
+        var url = playerCoverExists(`https://accessretrieved.github.io/server/music/cover/${trackName}.png`);
+        if (url == true) {
+            playerCover.src = `https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/${trackName}.png`;;
+            playerTitle.innerHTML = trackName;
+        } else {
+            playerCover.src = `https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/${trackName}.png`;
+            playerTitle.innerHTML = trackName;
+        }
+    }
+}
+
+const interval = setInterval(function() {
+    if (playedSongs.length == 0 || playedSongs.length == 1) {
+        playerPrevious.disabled = true;
+    } else {
+        playerPrevious.disabled = false;
+    }
+}, 1)
