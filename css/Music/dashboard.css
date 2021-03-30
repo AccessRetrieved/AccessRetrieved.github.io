@@ -36,6 +36,8 @@ h2 {
     border-radius: 8px;
     transition: .2s ease-in-out;
     display: none;
+    font-size: 13px;
+    font-family: 'calibri';
 }
 
 .btn:hover {
