@@ -30,7 +30,7 @@ This website provides api to informations of this website. To use the api, enter
 ```
 $ curl -l 'https://accessretrieved.github.io/api?mode=json'
 ```
-[See more](https://accessretrieve.github.io/articles/support/server/api_help.html), [查看更多](https://accessretrieved.github.io/articles/support/server/api_help_zh-cn.html)
+[See more](https://accessretrieved.github.io/articles/support/server/api_help.html), [查看更多](https://accessretrieved.github.io/articles/support/server/api_help_zh-cn.html)
 
 <a name="#toolbox"></a>
 ## Toolbox
