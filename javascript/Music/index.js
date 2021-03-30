@@ -133,9 +133,9 @@ function playPrevious() {
 
         var url = playerCoverExists(`https://accessretrieved.github.io/server/music/cover/${trackName}.png`);
         if (url == true) {
-            playerCover.src = `https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/music.png`;
+            playerCover.src = `https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/${trackName}.png`;
             playerTitle.innerHTML = trackName;
-            fullscreenCover.src = `https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/music.png`;
+            fullscreenCover.src = `https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/${trackName}.png`;
             fullscreenTitle.innerHTML = trackName;
         } else {
             playerCover.src = `https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/music.png`;
