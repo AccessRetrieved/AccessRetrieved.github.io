@@ -14,7 +14,6 @@
     - [Macpods](https://accessretrieved.github.io/Macpods/app.html)
     - [Project-Pios](https://accessretrieved.github.io/project-pios/app.html)
 - [Support me](https://accessretrieved.github.io/sponsor.html)
-- [Download](#download)
 - [api](#api)
 - [Toolbox](#toolbox)
 - [Oh-my-music](#music)
@@ -23,14 +22,7 @@
 
 <a name="#about"></a>
 ## About
-This repository is the source code of the website running on [accessretrieved.github.io](https://accessretrieved.github.io).
-
-<a name="#download"></a>
-## Download
-Download this website's source code:
-```
-$ git clone https://github.com/AccessRetrieved/AccessRetrieved.github.io
-```
+This repository is the source code of the website running on [accessretrieved.github.io](https://accessretrieved.github.io)
 
 <a name="#api"></a>
 ## API
