@@ -2,6 +2,8 @@ var body = document.getElementById('body');
 var accountPopup = document.getElementById('profile-popup');
 var avatar = document.getElementById('avatar');
 var isPlaying = 0;
+var playerCover = document.getElementById('player-cover');
+var playerTitle = document.getElementById('player-title');
 
 var audio = new Audio();
 
@@ -27,6 +29,9 @@ function playSelected(trackName) {
         audio.src = path;
         audio.play();
         isPlaying = 1;
+
+        playerCover.src = `/server/music/cover/${trackName}.png`;
+        playerTitle.innerHTML = trackName;
     } else {
         var path = `/server/music/${trackName}.mp3`;
         audio.src = path;

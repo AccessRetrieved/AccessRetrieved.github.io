@@ -141,18 +141,30 @@
 
 .player {
     width: 99%;
-    background: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(1.5rem);
+    background: rgba(255, 255, 255, 0.960);
+    backdrop-filter: blur(90%);
     position: fixed;
-    bottom: 0.5%;
+    bottom: 0%;
     left: 0%;
-    text-align: center;
-    margin: auto;
+    height: 15%;
 }
 
+.player-title {
+    position: relative;
+    left: 8%;
+    top: 45%;
+    font-family: 'calibri';
+    font-size: 20px;
+    float: left;
+}
 
-
-
+.player-cover {
+    width: 8%;
+    position: relative;
+    left: 7%;
+    float: left;
+    border: none;
+}
 
 
 
