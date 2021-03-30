@@ -21,3 +21,25 @@ h2 {
     color: #888;
     font-size: 2em;
 }
+
+.page-content {
+    text-align: center;
+    margin: auto;
+}
+
+.btn {
+    background-color: rgb(37, 96, 207);
+    border: none;
+    color: white;
+    width: 10%;
+    height: 7%;
+    border-radius: 8px;
+    transition: .2s ease-in-out;
+    display: none;
+}
+
+.btn:hover {
+    transition: .2s linear;
+    width: 11%;
+    height: 8%;
+}
