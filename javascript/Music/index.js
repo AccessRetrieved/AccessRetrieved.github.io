@@ -54,7 +54,7 @@ function playSelected(trackName) {
         fullscreenPlay.disabled = false
         playedSongs.push(`https://github.com/AccessRetrieved/server/blob/main/Music/${trackName}.mp3?raw=true`)
 
-        var url = playerCoverExists(`https://accessretrieved.github.io/server/music/cover/${trackName}.png`);
+        var url = playerCoverExists(`https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/${trackName}.png`);
         if (url == true) {
             playerCover.src = `https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/${trackName}.png`;
             playerTitle.innerHTML = trackName;
@@ -77,7 +77,7 @@ function playSelected(trackName) {
         fullscreenPlay.disabled = false
         playedSongs.push(`https://github.com/AccessRetrieved/server/blob/main/Music/${trackName}.mp3?raw=true`)
 
-        var url = playerCoverExists(`https://accessretrieved.github.io/server/music/cover/${trackName}.png`);
+        var url = playerCoverExists(`https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/${trackName}.png`);
         if (url == true) {
             playerCover.src = `https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/${trackName}.png`;
             playerTitle.innerHTML = trackName;
@@ -131,7 +131,7 @@ function playPrevious() {
         playerPlay.disabled = false;
         fullscreenPlay.disabled = false
 
-        var url = playerCoverExists(`https://accessretrieved.github.io/server/music/cover/${trackName}.png`);
+        var url = playerCoverExists(`https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/${trackName}.png`);
         if (url == true) {
             playerCover.src = `https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/${trackName}.png`;
             playerTitle.innerHTML = trackName;
