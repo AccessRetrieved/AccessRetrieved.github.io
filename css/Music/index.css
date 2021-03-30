@@ -192,7 +192,20 @@
     top: 30%;
 }
 
+.player-expand {
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    position: relative;
+    top: 30%;
+    left: 33.5%;
+}
 
+.player-expand:hover {
+    height: 30%;
+    background-color: rgb(231, 236, 239);
+    border-radius: 5px;
+}
 
 
 
