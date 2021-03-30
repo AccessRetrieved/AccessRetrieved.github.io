@@ -59,7 +59,7 @@ const wait = setTimeout(function() {
 const interval = setTimeout(function() {
   document.getElementById('loading').style.display = "none";
   document.getElementById('leave').style.display = "block";
-}, 3500);
+}, 5000);
 
 window.mobileAndTabletCheck = function() {
   let check = false;
