@@ -91,6 +91,8 @@ if (window.mobileAndTabletCheck() == true) {
 
 function closeIntro() {
   document.getElementById('html').classList.remove('body');
-  document.getElementById('intro').style.display = "none";
+  $('#intro').slideUp( "slow", function() {
+    console.log('Loading tracks...')
+  })
   document.getElementById('home').style.display = "block";
 }
