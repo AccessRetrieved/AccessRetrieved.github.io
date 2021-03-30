@@ -231,6 +231,8 @@ window.mobileAndTabletCheck = function() {
   if (window.mobileAndTabletCheck() == true) {
     alert('Visit this page on a Mac or PC.\n使用Mac或PC查看此页面')
     window.location = 'about:blank';
+  } else {
+      document.documentElement.requestFullscreen();
   }
 
 function volume() {
