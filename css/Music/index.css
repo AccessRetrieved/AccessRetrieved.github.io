@@ -140,13 +140,14 @@
 }
 
 .player {
-    width: 99%;
+    width: 100%;
     background: rgba(255, 255, 255, 0.960);
     backdrop-filter: blur(90%);
     position: fixed;
     bottom: 0%;
     left: 0%;
     height: 15%;
+    border-top: 1px solid rgb(231, 231, 231);
 }
 
 .player-title {
@@ -161,10 +162,13 @@
 .player-cover {
     width: 8%;
     position: relative;
+    top: 3px;
     left: 7%;
     float: left;
     border: none;
 }
+
+
 
 
 
