@@ -160,12 +160,13 @@
 }
 
 .player-cover {
-    width: 8%;
+    height: 100%;
     position: relative;
     top: 3px;
     left: 7%;
     float: left;
     border: none;
+    border-radius: 5px;
 }
 
 .player-play {
