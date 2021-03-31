@@ -26,7 +26,7 @@ function check() {
         '湘礼湘礼': 'https://github.com/AccessRetrieved/server/blob/main/Music/湘礼湘礼.mp3?raw=true',
       }
   
-      var str = JSON.stringify(obj);
+      var str = JSON.stringify(obj, null, 4);
       document.innerHTML = '';
       document.write(str);
   
