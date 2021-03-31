@@ -16,7 +16,8 @@ preloadImages([
     'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/少年.png',
     'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/飞鸟和蝉.png',
     'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/Rewrite-The-Stars.png',
-    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/A-Sky-Full-Of-Stars.png'
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/A-Sky-Full-Of-Stars.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/wave.gif'
 ], function() {
     console.log('Successfully loaded all images')
 })
