@@ -39,5 +39,89 @@
         "title": "气象站台",
         "url": "https://github.com/AccessRetrieved/server/blob/main/Music/气象站台.mp3?raw=true",
         "id": 7
+    },
+
+    {
+        "title": "清空",
+        "url": "https://github.com/AccessRetrieved/server/blob/main/Music/清空.mp3?raw=true",
+        "id": 8
+    },
+
+    {
+        "title": "A-Thousand-Years",
+        "url": "https://github.com/AccessRetrieved/server/blob/main/Music/A-Thousand-Years.mp3?raw=true",
+        "id": 9
+    },
+
+    {
+        "title": "Someone-You-Loved",
+        "url": "https://github.com/AccessRetrieved/server/blob/main/Music/Someone-You-Loved?raw=true",
+        "id": 10
+    },
+
+    {
+        "title": "水",
+        "url": "https://github.com/AccessRetrieved/server/blob/main/Music/水.mp3?raw=true",
+        "id": 11
+    },
+
+    {
+        "title": "River-Flows-In-You",
+        "url": "https://github.com/AccessRetrieved/server/blob/main/Music/River-Flows-In-You.mp3?raw=true",
+        "id": 12
+    },
+
+    {
+        "title": "少年",
+        "url": "https://github.com/AccessRetrieved/server/blob/main/Music/少年.mp3?raw=true",
+        "id": 13
+    },
+
+    {
+        "title": "飞鸟和蝉",
+        "url": "https://github.com/AccessRetrieved/server/blob/main/Music/飞鸟和蝉.mp3?raw=true",
+        "id": 14
+    },
+
+    {
+        "title": "A-Sky-Full-Of-Stars",
+        "url": "https://github.com/AccessRetrieved/server/blob/main/Music/A-Sky-Full-Of-Stars.mp3?raw=true",
+        "id": 15
+    },
+
+    {
+        "title": "Rewrite-The-Stars",
+        "url": "https://github.com/AccessRetrieved/server/blob/main/Music/Rewrite-The-Stars.mp3?raw=true",
+        "id": 16
+    },
+
+    {
+        "title": "湘礼湘礼",
+        "url": "https://github.com/AccessRetrieved/server/blob/main/Music/湘礼湘礼.mp3?raw=true",
+        "id": 17
+    },
+
+    {
+        "title": "十年",
+        "url": "https://github.com/AccessRetrieved/server/blob/main/Music/十年.mp3?raw=true",
+        "id": 18
+    },
+
+    {
+        "title": "Lover",
+        "url": "https://github.com/AccessRetrieved/server/blob/main/Music/Lover.mp3?raw=true",
+        "id": 19
+    },
+
+    {
+        "title": "Celebrity",
+        "url": "https://github.com/AccessRetrieved/server/blob/main/Music/Celebrity.mp3?raw=true",
+        "id": 20
+    },
+
+    {
+        "title": "Batman-Evolution",
+        "url": "https://github.com/AccessRetrieved/server/blob/main/Music/Batman-Evolution.mp3?raw=true",
+        "id": 21
     }
 ]
