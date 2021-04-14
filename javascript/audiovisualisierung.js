@@ -46,7 +46,7 @@ function playSample() {
 	request.addEventListener("error", transferFailed);
 	request.addEventListener("abort", transferCanceled);
 	
-	request.open('GET', '/server/music/A-Million-Dreams.mp3', true);
+	request.open('GET', 'https://github.com/AccessRetrieved/server/blob/main/Music/A-Million-Dreams.mp3?raw=true', true);
 	request.responseType = 'arraybuffer';
 
  	// When loaded decode the data
