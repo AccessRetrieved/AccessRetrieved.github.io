@@ -19,7 +19,18 @@ preloadImages([
     'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/A-Sky-Full-Of-Stars.png',
     'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/wave.gif',
     'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/十年.png',
-    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/Lover.png'
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/Lover.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/Celebrity.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/Batman-Evolution.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/大梦想家.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/如一.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/慢热.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/察觉.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/淋雨一直走.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/大雨还在下.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/煎熬.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/His-Theme.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/八小时时差.png',
 ], function() {
     console.log('Successfully loaded all images')
 })
