@@ -13,7 +13,7 @@ function check() {
 
   const progress = setTimeout(function() {
       progressBar.style.display = "none";
-  }, 3000);
+  }, 5000);
 
   if (param == "false") {
     closes();

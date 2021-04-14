@@ -92,7 +92,7 @@ function preloadImages(urls, allImagesLoadedCallback){
 
 const progress = setTimeout(function() {
     progressBar.style.display = "none";
-}, 3000);
+}, 5000);
 
 function playSelected(trackName) {
     if (isPlaying == 1) {
