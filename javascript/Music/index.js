@@ -31,6 +31,8 @@ preloadImages([
     'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/煎熬.png',
     'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/His-Theme.png',
     'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/八小时时差.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/恋爱ing.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/像女孩的女人.png'
 ], function() {
     console.log('Successfully loaded all images')
 })
