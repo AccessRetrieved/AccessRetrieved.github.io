@@ -32,7 +32,12 @@ preloadImages([
     'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/His-Theme.png',
     'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/八小时时差.png',
     'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/恋爱ing.png',
-    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/像女孩的女人.png'
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/像女孩的女人.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/勇气.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/The-Dawn.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/The-Kings-Speech.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/花之舞.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/所念皆星河.png'
 ], function() {
     console.log('Successfully loaded all images')
 })
