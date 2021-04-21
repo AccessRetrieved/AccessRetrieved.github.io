@@ -38,7 +38,9 @@ preloadImages([
     'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/The-Kings-Speech.png',
     'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/花之舞.png',
     'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/所念皆星河.png',
-    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/7710.png'
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/7710.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/The-Dawn.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/来迟.png'
 ], function() {
     console.log('Successfully loaded all images')
 })
