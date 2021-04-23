@@ -253,7 +253,13 @@
 
     {
         "title": "Love-Is-Gone",
-        "url": "https://github.com/AccessRetrieved/server/blob/main/Music/Love-Is-Gone.mp3?raw=true",,
+        "url": "https://github.com/AccessRetrieved/server/blob/main/Music/Love-Is-Gone.mp3?raw=true",
         "id": 39
+    },
+
+    {
+        "title": "迪士尼在逃公主",
+        "url": "https://github.com/AccessRetrieved/server/blob/main/Music/swift/cn30.mp3?raw=true",
+        "id": 40
     }
 ]
