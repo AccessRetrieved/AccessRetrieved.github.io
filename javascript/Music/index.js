@@ -44,7 +44,8 @@ preloadImages([
     'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/一分钟恋人.png',
     'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/当你.png',
     'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/Love-Is-Gone.png',
-    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/迪士尼在逃公主.png'
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/迪士尼在逃公主.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/幻昼.png'
 ], function() {
     console.log('Successfully loaded all images')
 })
