@@ -267,5 +267,11 @@
         "title": "幻昼",
         "url": "https://github.com/AccessRetrieved/server/blob/main/Music/swift/cn31.mp3?raw=true",
         "id": 41
+    },
+
+    {
+        "title": "奔扑星空",
+        "url": "https://github.com/AccessRetrieved/server/blob/main/Music/swift/cn32.mp3?raw=true",
+        "id": 42
     }
 ]
