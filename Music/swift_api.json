@@ -270,7 +270,7 @@
     },
 
     {
-        "title": "奔扑星空",
+        "title": "奔赴星空",
         "url": "https://github.com/AccessRetrieved/server/blob/main/Music/swift/cn32.mp3?raw=true",
         "id": 42
     },
@@ -279,5 +279,11 @@
         "title": "沦陷",
         "url": "https://github.com/AccessRetrieved/server/blob/main/Music/swift/cn33.mp3?raw=true",
         "id": 43
+    },
+
+    {
+        "title": "还是会想你",
+        "url": "https://github.com/AccessRetrieved/server/blob/main/Music/swift/cn34.mp3?raw=true",
+        "id": 45
     }
 ]
