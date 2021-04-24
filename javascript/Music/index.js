@@ -49,7 +49,11 @@ preloadImages([
     'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/幻昼.png',
     'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/沦陷.png',
     'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/还是会想你.png',
-    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/修炼爱情.png'
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/修炼爱情.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/即刻.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/嫌晚.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/爱就一个字.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/世界美好与你环环相扣.png'
 ], function() {
     console.log('Successfully loaded all images')
 })
