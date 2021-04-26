@@ -53,7 +53,8 @@ preloadImages([
     'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/即刻.png',
     'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/嫌晚.png',
     'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/爱就一个字.png',
-    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/世界美好与你环环相扣.png'
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/世界美好与你环环相扣.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/记忆停留.png'
 ], function() {
     console.log('Successfully loaded all images')
 })
