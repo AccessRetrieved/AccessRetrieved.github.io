@@ -48,10 +48,10 @@
 
 .buttons {
     float: left;
-    margin: 85px;
+    margin: 80px;
     font-family: "roboto";
     font-size: 13;
-    width: 7%;
+    width: 8%;
     border-radius: 50%;
     border: none;
     background-color: white;
