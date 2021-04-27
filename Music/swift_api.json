@@ -321,5 +321,23 @@
         "title": "记忆停留",
         "url": "https://github.com/AccessRetrieved/server/blob/main/Music/swift/cn40.mp3?raw=true",
         "id": 51
+    },
+
+    {
+        "title": "We-Can't-Stop",
+        "url": "https://github.com/AccessRetrieved/server/blob/main/Music/We-Can't-Stop.mp3?raw=true",
+        "id": 52
+    },
+    
+    {
+        "title": "小白兔遇上卡布奇诺",
+        "url": "https://github.com/AccessRetrieved/server/blob/main/Music/swift/cn42.mp3?raw=true",
+        "id": 53
+    },
+
+    {
+        "title": "忘了没有",
+        "url": "https://github.com/AccessRetrieved/server/blob/main/Music/swift/cn41.mp3?raw=true",
+        "id": 54
     }
 ]
