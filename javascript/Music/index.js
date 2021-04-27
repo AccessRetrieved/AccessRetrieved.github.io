@@ -54,7 +54,10 @@ preloadImages([
     'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/嫌晚.png',
     'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/爱就一个字.png',
     'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/世界美好与你环环相扣.png',
-    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/记忆停留.png'
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/记忆停留.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/We-Can\'t-Stop.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/小白兔遇上卡布奇诺.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/忘了没有.png'
 ], function() {
     console.log('Successfully loaded all images')
 })
