@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "roboto";
-    src: url("/fonts/Roboto-Light.ttf");
+    font-family: "calibri";
+    src: url("/fonts/Calibri-Light.ttf");
 }
 
 @font-face {
@@ -20,14 +20,14 @@
 }
 
 .header-text {
-    font-family: "roboto";
+    font-family: "calibri";
     text-align: center;
     margin: auto;
     position: absolute;
     left: 50%;
     width: 100%;
     top: 13%;
-    font-size: 18px;
+    font-size: 30px;
     transform: translateX(-50%);
 }
 
@@ -50,8 +50,8 @@
     float: left;
     margin: 80px;
     font-family: "roboto";
-    font-size: 13;
-    width: 8%;
+    font-size: 15;
+    width: 16%;
     border-radius: 50%;
     border: none;
     background-color: white;
