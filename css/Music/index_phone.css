@@ -1,0 +1,151 @@
+/* Self */
+
+@font-face {
+    font-family: 'calibri';
+    src: url("/fonts/Calibri-Light.ttf");
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url("/fonts/Roboto-Light.ttf");
+}
+
+@font-face {
+    font-family: 'notosans';
+    src: url("/fonts/NotoSans-Regular.ttf");
+}
+
+.page-content {
+    text-align: center;
+}
+
+.navbar-title {
+    font-size: 40px;
+}
+
+.navbar-element {
+    font-size: 30px;
+}
+
+.side-by-side {
+    clear: both;
+    text-align: center;
+    margin: auto;
+}
+
+.element {
+    float: left;
+    margin: 50px;
+    font-display: 13;
+    background-color: white;
+}
+
+.empty-list {
+    width: 90%;
+    background-color: rgb(235, 236, 236);
+    height: 30%;
+    border-radius: 8px;
+    font-family: 'calibri';
+    font-size: 15px;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+}
+
+.empty-list-title {
+    font-family: 'roboto';
+    font-size: 60px;
+}
+
+.progress {
+    width: 0px;
+    height: 7px;
+    background: linear-gradient(to right, #1565c0, #9ac7bd);
+    transition: width .1s linear;
+    text-align: center;
+    margin: auto;
+}
+
+.player {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.960);
+    backdrop-filter: blur(90%);
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    height: 15%;
+    border-top: 3px solid rgb(231, 231, 231);
+}
+
+.player-title {
+    position: relative;
+    left: 4.5%;
+    top: 44%;
+    font-family: 'calibri';
+    float: left;
+    font-size: 30px;
+}
+
+.player-cover {
+    height: 97%;
+    position: relative;
+    top: 3px;
+    left: 5px;
+    float: left;
+    border: none;
+    border-radius: 5px;
+    bottom: 3px;
+}
+
+.player-play {
+    border: none;
+    background-color: white;
+    font-size: 50px;
+    position: relative;
+    top: 40%;
+    text-align: center;
+    margin: auto;
+    left: 7%;
+}
+
+.player-previous {
+    border: none;
+    background-color: white;
+    font-size: 50px;
+    position: relative;
+    top: 40%;
+    left: 12%;
+}
+
+.player-expand {
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    font-size: 45px;
+    position: relative;
+    top: 40%;
+    left: 6%;
+}
+
+.player-fullscreen {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    background: rgba(255, 255, 255, 0.960);
+    backdrop-filter: blur(90%);
+    display: none;
+    font-family: 'calibri';
+}
+
+.player-fullscreen-close {
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    font-size-adjust: 40px;
+    position: relative;
+    top: 5%;
+    left: 90%;
+}
