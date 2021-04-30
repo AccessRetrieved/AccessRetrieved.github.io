@@ -59,7 +59,9 @@ preloadImages([
     'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/小白兔遇上卡布奇诺.png',
     'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/忘了没有.png',
     'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/千千万万.png',
-    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/你头顶的风.png'
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/你头顶的风.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/Experience.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/恋爱画板.png'
 ], function() {
     console.log('Successfully loaded all images')
 })
