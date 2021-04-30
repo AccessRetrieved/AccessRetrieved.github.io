@@ -149,3 +149,24 @@
     top: 5%;
     left: 90%;
 }
+
+.song-card {
+    width: 430px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+    text-align: center;
+    border-radius: 10px;
+    transition: .1s ease-in-out;
+    margin: 30px;
+}
+
+.song-card-title {
+    padding-bottom: 15px;
+    font-family: Barlow,-apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;;
+    font-size: 30px;
+    padding-top: 15px;
+}
+
+.song-card-img {
+    width: 100%;
+    border-radius: 10px;
+}
