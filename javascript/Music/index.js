@@ -61,7 +61,8 @@ preloadImages([
     'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/千千万万.png',
     'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/你头顶的风.png',
     'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/Experience.png',
-    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/恋爱画板.png'
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/恋爱画板.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/嘉宾.png'
 ], function() {
     console.log('Successfully loaded all images')
 })
