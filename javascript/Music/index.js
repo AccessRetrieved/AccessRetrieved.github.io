@@ -62,7 +62,11 @@ preloadImages([
     'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/你头顶的风.png',
     'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/Experience.png',
     'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/恋爱画板.png',
-    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/嘉宾.png'
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/嘉宾.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/下坠.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/对不起，我爱你.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/Breath.png',
+    'https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/Leave-Me-Alone.png'
 ], function() {
     console.log('Successfully loaded all images')
 })

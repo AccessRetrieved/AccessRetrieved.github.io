@@ -55,7 +55,7 @@
 
     {
         "title": "Someone-You-Loved",
-        "url": "https://github.com/AccessRetrieved/server/blob/main/Music/Someone-You-Loved?raw=true",
+        "url": "https://github.com/AccessRetrieved/server/blob/main/Music/Someone-You-Loved.mp3?raw=true",
         "id": 10
     },
 
@@ -369,5 +369,29 @@
         "title": "嘉宾",
         "url": "https://github.com/AccessRetrieved/server/blob/main/Music/swift/cn46.mp3?raw=true",
         "id": 59
+    },
+
+    {
+        "title": "下坠",
+        "url": "https://github.com/AccessRetrieved/server/blob/main/Music/swift/cn47.mp3?raw=true",
+        "id": 60
+    },
+
+    {
+        "title": "对不起，我爱你",
+        "url": "https://github.com/AccessRetrieved/server/blob/main/Music/swift/cn48.mp3?raw=true",
+        "id": 61
+    },
+
+    {
+        "title": "Breath",
+        "url": "https://github.com/AccessRetrieved/server/blob/main/Music/Breath.mp3?raw=true",
+        "id": 62
+    },
+
+    {
+        "title": "Leave-Me-Alone",
+        "url": "https://github.com/AccessRetrieved/server/blob/main/Music/Leave-Me-Alone.mp3?raw=true",
+        "id": 63
     }
 ]
