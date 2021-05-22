@@ -9,6 +9,91 @@
 
         <!--Bootstrap v5 icon link-->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+
+        <script>
+var body = document.getElementById('body');
+var accountPopup = document.getElementById('profile-popup');
+var avatar = document.getElementById('avatar');
+var isPlaying = 0;
+var playerCover = document.getElementById('player-cover');
+var playerTitle = document.getElementById('player-title');
+var fullscreenCover = document.getElementById('fullscreen-cover');
+var fullscreenTitle = document.getElementById('fullscreen-title');
+var counter
+
+var playerPrevious = document.getElementById('player-previous');
+var playerPlay = document.getElementById('player-play');
+var playerNext = document.getElementById('player-next');
+var player = document.getElementById('player');
+var playerFullscreen = document.getElementById('player-fullscreen');
+var playerVolume = document.getElementById('player-volume');
+
+var fullscreenPrevious = document.getElementById('fullscreen-previous');
+var fullscreenPlay = document.getElementById('fullscreen-play');
+var fullscreenNext = document.getElementById('fullscreen-next');
+var fullscreenShare = document.getElementById('fullscreen-share');
+
+var progressBar = document.getElementById('slider');
+
+var playedSongs = [];
+var audio = new Audio();
+
+var timer;
+var percent = 0;
+
+playerCover.style.height = "100%";
+
+function playSelected(trackName) {
+    if (isPlaying == 1) {
+        audio.pause();
+        var path = `https://github.com/AccessRetrieved/server/blob/main/Music/${trackName}.mp3?raw=true`;
+        audio.src = path;
+        audio.play();
+        isPlaying = 1;
+        playerPlay.innerHTML = '<i class="bi bi-pause-circle-fill"></i>';
+        fullscreenPlay.innerHTML = '<i class="bi bi-pause-circle-fill"></i>';
+        playerPlay.disabled = false;
+        fullscreenPlay.disabled = false
+        playedSongs.push(`https://github.com/AccessRetrieved/server/blob/main/Music/${trackName}.mp3?raw=true`)
+
+        var url = playerCoverExists(`https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/${trackName}.png`);
+        if (url == true) {
+            playerCover.src = `https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/${trackName}.png`;
+            playerTitle.innerHTML = trackName;
+            fullscreenCover.src = `https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/${trackName}.png`;
+            fullscreenTitle.innerHTML = trackName;
+        } else {
+            playerCover.src = `https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/music.png`;
+            playerTitle.innerHTML = trackName;
+            fullscreenCover.src = `https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/music.png`;
+            fullscreenTitle.innerHTML = trackName;
+        }
+    } else {
+        var path = `https://github.com/AccessRetrieved/server/blob/main/Music/${trackName}.mp3?raw=true`;
+        audio.src = path;
+        audio.play();
+        isPlaying = 1;
+        playerPlay.innerHTML = '<i class="bi bi-pause-circle-fill"></i>';
+        fullscreenPlay.innerHTML = '<i class="bi bi-pause-circle-fill"></i>';
+        playerPlay.disabled = false;
+        fullscreenPlay.disabled = false
+        playedSongs.push(`https://github.com/AccessRetrieved/server/blob/main/Music/${trackName}.mp3?raw=true`)
+
+        var url = playerCoverExists(`https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/${trackName}.png`);
+        if (url == true) {
+            playerCover.src = `https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/${trackName}.png`;
+            playerTitle.innerHTML = trackName;
+            fullscreenCover.src = `https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/${trackName}.png`;
+            fullscreenTitle.innerHTML = trackName;
+        } else {
+            playerCover.src = `https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/music.png`;
+            playerTitle.innerHTML = trackName;
+            fullscreenCover.src = `https://raw.githubusercontent.com/AccessRetrieved/server/main/Music/cover/music.png`;
+            fullscreenTitle.innerHTML = trackName;
+        }
+    }
+}
+        </script>
     </head>
     <body class="noselect" id="body" onload="check();">
         <div class="menubar noselect">
