@@ -4,6 +4,7 @@ apiSongs = [
 ];
 
 function check() {
+  alert('页面施工中，部分功能会失效(*ﾟДﾟ*) ');
   var url_string = window.location.href;
   var url = new URL(url_string);
   var param = url.searchParams.get("intro");
