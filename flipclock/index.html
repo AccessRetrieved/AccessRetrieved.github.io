@@ -3,17 +3,26 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link rel="stylesheet" href="./css/flipclock.css">
-		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="/flipclock/css/flipclock.css">
+		<link rel="stylesheet" href="/flipclock/css/style.css">
+		<link rel="stylesheet" href="/flipclock/css/other.css">
 
 		<script src="./js/jquery.min.js"></script>		
 		<script src="./js/flipclock.js"></script>		
 	</head>
-	<body>
-
+	<body onclick="window.location='#container'" data-reveal-id="exampleModal">
 		<div id="box">
 			<div id="content">
 				<div style="zoom: 1.6;" class="clock" id="flipclock"></div>
+			</div>
+		</div>
+		<div id="container">
+			<div class="reveal-modal">
+				<span class="reveal-modal-title">选择时钟</span>
+				<br>
+				<span class="reveal-modal-body">时钟开发中~</span>
+				<br>
+				<a href="#" class="reveal-modal-close">×</a>
 			</div>
 		</div>
 

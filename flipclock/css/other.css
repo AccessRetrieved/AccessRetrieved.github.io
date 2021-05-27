@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'calibri';
+    src: url("/fonts/Calibri-Light.ttf");
+}
+
+@font-face {
+    font-family: 'notosans';
+    src: url("/fonts/NotoSans-Regular.ttf");
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    visibility:hidden;
+    display:none;
+    background-color: rgba(22,22,22,0.5);
+}
+
+#container:target {
+    visibility: visible;
+    display: block;
+}
+.reveal-modal {
+    background:#e1e1e1; 
+    margin: 0 auto;
+    width:160px; 
+    position:relative; 
+    z-index:41;
+    top: 25%;
+    padding:30px; 
+    -webkit-box-shadow:0 0 10px rgba(0,0,0,0.4);
+    -moz-box-shadow:0 0 10px rgba(0,0,0,0.4); 
+    box-shadow:0 0 10px rgba(0,0,0,0.4);
+    border-radius: 5px;
+    width: 30%;
+    height: 40%;
+}
+
+.reveal-modal-title {
+    font-family: 'notosans';
+    font-size: 30px;
+}
+
+.reveal-modal-body {
+    font-family: 'calibri';
+    font-size: 15px;
+}
+
+.reveal-modal-close {
+    position: relative;
+    top: 83%;
+    text-decoration: none;
+    width: 5%;
+    height: 5%;
+    padding: 5%;
+    border: none;
+    text-align: center;
+    border-radius: 50px;
+    color: black;
+    font-size: 20px;
+    font-family: 'calibri';
+    background-color: rgb(234, 242, 251);
+}
