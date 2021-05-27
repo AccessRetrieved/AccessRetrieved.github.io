@@ -21,25 +21,27 @@
 				<span class="reveal-modal-title">选择时钟</span>
 				<br>
 				<span class="reveal-modal-body">时钟开发中~</span>
-				<br>
-				<a href="#" class="reveal-modal-close">×</a>
+
+
+				
+				<a href="#" class="reveal-modal-close close">×</a>
 			</div>
 		</div>
 
 		<script type="text/javascript">
-			// mobile
-			if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
-				document.getElementById('flipclock').setAttribute("style","zoom:0.7;");
-    		}
+// mobile
+if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+	document.getElementById('flipclock').setAttribute("style","zoom:0.7;");
+}
 
-			var clock;
-			
-			$(document).ready(function() {
-				clock = $('.clock').FlipClock({
-					clockFace: 'TwelveHourClock',
-					showSeconds: true
-				});
-			});
+var clock;
+
+$(document).ready(function() {
+	clock = $('.clock').FlipClock({
+		clockFace: 'TwelveHourClock',
+		showSeconds: true
+	});
+});
 		</script>
 
 	</body>

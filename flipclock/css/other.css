@@ -8,6 +8,10 @@
     src: url("/fonts/NotoSans-Regular.ttf");
 }
 
+.page-content {
+    text-align: center;
+}
+
 #container {
     width: 100%;
     height: 100%;
@@ -26,6 +30,7 @@
     margin: 0 auto;
     width:160px; 
     position:relative; 
+    top: 25%;
     z-index:41;
     top: 25%;
     padding:30px; 
@@ -35,6 +40,13 @@
     border-radius: 5px;
     width: 30%;
     height: 40%;
+    transition: opacity 0.4s top 0.4s;
+    opacity: 1;
+}
+
+.reveal-modal.closed {
+    opacity: 0;
+    top: -300px;
 }
 
 .reveal-modal-title {
@@ -48,13 +60,14 @@
 }
 
 .reveal-modal-close {
-    position: relative;
-    top: 83%;
+    position: absolute;
+    top: 93%;
     text-decoration: none;
     width: 5%;
     height: 5%;
     padding: 5%;
     border: none;
+    left: 43.5%;
     text-align: center;
     border-radius: 50px;
     color: black;
