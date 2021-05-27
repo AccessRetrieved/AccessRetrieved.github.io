@@ -20,7 +20,7 @@
 		<script type="text/javascript">
 			// mobile
 			if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
-				document.getElementById('flipclock').setAttribute("style","zoom:1;");
+				document.getElementById('flipclock').setAttribute("style","zoom:0.7;");
     		}
 
 			var clock;
@@ -28,7 +28,7 @@
 			$(document).ready(function() {
 				clock = $('.clock').FlipClock({
 					clockFace: 'TwelveHourClock',
-					showSeconds: false
+					showSeconds: true
 				});
 			});
 		</script>
