@@ -248,7 +248,7 @@
   z-index: 2;
   -webkit-animation: turn 0.5s 0.5s linear both;
   -moz-animation: turn 0.5s 0.5s linear both;
-  animation: turn 0.5s 0.5s linear both; }
+  animation: turn 0.5s 0.4s linear both; }
 
 @-webkit-keyframes turn {
   0% {
@@ -280,9 +280,9 @@
 
 .flip-clock-wrapper ul.play li.flip-clock-before .up {
   z-index: 2;
-  -webkit-animation: turn2 0.5s linear both;
-  -moz-animation: turn2 0.5s linear both;
-  animation: turn2 0.5s linear both; }
+  -webkit-animation: turn2 0.3s linear both;
+  -moz-animation: turn2 0.3s linear both;
+  animation: turn2 0.3s linear both; }
 
 @-webkit-keyframes turn2 {
   0% {
@@ -359,7 +359,7 @@
   background: linear, to bottom, black 0%, rgba(0, 0, 0, 0.1) 100%;
   -webkit-animation: hide 0.5s 0.3s linear both;
   -moz-animation: hide 0.5s 0.3s linear both;
-  animation: hide 0.5s 0.2s linear both; }
+  animation: hide 0.4s 0.2s linear both; }
 
 @-webkit-keyframes show {
   0% {
