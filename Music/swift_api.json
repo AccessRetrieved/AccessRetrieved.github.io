@@ -393,5 +393,17 @@
         "title": "Leave-Me-Alone",
         "url": "https://github.com/AccessRetrieved/server/blob/main/Music/Leave-Me-Alone.mp3?raw=true",
         "id": 63
+    },
+
+    {
+        "title": "Goodbye",
+        "url": "https://github.com/AccessRetrieved/server/blob/main/Music/Goodbye.mp3?raw=true",
+        "id": 64
+    },
+
+    {
+        "title": "Love-You-Three-3000",
+        "url": "https://github.com/AccessRetrieved/server/blob/main/Music/Love-You-Three-3000.mp3?raw=true",
+        "id": 65
     }
 ]
