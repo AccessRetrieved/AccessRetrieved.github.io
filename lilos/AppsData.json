@@ -1,0 +1,57 @@
+[
+    {
+        "name": "Calculator Pro",
+        "description": "A calculator+ for Lil OS.",
+        "authorname": "Jerry Hu",
+        "authordescription": "13, Surrey BC, SwiftUI Developer.",
+        "available": false,
+        "type": "Utilities",
+        "image": "calculator+",
+        "url": ""
+    },
+    {
+        "name": "Quizlet",
+        "description": "用单词卡学习语言的神器",
+        "authorname": "IIIIIIIIIII8766",
+        "authordescription": "",
+        "available": true,
+        "type": "Study",
+        "url": "https://testflight.apple.com/join/mwhcPqxJ"
+    },
+    {
+        "name": "哔哩哔哩",
+        "description": "弹幕番剧直播高清视频",
+        "authorname": "IIIIIIIIIII8766",
+        "authordescription": "",
+        "available": true,
+        "type": "Entertainment",
+        "url": "https://testflight.apple.com/join/K4pM1kHu"
+    },
+    {
+        "name": "Tiny Weather: Simple forecasts",
+        "description": "极简天气",
+        "authorname": "61",
+        "authordescription": "",
+        "available": true,
+        "type": "Utilities",
+        "url": "https://testflight.apple.com/join/JRph6rSI"
+    },
+    {
+        "name": "Widget Center",
+        "description": "自定义小组件",
+        "authorname": "61",
+        "authordescription": "",
+        "available": false,
+        "type": "Tools",
+        "url": "https://testflight.apple.com/join/E0MJMhhT"
+    },
+    {
+        "name": "Any Distance",
+        "description": "🏃‍♀️",
+        "authorname": "61",
+        "authordescription": "",
+        "available": true,
+        "type": "Fitness",
+        "url": "https://testflight.apple.com/join/6stLkWyl"
+    }
+]
