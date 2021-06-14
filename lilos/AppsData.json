@@ -53,5 +53,14 @@
         "available": true,
         "type": "Fitness",
         "url": "https://testflight.apple.com/join/6stLkWyl"
+    },
+    {
+        "name": "删除照片",
+        "description": "删除不小心拍的照片",
+        "authorname": "Jerry Hu",
+        "authordescription": "13, Surrey BC, SwiftUI Developer.",
+        "available": true,
+        "type": "Shortcuts",
+        "url": "https://www.icloud.com/shortcuts/4c8e2f959c534259b3771a3cdbf873d6"
     }
 ]
