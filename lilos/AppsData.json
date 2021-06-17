@@ -62,5 +62,61 @@
         "available": true,
         "type": "Shortcuts",
         "url": "https://www.icloud.com/shortcuts/4c8e2f959c534259b3771a3cdbf873d6"
+    },
+    {
+        "name": "Settings",
+        "description": "Lil OS Settings",
+        "authorname": "Jerry Hu",
+        "authordescription": "13, Surrey BC, SwiftUI Developer.",
+        "available": false,
+        "type": "Utilities",
+        "url": "Settings"
+    },
+    {
+        "name": "Calculator",
+        "description": "Lil OS Calculator",
+        "authorname": "Jerry Hu",
+        "authordescription":"13, Surrey BC, SwiftUI Developer.",
+        "available": false,
+        "type": "Utilities",
+        "url": "Calculator"
+    },
+    {
+        "name": "Airport",
+        "description": "Lil OS Airport",
+        "authorname": "Jerry Hu",
+        "authordescription": "13, Surrey BC, SwiftUI Developer.",
+        "available": false,
+        "type": "Utilities",
+        "url": "Airport"
+    },
+    {
+        "name": "Camera",
+        "description": "Lil OS Camera",
+        "authorname": "Jerry Hu",
+        "authordescription": "13, Surrey BC, SwiftUI Developer.",
+        "available": false,
+        "type": "Lifestyle",
+        "url": "Camera"
+    },
+    {
+        "name": "Photos",
+        "description": "Lils OS Photos",
+        "authorname": "Jerry Hu",
+        "authordescription": "13, Surrey BC, SwiftUI Developer.",
+        "available": false,
+        "type": "Lifestyle",
+        "image": "Photos",
+        "url": ""
+    },
+    {
+        "name": "Phone",
+        "description": "Lil OS Phone",
+        "authorname": "Jerry Hu",
+        "authordescription": "13, Surrey BC, SwiftUI Developer.",
+        "available": false,
+        "type": "Utilities",
+        "image": "Phone",
+        "url": ""
     }
 ]
