@@ -118,5 +118,25 @@
         "type": "Utilities",
         "image": "Phone",
         "url": ""
+    },
+    {
+        "name": "Breath",
+        "description": "Take a deep breath",
+        "authorname": "Jerry Hu",
+        "authordescription": "13, Surrey BC, SwiftUI Developer.",
+        "available": false,
+        "type": "Lifestyle",
+        "image": "Breath",
+        "url": ""
+    },
+    {
+        "name": "Health",
+        "description": "View your health statistics",
+        "authorname": "Jerry Hu",
+        "authordescription":"13, Surrey BC, SwiftUI Developer.",
+        "available": false,
+        "type": "Tools",
+        "image": "Health",
+        "url": ""
     }
 ]
