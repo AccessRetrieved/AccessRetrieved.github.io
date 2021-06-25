@@ -50,7 +50,7 @@
         "description": "🏃‍♀️",
         "authorname": "61",
         "authordescription": "",
-        "available": true,
+        "available": false,
         "type": "Fitness",
         "url": "https://testflight.apple.com/join/6stLkWyl"
     },
