@@ -5,5 +5,12 @@
         "downloadFileName": "Clarity",
         "background": "MusicPlayer-background1",
         "URL": "https://serene-music.s3.us-east-2.amazonaws.com/clarity.mp3"
+    },
+    {
+        "title": "Clarity 1",
+        "subtitle": "",
+        "downloadFileName": "Clarity",
+        "background": "MusicPlayer-background2",
+        "URL": "https://serene-music.s3.us-east-2.amazonaws.com/clarity.mp3"
     }
 ]
