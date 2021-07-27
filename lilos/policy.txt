@@ -1,1 +1,1 @@
-lilOS does not collect any info from you, or share your private information.
+This app does not collect any information from you, or share your private information with any 3rd parties softwares. Your phone number is used to send verification codes and any alerts when needed.
