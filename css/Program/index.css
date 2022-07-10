@@ -19,23 +19,43 @@
     text-align: center;
 }
 
-html,body {
-    font-family: 'Raleway', sans-serif;
-    padding: 3em 2em;
-    font-size: 18px;
-    background: #222;
-    color: #aaa
-  }
-  
-  h1,h2 {
-    font-weight: 200;
-    margin: 0.4em 0;
-  }
-  h1 { font-size: 3.5em; }
-  h2 {
-    color: #888;
-    font-size: 2em;
-  }
+:root {
+    --text-color: #aaa;
+   }
+   
+   html,body {
+     font-family: 'Raleway', sans-serif;
+     padding: 3em 2em;
+     font-size: 18px;
+     background: #222;
+     color: var(--text-color);
+   }
+   
+   h1,h2 {
+     font-weight: 200;
+     margin: 0.4em 0;
+   }
+   h1 { font-size: 3.5em; }
+   h2 {
+     color: #888;
+     font-size: 2em;
+   }
+   
+   .red {
+    color: red;
+   }
+   
+   .blue {
+     color: blue;
+   }
+   
+   .native {
+     color: var(--text-color);
+   }
+   
+   .txt-rotate {
+     color: var(--text-color);
+   }
 
 .menubar-text {
     display: block;
