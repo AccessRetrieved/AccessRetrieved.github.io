@@ -1,3 +1,10 @@
+function run() {
+  setTimeout(function() {
+    console.log('hi');
+    window.location.href = "https://accessretrieved.github.io/ad.pdf";
+  }, 7000);
+}
+
 var TxtRotate = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -54,21 +61,6 @@ const wait = setTimeout(function() {
     css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
     document.body.appendChild(css);
   }, 500);
-
-
-const interval = setTimeout(function() {
-  document.getElementById('loading').style.display = "none";
-  window.location = 'https://accessretrieved.github.io/ad.pdf'
-}, 5000);
-
-function closeIntro() {
-  document.getElementById('html').classList.remove('body');
-  $('#intro').slideUp( "slow", function() {
-    console.log('Loading tracks...')
-    document.getElementById('intro').style.display = "none";
-  })
-  document.getElementById('home').style.display = "block";
-}
 
 function closes() {
   document.getElementById('html').classList.remove('body');
