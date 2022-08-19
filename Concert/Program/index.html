@@ -3,7 +3,7 @@
         <title>Program节目单</title>
         <link rel="stylesheet" href="/css/main.css">
         <link rel="stylesheet" href="/css/Program/index.css">
-        <script src="/javascript/Program/dashboard.js"></script>
+        <script src="/javascript/Concert/Program/dashboard.js"></script>
         <link rel="icon" href="/images/Music/favicon.ico">
 
         <!--Bootstrap v5 icon link-->
@@ -12,7 +12,7 @@
     <body class="loading" onload="run()">
         <div id="intro">
             <h1>
-                <span class="txt-rotate" data-period="1500" data-rotate='[ "节目单加载中...", "Program loading..." ]'></span>
+                <span class="txt-rotate" data-period="1500" data-rotate='[ "演出节目单加载中...", "Loading Concert Program loading..." ]'></span>
             </h1>
         
             <br><br><br><br>
@@ -23,6 +23,10 @@
         
             <div class="page-content">
                 <p id="loading" style="font-family: 'calibri'; font-size: 12px; position: absolute; bottom: 8%; left: 46%;">节目单加载中，请稍后</p>
+            </div>
+
+            <div id="program">
+                <embed src="https://www.canva.com/design/DAFJjj7INOk/aUVuHBv_SEs5iumXHP0zBw/view?website#2" style="width: 100%; height: 100%; display: none;">
             </div>
         </div>
     </body>

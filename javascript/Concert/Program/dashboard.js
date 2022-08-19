@@ -1,7 +1,12 @@
 function run() {
   setTimeout(function() {
-    console.log('hi');
-    window.location.href = "https://accessretrieved.github.io/ad.pdf";
+    // window.location.href = "https://accessretrieved.github.io/ad.pdf";
+    var program = document.getElementById("program");
+    if (program.style.display === "none") {
+      program.style.display = "block";
+    } else {
+      program.style.display = "none";
+    }
   }, 7000);
 }
 
