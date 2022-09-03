@@ -1,6 +1,6 @@
 function run() {
   setTimeout(function() {
-    window.location.href = "https://accessretrieved.github.io/Concert";
+    window.location.href = "https://accessretrieved.github.io/Concert?useDefaultViewer=true";
   }, 7000);
 }
 
