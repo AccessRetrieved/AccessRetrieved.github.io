@@ -14,7 +14,6 @@ var TxtRotate = function(el, toRotate, period) {
     this.isDeleting = false;
   };
 
-  
   TxtRotate.prototype.tick = function() {
     var i = this.loopNum % this.toRotate.length;
     var fullTxt = this.toRotate[i];
