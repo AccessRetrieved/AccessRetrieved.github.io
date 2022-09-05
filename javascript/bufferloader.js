@@ -60,8 +60,6 @@ BufferLoader.prototype._playBuffer = function(name, gain, time) {
     
     var analyser = this.context.createAnalyser();
 	
-	
-	
     source.connect(analyser);
     source.connect(this.context.destination);
     source.start(time);
