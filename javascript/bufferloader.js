@@ -37,7 +37,7 @@ BufferLoader.prototype.onBufferLoad = function(bufferName, srcBuffer, callback) 
     this.context.decodeAudioData(srcBuffer, function onSuccess(buffer) {
         this.buffers[bufferName] = buffer;
         if (typeof callback === 'function') {			
-			callback(); // Aufruf der Wiedergabefunktion
+			callback();
         }
     }.bind(this), this.onBufferError);
 };
@@ -66,7 +66,6 @@ BufferLoader.prototype._playBuffer = function(name, gain, time) {
 };
 
 BufferLoader.prototype.play = function (name, gain, time) {
-    // Default values for time and gain
     gain = typeof gain !== 'undefined' ? gain : 1;
     time = typeof time !== 'undefined' ? time : 0;
 
