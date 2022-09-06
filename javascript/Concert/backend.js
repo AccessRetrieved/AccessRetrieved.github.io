@@ -8,4 +8,6 @@ if (useDefaultViewer === "default") {
     window.location = 'https://www.canva.com/design/DAFJjj7INOk/aUVuHBv_SEs5iumXHP0zBw/view?website#2';
 } else if (useDefaultViewer === 'swipe') {
     window.location = 'https://accessretrieved.github.io/Concert';
-}
+} else {
+    window.location = 'https://www.canva.com/design/DAFJjj7INOk/aUVuHBv_SEs5iumXHP0zBw/view?website#2';
+};
