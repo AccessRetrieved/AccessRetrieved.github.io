@@ -1,14 +1,14 @@
 function run() {
   setTimeout(function() {
     window.location.href = "https://accessretrieved.github.io/Concert?useDefaultViewer=canvascrolling";
-  }, 7000);
+  }, 15000);
 }
 
 var TxtRotate = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
     this.loopNum = 0;
-    this.period = parseInt(period, 10) || 2000;
+    this.period = parseInt(period, 1) || 2000;
     this.txt = '';
     this.tick();
     this.isDeleting = false;
@@ -27,7 +27,7 @@ var TxtRotate = function(el, toRotate, period) {
     this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
   
     var that = this;
-    var delta = 300 - Math.random() * 100;
+    var delta = 200;
   
     if (this.isDeleting) { delta /= 2; }
   
@@ -37,7 +37,7 @@ var TxtRotate = function(el, toRotate, period) {
     } else if (this.isDeleting && this.txt === '') {
       this.isDeleting = false;
       this.loopNum++;
-      delta = 500;
+      delta = 200;
     }
   
     setTimeout(function() {
@@ -59,7 +59,7 @@ const wait = setTimeout(function() {
     css.type = "text/css";
     css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
     document.body.appendChild(css);
-  }, 500);
+  }, 100);
 
 function closes() {
   document.getElementById('html').classList.remove('body');
