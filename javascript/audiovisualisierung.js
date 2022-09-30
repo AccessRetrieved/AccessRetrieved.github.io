@@ -46,8 +46,8 @@ function playSample() {
 	request.responseType = 'arraybuffer';
 
 	request.onload = function() {
-		$("#title").html("");
-		$("#album").html("Suit and Tie");
+		$("#title").html("Suit and Tie");
+		$("#album").html("Sample file");
 		$("#artist").html("Justin Timberlake");
 		onWindowResize();
 		$("#title, #artist, #album").css("visibility", "visible");
