@@ -83,7 +83,7 @@ function useMic() {
 		
 		$("#title").html("Mic");
 		$("#album").html("Input");
-		$("#artist").html("Using");
+		$("#artist").html("ｂ（￣▽￣）ｄ");
 		onWindowResize();
 		$("#title, #artist, #album").css("visibility", "visible");
 		$("#freq, body").addClass("animateHue");
