@@ -42,13 +42,13 @@ function playSample() {
 	request.addEventListener("error", transferFailed);
 	request.addEventListener("abort", transferCanceled);
 	
-	request.open('GET', '/server/music/AMillionDreams.mp3', true);
+	request.open('GET', '/server/music/SuitAndTie.mp3', true);
 	request.responseType = 'arraybuffer';
 
 	request.onload = function() {
 		$("#title").html("");
-		$("#album").html("A Million Dreams");
-		$("#artist").html("The Piano Guys");
+		$("#album").html("Suit and Tie");
+		$("#artist").html("Justin Timberlake");
 		onWindowResize();
 		$("#title, #artist, #album").css("visibility", "visible");
 		
@@ -169,7 +169,6 @@ function setupAudioNodes() {
 	rafID = window.requestAnimationFrame(updateVisualization);
 }
 
-
 function reset () {
 	if (typeof sourceNode !== "undefined") {
 		sourceNode.stop(0);		
@@ -178,7 +177,6 @@ function reset () {
 		microphone = null;
 	}
 }
-
 
 function updateVisualization () {
 	if (fileChosen || hasSetupUserMedia) {
