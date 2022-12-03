@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400&display=swap');
+
+.page-content {
+    margin: auto;
+    text-align: center;
+    width: 85%;
+    padding: 15px;
+}
+
+.profile {
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+    border: 5px solide rgb(245, 245, 245);
+    display: flex;
+}
+
+.title-section {
+    text-align: left;
+}
+
+.title {
+    font-family: 'Alata';
+    font-size: 45px;
+}
+
+.subtitle {
+    font-family: 'Albert Sans';
+    font-size: 25px;
+}
+
+.socialbtns:hover {
+    color: rgb(4, 4, 21);
+}
+
+.socialbtns {
+    display: flex;
+    border-radius: 50px;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-property: all;
+    color: rgb(205, 205, 208);
+    padding-left: 20px;
+}
+
+.socialbtns:visited {
+    background-image: none;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+}
+
+.divider {
+    height: 0px;
+    width: 100%;
+    border-width: 1px;
+    border-style: dashed;
+    border-color: rgb(245, 245, 245);
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+}
+
+.title-name {
+    color: rgb(300, 210, 120);
+}
+
+.works {
+    font-family: 'Alata';
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 50px;
+}
+
+.works-title {
+    text-align: left;
+    padding-bottom: 50px;
+}
+
+.works-block {
+    border-top: 1.25rem;
+    padding-top: 1.25rem;
+    background-color: rgb(245, 248, 255);
+    display: block;
+    text-decoration-line: none;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: all;
+    color: black;
+    width: 50%;
+    margin-left: 210px;
+    text-align: center;
+}
+
+.works-block:hover {
+    background-color: rgb(235, 241, 255);
+}
+
+.works-block-img {
+    border-radius: 25px;
+    width: 60px;
+    height: 60px;
+    float: left;
+    display: block;
+}
