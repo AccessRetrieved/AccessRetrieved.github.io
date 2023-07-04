@@ -33,7 +33,6 @@ if ("geolocation" in navigator) {
     document.getElementById('location').textContent = "Geolocation is not supported by this browser.";
 }
 
-
 function myMap() {
     navigator.geolocation.getCurrentPosition(function (pos) {
         var mapProp = {
@@ -41,5 +40,14 @@ function myMap() {
             zoom: 5,
         };
         var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+        let markersArray = [];
+        let marker = new google.maps.Marker({
+            map: map,
+            position: new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude),
+            draggable: true
+        });
+
+        markersArray.push(marker)
     })
 }
