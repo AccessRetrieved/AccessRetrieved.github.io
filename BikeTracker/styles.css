@@ -1,0 +1,79 @@
+html {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --lime-green: #1eb980;
+    --lime-dark: #11956c;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #F2F2F2;
+}
+
+.header {
+    background-color: var(--lime-green);
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.tracker-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+}
+
+.bike-location {
+    font-size: 1.2em;
+    color: var(--lime-dark);
+    margin-bottom: 20px;
+}
+
+.map-container {
+    height: 200px;
+    background-color: #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+/* Larger Screen Adjustments */
+@media (min-width: 600px) {
+    .header {
+        font-size: 2.5em;
+    }
+
+    .content {
+        padding: 40px;
+    }
+
+    .tracker-card {
+        padding: 30px;
+    }
+
+    .bike-location {
+        font-size: 1.5em;
+    }
+
+    .map-container {
+        height: 400px;
+    }
+}
