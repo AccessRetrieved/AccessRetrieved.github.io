@@ -1,3 +1,6 @@
+var latitude = 0.0;
+var longitude = 0.0;
+
 if ("geolocation" in navigator) {
     navigator.geolocation.getCurrentPosition(function (position) {
         const lat = position.coords.latitude;
@@ -12,7 +15,8 @@ if ("geolocation" in navigator) {
                 locationElement.href = `https://www.google.com/maps/search/?api=1&query${lat},${lon}`
 
                 // update maps
-                myMap(lat, lon)
+                latitude = lat;
+                longitude = lon;
             })
             .catch(error => {
                 console.error("Error occurred while getting location: " + error.message);
@@ -30,9 +34,9 @@ if ("geolocation" in navigator) {
 }
 
 
-function myMap(lat, lng) {
+function myMap() {
     var mapProp = {
-        center: new google.maps.LatLng(lat, lng),
+        center: new google.maps.LatLng(latitude, longitude),
         zoom: 5,
     };
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
