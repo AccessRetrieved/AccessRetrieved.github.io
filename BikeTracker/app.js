@@ -35,9 +35,11 @@ if ("geolocation" in navigator) {
 
 
 function myMap() {
-    var mapProp = {
-        center: new google.maps.LatLng(0, 0),
-        zoom: 5,
-    };
-    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+    navigator.geolocation.getCurrentPosition(function (pos) {
+        var mapProp = {
+            center: new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude),
+            zoom: 5,
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+    })
 }
