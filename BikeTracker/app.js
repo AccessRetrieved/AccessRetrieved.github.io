@@ -1,16 +1,15 @@
-// Check if the Geolocation API is supported by the browser
 if ("geolocation" in navigator) {
     navigator.geolocation.getCurrentPosition(function (position) {
         const lat = position.coords.latitude;
         const lon = position.coords.longitude;
 
-        // Call the Nominatim API
         fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lon}`)
             .then(response => response.json())
             .then(data => {
-                // Update the location on the page with the address
+                // update location
                 const locationElement = document.getElementById('location');
                 locationElement.textContent = data.display_name;
+                locationElement.onclick(window.location = `https://www.google.com/maps/search/?api=1&query${lat},${lon}`)
 
                 // update maps
                 myMap(lat, lon)
@@ -25,7 +24,7 @@ if ("geolocation" in navigator) {
         document.getElementById('location').textContent = "Unable to retrieve location.";
     });
 } else {
-    // Geolocation is not supported by this browser
+    // Geolocation not supported
     console.log("Geolocation is not supported by this browser.");
     document.getElementById('location').textContent = "Geolocation is not supported by this browser.";
 }
