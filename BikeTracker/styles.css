@@ -1,19 +1,24 @@
+
+
+/* Font Families */
 html {
-    font-family: 'Lato', sans-serif;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato', 'Open Sans', sans-serif;
 }
 
+/* Colors */
 :root {
     --lime-green: #1eb980;
     --lime-dark: #11956c;
+    --background-gray: #F2F2F2;
 }
 
+/* Body Styles */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    background-color: #F2F2F2;
+    background-color: var(--background-gray);
 }
 
+/* Header Styles */
 .header {
     background-color: var(--lime-green);
     padding: 20px 0;
@@ -23,14 +28,14 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Content Styles */
 .content {
     display: flex;
     justify-content: center;
     padding: 20px;
-    font-family: 'Lato', sans-serif;
-    font-family: 'Open Sans', sans-serif;
 }
 
+/* Tracker Card Styles */
 .tracker-card {
     background: white;
     border-radius: 12px;
@@ -41,12 +46,14 @@ body {
     text-align: center;
 }
 
+/* Bike Location Styles */
 .bike-location {
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: var(--lime-dark);
     margin-bottom: 20px;
 }
 
+/* Map Container Styles */
 .map-container {
     height: 200px;
     background-color: #ddd;
@@ -70,7 +77,7 @@ body {
     }
 
     .bike-location {
-        font-size: 1.5em;
+        font-size: 1.8em;
     }
 
     .map-container {
