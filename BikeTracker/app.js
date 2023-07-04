@@ -49,5 +49,7 @@ function myMap() {
         });
 
         markersArray.push(marker)
+    }, function(error) {
+        console.log(error.message);
     })
 }
