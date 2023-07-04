@@ -37,7 +37,7 @@ function myMap() {
     navigator.geolocation.getCurrentPosition(function (pos) {
         var mapProp = {
             center: new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude),
-            zoom: 1,
+            zoom: 15,
         };
         var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 
