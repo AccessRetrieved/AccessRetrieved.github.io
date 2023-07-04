@@ -1,6 +1,12 @@
 var latitude = 0.0;
 var longitude = 0.0;
 
+// api key
+new webpack.DefinePlugin({
+    'process.env.GOOGLE_MAPS_API_KEY': JSON.stringify(process.env.GOOGLE_MAPS_API_KEY),
+})
+
+
 if ("geolocation" in navigator) {
     navigator.geolocation.getCurrentPosition(function (position) {
         const lat = position.coords.latitude;
@@ -49,7 +55,7 @@ function myMap() {
         });
 
         markersArray.push(marker)
-    }, function(error) {
+    }, function (error) {
         console.log(error.message);
     })
 }
