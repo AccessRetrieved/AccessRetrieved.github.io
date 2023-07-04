@@ -12,7 +12,7 @@ if ("geolocation" in navigator) {
                 // update location
                 const locationElement = document.getElementById('location');
                 locationElement.textContent = data.display_name;
-                locationElement.href = `https://www.google.com/maps/search/?api=1&query${lat},${lon}`
+                locationElement.href = `https://www.google.com/maps/search/?ll=${lat},${lon}`
 
                 // update maps
                 latitude = lat;
