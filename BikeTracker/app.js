@@ -1,5 +1,25 @@
+import firebase from 'firebase/compat/app';
+import "firebase/firestore";
+import { getFirestore } from "firebase/firestore";
+import { collection, addDoc } from "firebase/firestore"; 
+
+// firebase
+const firebaseConfig = {
+    apiKey: "AIzaSyBCp--QML8Dg8r5XUJEiKB3-JdXOixfTPw",
+    authDomain: "bike-cceb1.firebaseapp.com",
+    projectId: "bike-cceb1",
+    storageBucket: "bike-cceb1.appspot.com",
+    messagingSenderId: "274389744864",
+    appId: "1:274389744864:web:faa7649a5497fb35bce485",
+    measurementId: "G-TGDKPW3RLF"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
 var latitude = 0.0;
 var longitude = 0.0;
+
 
 if ("geolocation" in navigator) {
     navigator.geolocation.getCurrentPosition(function (position) {
@@ -17,6 +37,9 @@ if ("geolocation" in navigator) {
                 // update maps
                 latitude = lat;
                 longitude = lon;
+
+                // update firebase
+                updateFirebase()
             })
             .catch(error => {
                 console.error("Error occurred while getting location: " + error.message);
@@ -52,4 +75,16 @@ function myMap() {
     }, function (error) {
         console.log(error.message);
     })
+}
+
+async function updateFirebase() {
+    try {
+        const docRef = await addDoc(collection(db, "boltpro"), {
+            lat: String(latitude),
+            lng: String(longitude)
+        });
+        console.log("Document written with ID: ", docRef.id);
+      } catch (e) {
+        console.error("Error adding document: ", e);
+      }
 }
