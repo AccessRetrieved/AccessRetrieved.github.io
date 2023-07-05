@@ -81,8 +81,8 @@ function myMap() {
 async function updateFirebase() {
     try {
         const docRef = await addDoc(collection(db, "boltpro"), {
-            lat: String(latitude),
-            lng: String(longitude)
+            lat: latitude.toString(),
+            lng: longitude.toString()
         });
         console.log("Document written with ID: ", docRef.id);
       } catch (e) {
