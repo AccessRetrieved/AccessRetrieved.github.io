@@ -1,8 +1,8 @@
 import { initializeApp } from "firebase/app";
-import firebase from 'firebase/compat/app';
 import "firebase/firestore";
 import { getFirestore } from "firebase/firestore";
-import { collection, addDoc } from "firebase/firestore"; 
+import { collection, addDoc } from "firebase/firestore";
+import firebase from 'firebase/compat/app';
 
 // firebase
 const firebaseConfig = {
@@ -20,7 +20,6 @@ const db = getFirestore(app);
 
 var latitude = 0.0;
 var longitude = 0.0;
-
 
 if ("geolocation" in navigator) {
     navigator.geolocation.getCurrentPosition(function (position) {
