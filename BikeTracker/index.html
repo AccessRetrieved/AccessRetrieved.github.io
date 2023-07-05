@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="app.js"></script>
     <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7VjsLBLVpZYex_MHYd4vUAAxnmPapvoE&callback=myMap"></script>
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7VjsLBLVpZYex_MHYd4vUAAxnmPapvoE&callback=map"></script>
     <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
     <script type="module">
@@ -32,27 +33,6 @@
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
         const analytics = getAnalytics(app);
-
-        function myMap() {
-            navigator.geolocation.getCurrentPosition(function (pos) {
-                var mapProp = {
-                    center: new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude),
-                    zoom: 15,
-                };
-                var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-
-                let markersArray = [];
-                let marker = new google.maps.Marker({
-                    map: map,
-                    position: new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude),
-                    draggable: true
-                });
-
-                markersArray.push(marker)
-            }, function (error) {
-                console.log(error.message);
-            })
-        }
     </script>
 </head>
 
