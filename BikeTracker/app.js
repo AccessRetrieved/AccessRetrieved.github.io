@@ -33,7 +33,7 @@ if ("geolocation" in navigator) {
     document.getElementById('location').textContent = "Geolocation is not supported by this browser.";
 }
 
-function map() {
+function Map() {
     navigator.geolocation.getCurrentPosition(function (pos) {
         var mapProp = {
             center: new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude),
