@@ -1,18 +1,3 @@
-var firebaseConfig = {
-    apiKey: "AIzaSyBCp--QML8Dg8r5XUJEiKB3-JdXOixfTPw",
-    authDomain: "bike-cceb1.firebaseapp.com",
-    projectId: "bike-cceb1",
-    storageBucket: "bike-cceb1.appspot.com",
-    messagingSenderId: "274389744864",
-    appId: "1:274389744864:web:faa7649a5497fb35bce485",
-    measurementId: "G-TGDKPW3RLF"
-  };
-
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-
-// Initialize Firestore
-var db = firebase.firestore();
 
 
 var latitude = 0.0;
@@ -70,13 +55,3 @@ function Map() {
         console.log(error.message);
     })
 }
-
-var boltproRef = db.collection('boltpro').orderBy('timestamp', 'desc').limit(1);
-
-boltproRef.get().then((querySnapshot) => {
-    querySnapshot.forEach((doc) => {
-        console.log(doc.id, " => ", doc.data());
-    });
-}).catch((error) => {
-    console.log("Error getting documents: ", error);
-});

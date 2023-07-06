@@ -4,13 +4,41 @@
 <head>
     <title>Jetson Bolt Pro Tracker</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+        import { getFirestore, collection, query, orderBy, limit, getDocs } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js";
 
-    <!-- Add Firestore SDK -->
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyBCp--QML8Dg8r5XUJEiKB3-JdXOixfTPw",
+            authDomain: "bike-cceb1.firebaseapp.com",
+            projectId: "bike-cceb1",
+            storageBucket: "bike-cceb1.appspot.com",
+            messagingSenderId: "274389744864",
+            appId: "1:274389744864:web:faa7649a5497fb35bce485",
+            measurementId: "G-TGDKPW3RLF"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        const q = query(collection(db, 'boltpro'), orderBy('timestamp', 'desc'), limit(1));
+
+        getDocs(q).then((querySnapshot) => {
+            querySnapshot.forEach((doc) => {
+                console.log(doc.id, " => ", doc.data());
+            });
+        }).catch((error) => {
+            console.log("Error getting documents: ", error);
+        });
+
+    </script>
+
     <script src="app.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7VjsLBLVpZYex_MHYd4vUAAxnmPapvoE&callback=Map"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7VjsLBLVpZYex_MHYd4vUAAxnmPapvoE&callback=Map"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 
