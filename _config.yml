@@ -1,0 +1,4 @@
+# Site content is archived in _archive/ (not published). Only the redirect pages are served.
+exclude:
+  - _archive
+  - README.md
